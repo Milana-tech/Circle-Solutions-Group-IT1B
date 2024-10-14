@@ -14,7 +14,7 @@ src: url("../fonts/Calibre-Regular.otf") format("opentype");
 
 main
 {
-    padding: 20px;
+    padding: 10px;
 }
 
 body
