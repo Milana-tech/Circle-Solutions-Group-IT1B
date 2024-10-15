@@ -157,23 +157,3 @@ ul {
   background-color: #799dab;
   color: white;
 }
-
-
-/* .efficiency-section,
-.efficiency-text{
-  text-align: right;
-}   
-
-.efficiency-text ul{
-    list-style-position: inside;
-    text-align: right;
-}
-
-.efficiency-text li::marker{
-    color: yellow;
-}
-
-h2 + ul > li{
-    color: green;
-    list-style-position: inside;
-} */

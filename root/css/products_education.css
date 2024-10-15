@@ -1,60 +1,3 @@
-/* * {
-  font-family: "Test Calibre", sans-serif;
-  padding: 0;
-  box-sizing: border-box;
-  margin: 0;
-}
-
-body {
-  margin-inline: 100px;
-}
-
-h1 {
-  color: #799dab;
-}
-
-.faculty-section {
-  display: grid;
-  grid-template-columns: 1fr 2.2fr;
-  grid-template-rows: 1fr;
-}
-
-.faculty-text{
-    margin: auto;
-}
-
-.faculty {
-  display: flex;
-  flex-direction: column;
-}
-
-.glasses {
-  grid-column-start: 1;
-  width: 300px;
-  height: 200px;
-}
-
-.student-section {
-  display: grid;
-  grid-template-columns: 1fr 2.2fr;
-  grid-template-rows: 1fr;
-}
-
-.student {
-  grid-column-start: -1;
-  width: 300px;
-  height: 200px;
-}
-
-p {
-  grid-column: 2;
-  display: flex;
-}
-
-ul {
-  margin-inline: 15px;
-} */
-
 * {
   font-family: "Test Calibre", sans-serif;
   margin: 0;
@@ -207,3 +150,22 @@ ul {
   background-color: #799dab;
   color: white;
 }
+
+/* .efficiency-section,
+.efficiency-text{
+  text-align: right;
+}   
+
+.efficiency-text ul{
+    list-style-position: inside;
+    text-align: right;
+}
+
+.efficiency-text li::marker{
+    color: yellow;
+}
+
+h2 + ul > li{
+    color: green;
+    list-style-position: inside;
+} */
