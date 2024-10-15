@@ -1,0 +1,309 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face
+{
+font-family: Calibre-Regular;
+font-weight: 400;
+src: url("../fonts/Calibre-Regular.otf") format("opentype");
+}
+
+main
+{
+    padding: 10px;
+}
+
+body
+{
+    font-family: Calibre-Regular;
+}
+
+.circle
+{
+    width: 270px;
+    height: 270px;
+    background-color: #C7EAF8;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -135px;
+    right: -30px;
+}
+
+.circle2
+{
+    width: 130px;
+    height: 130px;
+    background-color: rgba(220, 241, 249, 0.50);
+    border-radius: 100%;
+    position: absolute;
+    bottom: 20px; 
+    right: 110px; 
+}
+
+.grid
+{
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+}
+
+.whole-div
+{
+    box-sizing: content-box;
+    padding: 20px;
+    width: 1300px;
+    height: 650px;
+    display: grid;
+    grid-column-start: 2;
+    grid-template-columns: 1fr 2fr;
+    border-radius: 15px;
+    box-shadow: 0px 0px 60px 30px rgba(0, 0, 0, 0.03);
+    overflow: hidden;
+}
+
+.topest
+{
+    padding-bottom: 15px;
+}
+
+.square-info
+{
+    padding: 40px 20px;
+    border-radius: 10px;
+    width: 500px;
+    height: 650px;
+    background-color: #799DAB;
+    position: relative;
+    overflow: hidden;
+}
+
+.content
+{
+    margin-bottom: 80px;
+    padding: 0px 20px;
+}
+
+.dark-blue
+{
+    color: #799dab;
+}
+
+.white
+{
+    color: white;
+}
+
+.grey
+{
+    color: #C9C9C9;
+    font-size: 1.5rem;
+}
+
+.center
+{
+    display: flex;
+    justify-content: center;
+}
+
+.dark-blue h1
+{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.box-question
+{
+    width: 300px;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+img
+{
+    width: 20px;
+    margin: 0px 20px;
+}
+
+.icons
+{
+    font-size: 1em;
+    padding: 20px 30px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.icon3
+{
+    width: 15px;
+}
+
+.form-right
+{
+    box-sizing: content-box;
+    padding: 30px 60px;
+}
+
+.first-name
+{
+    display: flex;
+    flex: 1, 1, 50%;
+}
+
+.email
+{
+    flex: 1, 1, 50%;
+}
+
+.number
+{   
+    display: flex;
+    flex: 1, 1, 100%;
+}
+
+.radio-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.radio-container input[type="radio"]
+{
+    margin-right: 20px;
+}
+
+.radio-container label
+{
+    display: inline-block;
+    width: calc(100% - 30px); 
+    word-wrap: break-word; 
+}
+
+label
+{
+    color: #799DAB;
+}
+
+.flex
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex2
+{
+    display: flex;
+    padding-top: 50px;
+}
+
+.third
+{
+    padding-right: 250px;
+    padding-bottom: 40px;
+}
+
+.subject
+{
+    margin-bottom: 20px;
+}
+
+input 
+{
+    outline: none; 
+    border: none; 
+    border-bottom: 1px solid rgb(0, 0, 0); 
+    padding: 5px 0; 
+    font-size: 14px; 
+    width: 160%; 
+    margin-bottom: 20px; 
+}
+
+.custom-input
+{
+    width: 100%;
+}
+
+.button
+{
+    padding-top: 40px;
+    padding-left: 470px;
+}
+
+.button input[type="submit"]
+{
+    padding: 15px 7px;
+    font-size: 16px; 
+    background-color: #799DAB;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.12);
+    border: none; 
+    cursor: pointer; 
+    width: 240px;
+}
+
+.radio-container
+{
+    white-space: nowrap;
+}
+
+.radio-container input[type="radio"]
+{
+    margin-left: 10px;
+}
+
+.airport
+{
+    display: block; 
+    margin: 0 auto; 
+    width: 340px; 
+    height: auto;
+    transform: rotate(-29.753deg);
+}
+
+.grid
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-question
+{
+    width: 990px;
+    height: 120px;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: flex-start; 
+    padding: 20px; 
+    position: relative; 
+    background-color: rgba(220, 241, 249, 1);
+    margin-top: 20px;
+    margin-right: 400px;
+}
+
+.button-question {
+    background-color: rgba(237, 250, 255, 1);
+    position: absolute;
+    top: 35px;
+    bottom: 50px; 
+    right: 10px; 
+    cursor: pointer;
+    display: inline-flex;
+    height: 50px;
+    padding: 0px 20px 0px 15px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.padding
+{
+    padding: 5px 0px;
+}
