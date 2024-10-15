@@ -100,18 +100,18 @@ ul {
   }
 }
 
-/* boxes */
+/* Boxes */
 .child-left {
   border: 1px solid #c6e8f7;
   float: left;
   width: 250px;
-  height: 200px;
+  height: 215px;
 }
 .child-right {
   border: 1px solid #c6e8f7;
   float: right;
   width: 250px;
-  height: 200px;
+  height: 215px;
 }
 
 .child-left p,
@@ -135,8 +135,8 @@ ul {
 .section-buttons {
   display: flex;
   gap: 10px;
-  justify-content: center;
-  padding-top: 10px;
+  justify-content: space-evenly;
+  padding: 10px 0px 10px 0px;
 }
 
 .cart-btn,
