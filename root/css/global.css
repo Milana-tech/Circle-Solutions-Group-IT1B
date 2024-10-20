@@ -224,7 +224,7 @@ a
     transform: rotate(180deg);
 }
 
-.userMenuBtn.expanded>.userInfo
+.userMenuBtn.expanded + .userInfo
 {
     position: absolute;
     top: 80px;
