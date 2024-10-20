@@ -151,21 +151,21 @@ ul {
   color: white;
 }
 
-/* .efficiency-section,
-.efficiency-text{
+/* .student-section,
+.student-text{
   text-align: right;
 }   
 
-.efficiency-text ul{
+.student-text ul{
     list-style-position: inside;
     text-align: right;
 }
 
-.efficiency-text li::marker{
+.student-text li::marker{
     color: yellow;
 }
 
 h2 + ul > li{
     color: green;
     list-style-position: inside;
-} */
+}  */
