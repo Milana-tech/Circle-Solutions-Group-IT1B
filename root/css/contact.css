@@ -150,24 +150,31 @@ img
     padding: 30px 60px;
 }
 
-.first-name
+.flex
 {
     display: flex;
-    flex: 1, 1, 50%;
+    padding-bottom: 50px;
 }
 
-.email
+.position
 {
-    flex: 1, 1, 50%;
+    flex: 1 1 50%;
+    margin-right: 120px;
+}
+
+.flex2
+{
+    display: flex;
 }
 
 .number
 {   
     display: flex;
-    flex: 1, 1, 100%;
+    flex: 1 1 100%;
 }
 
-.radio-container {
+.radio-container
+{
     display: flex;
     align-items: flex-start;
     margin-bottom: 10px;
@@ -175,7 +182,7 @@ img
 
 .radio-container input[type="radio"]
 {
-    margin-right: 20px;
+    margin-right: 5px;
 }
 
 .radio-container label
@@ -193,19 +200,12 @@ label
 .flex
 {
     display: flex;
-    justify-content: space-between;
 }
 
 .flex2
 {
     display: flex;
     padding-top: 50px;
-}
-
-.third
-{
-    padding-right: 250px;
-    padding-bottom: 40px;
 }
 
 .subject
@@ -219,14 +219,18 @@ input
     border: none; 
     border-bottom: 1px solid rgb(0, 0, 0); 
     padding: 5px 0; 
-    font-size: 14px; 
-    width: 160%; 
+    font-size: 14px;  
     margin-bottom: 20px; 
+}
+
+.full-width
+{
+    width: 100%;
 }
 
 .custom-input
 {
-    width: 100%;
+    width: 75%;
 }
 
 .button
@@ -255,7 +259,7 @@ input
 
 .radio-container input[type="radio"]
 {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .airport

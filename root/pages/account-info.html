@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/account-info-style.css" type="text/css">
 </head>
+
 <body>
     <div class="container">
         <h1>Account Setting</h1>
@@ -13,54 +15,48 @@
         <h2>Profile Information</h2>
         <form action="accountinfo.html">
             <div class="first">
-                <label for="" class="labels">FIRST NAME</label>
-                <input type="text" class="inputs">
+                <label for="fname" class="labels">FIRST NAME</label>
+                <input type="text" name="fname" id="fname" class="inputs" required>
             </div>
             <div class="second">
-                <label for="" class="labels">LAST NAME</label>
-                <input type="text" class="inputs">
+                <label for="lname" class="labels">LAST NAME</label>
+                <input type="text" name="lname" id="lname" class="inputs" required>
             </div>
-        </form>
-        <form action="accountinfo.html">
             <div class="first">
-                <label for="" class="labels">EMAIL ADDRESS</label>
-                <input type="text" class="inputs">
+                <label for="email" class="labels">EMAIL ADDRESS</label>
+                <input type="text" name="email" id="email" class="inputs" required>
             </div>
             <div class="second">
-                <label for="" class="labels">PHONE NUMBER</label>
-                <input type="text" class="inputs">
+                <label for="number" class="labels">PHONE NUMBER</label>
+                <input type="text" name="number" id="number" class="inputs" required> 
             </div>
-        </form>
-        <h3>Change Password</h3>
-        <form action="accountinfo.html">
+            <h3>Change Password</h3>
             <div class="first">
-                <label for="" class="labels">NEW PASSWORD</label>
-                <input type="text" class="inputs">
+                <label for="newpass" class="labels">NEW PASSWORD</label>
+                <input type="text" name="newpass" id="newpass" class="inputs" required>
             </div>
             <div class="second">
-                <label for="" class="labels">CONFIRM NEW PASSWORD</label>
-                <input type="text" class="inputs">
+                <label for="confirmpass" class="labels">CONFIRM NEW PASSWORD</label>
+                <input type="text" name="confirmpass" id="confirmpass" class="inputs" required>
             </div>
-        </form>
-        <h4>Address</h4>
-        <form action="accountinfo.html">
+            <h4>Address</h4>
             <div class="full">
-                <label for="" class="labels">SHIPPING ADDRESS</label>
-                <input type="text" class="address">
+                <label for="shipping" class="labels">SHIPPING ADDRESS</label>
+                <input type="text" name="shipping" id="shipping" class="address" required>
             </div>
-        </form>
-        <form action="accountinfo.html">
             <div class="first">
-                <label for="" class="labels">STATE</label>
-                <input type="text" class="inputs radius">
+                <label for="state" class="labels">STATE</label>
+                <input type="text" name="state" id="state" class="inputs radius" required>
             </div>
             <div class="second">
-                <label for="" class="labels">ZIP CODE</label>
-                <input type="text" class="inputs">
+                <label for="zipcode" class="labels">ZIP CODE</label>
+                <input type="text" name="zipcode" id="zipcode" class="inputs" required>
             </div>
+            <div class="button">
+                <input class="submit" type="submit" value="Save Changes">
+            </div>  
         </form>
-        <form action="accountinfo.html">
-            <input class="submit" type="submit" value="Save Changes">
-    </div>
+    </div>  
 </body>
+
 </html>
