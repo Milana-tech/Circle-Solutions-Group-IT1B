@@ -131,3 +131,130 @@ body {
     height: 132px;
     background-color: aliceblue;
 }
+
+@media only screen and (max-width: 1550px) {
+    .main {
+        grid-column: 1 / 4;
+      }
+  }
+
+
+  @media only screen and (max-width: 768px) {
+
+    
+    .main {
+        width: 100%;
+      }
+
+    .about {
+        width: 100%;
+        bottom: 0em; 
+    }
+
+    .img-bg {
+        display: none;
+    }
+
+    .aboutheader {
+        width: 100%;
+    }
+    /* .aboutheader {
+        font-size: 39px;
+        width: 65%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: sans-serif;
+        font-weight: bolder;
+    
+    
+    } */
+
+    .about-info {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .OS-section {
+        display: grid;
+        padding-top: 50px;
+    }
+    
+    .OS {
+        font-size: 65px;
+        line-height: 0px;
+        padding-top: 90px;
+        font-family: sans-serif;
+        font-weight: bolder;
+    }
+    
+    .OS-info1 {
+        font-size: 20px;
+        padding-left: 76px;
+        font-family: sans-serif;
+    }
+    
+    .ctd-section {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        padding-top: 50px;
+    }
+    
+    .ctd-info2 {
+        font-size: 20px;
+        padding-right: 33px;
+        padding-left: 70px;
+        padding-top: 20px;
+    }
+    
+    .ctd {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        font-size: 42px;
+        font-weight: bolder;
+        grid-row: 1 / 2;
+    }
+
+    .FR-section {
+        display: grid;
+        padding-top: 50px;
+    }
+    
+    .FR {
+        font-size: 42px;
+        line-height: 0px;
+        font-weight: bolder;
+        padding-top: 22px;
+    }
+    
+    .FR-info3 {
+        padding-left: 75px;
+        font-size: 20px;
+    }
+
+    .cs-section {
+        font-size: 20px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .cs {
+        font-size: 42px;
+        font-weight: bolder;
+        padding-top: 0px;
+        padding-right: 30px;
+        grid-row: 1 / 2;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+    
+    .cs-info4 {
+        padding-top: 6px;
+        padding-right: 60px;
+        padding-left: 75px;
+    }
+  }
