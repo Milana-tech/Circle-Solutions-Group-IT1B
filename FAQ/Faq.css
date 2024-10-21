@@ -1,0 +1,27 @@
+.head{
+    display: grid;
+    background-color:cadetblue;
+    justify-items:center;
+    padding: 5px;
+    color: white;
+}
+
+.body{
+    background-color: lightblue;
+    width: 16cm;
+}
+
+.contain {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    color: darkgreen;
+}
+
+.grid-container {
+    grid-column: 2 / 3;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
