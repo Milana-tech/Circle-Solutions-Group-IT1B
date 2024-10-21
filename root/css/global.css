@@ -518,6 +518,10 @@ form
     border:0px;
     width: 105%;
 }
+.errors
+{
+    color: red;
+}
 @media (max-width:700px){
     .account-info {display:flex;
         flex-direction: column;
