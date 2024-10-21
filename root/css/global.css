@@ -33,11 +33,14 @@ body {
     padding: 0;
 }
 
-.content
-{
+.content {
     margin-top: 20px;
     margin-inline: 10vw;
     margin-bottom: 20px;
+}
+
+.noBorder {
+    border: none !important;
 }
 
 .header ul {
@@ -74,7 +77,7 @@ a {
     justify-content: end;
 }
 
-.navMenuBtn {
+.header .navMenuBtn {
     display: none;
 }
 
@@ -90,10 +93,6 @@ a {
     border-right: 2px solid var(--blueGrey);
     color: #799dab;
     font-size: 1.75rem;
-}
-
-.noBorder {
-    border: none !important;
 }
 
 .header>div>a:first-child {
