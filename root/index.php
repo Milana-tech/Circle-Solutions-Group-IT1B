@@ -7,7 +7,10 @@
     <script src="http://localhost/Milana-tech-Circle-Solutions-Group-IT1B/root/scripts/header.js"></script>
     <link rel="stylesheet" href="http://localhost/Milana-tech-Circle-Solutions-Group-IT1B/root/css/global.css?id=1234" type="text/css">
 </head>
-<body>
+<body>                              
+    <?php
+        include "./sections/header.html";
+    ?>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quos facilis soluta labore numquam repellendus hic eum laborum atque cupiditate iusto delectus. Magnam modi veritatis tenetur optio obcaecati, quod iure!
     Illum et officia minus, officiis tenetur suscipit ea perspiciatis ex, itaque numquam, accusamus fugiat laudantium harum? Ipsam laudantium quaerat eos voluptatum sed mollitia, placeat soluta fuga culpa modi id consectetur?
     Aut, ipsam cupiditate harum sunt asperiores autem ex magnam suscipit dolor totam vel ut repellendus unde? Dolores iusto fugit libero suscipit dolorum? Mollitia, libero repudiandae quasi porro in voluptas. Doloremque?
@@ -69,7 +72,7 @@
     Totam magnam explicabo, et vitae culpa tempore excepturi assumenda illum maxime iusto suscipit nostrum dignissimos animi magni ex quisquam molestias dolor amet exercitationem corporis saepe, temporibus delectus. Illo, soluta. Maxime?
     Quo commodi eum quod quasi, fugiat mollitia deserunt. Dolor quidem similique dolores perspiciatis veritatis ex? Fugit, voluptatum atque minus distinctio quasi architecto corrupti, doloremque voluptates ducimus odit aperiam libero cum.
     <?php
-        include "sections/footer.html";
+        include "./sections/footer.html";
     ?>
 </body>
 </html>
