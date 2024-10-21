@@ -5,6 +5,15 @@
     box-sizing: border-box;
 }
 
+:root
+{
+    --desktop-breakpoint: 1200px;
+    --laptop-breakpoint: 1024px;
+    --tablet-breakpoint: 768px;
+	--mobile-breakpoint: 430px; 
+    /* Iphone 14 Pro Max */
+}
+
 main
 {
     padding-right: 280px;
@@ -12,6 +21,22 @@ main
     padding-top: 10px;
     padding-bottom: 50px;
     color: var(--blueGrey);
+    @media screen and (max-width: 430px)
+    {
+        padding-left: 15px;
+    }
+}
+
+
+.home
+{
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width: 430px)
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 
 .content
@@ -32,28 +57,52 @@ main
     background-color: #F9F9F9;
     width: 535px;
     height: 580px;
+
+    @media screen and (max-width: 430px)
+    {
+        width: 530px;
+        height: 580px;
+    }
 }
 
 .left
 {
     border: 1px solid #DEDFE1;
     margin-right: 40px;
+    width: 700px;
+    @media screen and (max-width: 430px)
+    {
+        width: 530px;
+        height: 390px;
+    }
 }
 
 .form
 {
     padding: 20px;
     font-size: 1rem;
+    @media screen and (max-width: 430px)
+    {
+        font-size: 2rem;
+    }
 }
 
 .first-last-name
 {
     display: flex;
+    @media screen and (max-width: 430px)
+    {
+        display: block;
+    }
 }
 
 .email-phone
 {
     display: flex;
+    @media screen and (max-width: 430px)
+    {
+        display: block;
+    } 
 }
 
 .header01
@@ -68,6 +117,11 @@ main
     padding-bottom: 50px;
     font-weight: 600;
     font-size: 1.5rem;
+    @media screen and (max-width: 430px) 
+    {
+        padding-right: 5px;
+        font-size: 2rem;
+    } 
 }
 
 .head
@@ -103,6 +157,11 @@ input
     padding-top: 10px;
     padding-left: 15px;
     padding-bottom: 20px;
+    @media screen and (max-width: 430px) 
+    {
+        width: 200px;
+        height: 100px;
+    } 
 }
 
 .button input[type="submit"]
@@ -118,6 +177,12 @@ input
     height: 55px;
     font-size: 1.5rem;
     font-weight: 550;
+    @media screen and (max-width: 430px)
+    {
+        width: 400px;
+        height: 60px;
+        font-size: 2rem;
+    }
 }
 
 .full
@@ -145,6 +210,11 @@ label
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    @media screen and (max-width: 430px)
+    {
+        width: 530px;
+        font-size: 2rem;
+    } 
 }
 
 hr
@@ -162,6 +232,10 @@ hr
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    @media screen and (max-width: 430px)
+    {
+        font-size: 2rem;
+    } 
 }
 
 .padding
