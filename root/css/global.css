@@ -33,6 +33,13 @@ body {
     padding: 0;
 }
 
+.content
+{
+    margin-top: 20px;
+    margin-inline: 10vw;
+    margin-bottom: 20px;
+}
+
 .header ul {
     margin: 0;
 }
