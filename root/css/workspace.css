@@ -34,8 +34,7 @@ img
     font-weight: 200;
     font-size: 22px;
 }
-.package hr {
-    
+.package hr { 
     height: 2px ;
     background-color: #008AB8;
     
@@ -118,4 +117,41 @@ img
     height: 30px;
     width:60%;
     margin-inline: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+    .work {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    img {
+        
+        display: flex;
+    }
+
+    .firstimage {
+        width: 45vw;
+    }
+
+    .secondimage {
+        width: 45vw;
+    }
+
+    .thirdimage {
+        /* display: none; */
+        width: 91vw;
+        
+    }
+
+    .plans {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 }
