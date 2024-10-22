@@ -291,7 +291,6 @@ footer>div {
     display: inline-block;
 }
 
-
 .company a {
     color: white;
 }
@@ -360,7 +359,6 @@ if vw is less than 880px then:
         margin: 0px 20px 20px 20px;
     }
 
-
     #userMenuDropdownBtn {
         padding: 5px 5px 5px 2px;
         margin: 5px 10px 5px 2px;
@@ -391,10 +389,8 @@ if vw is less than 880px then:
 
 .container-accountinfo {
     grid-column: 2/4;
-    color: #799DAB;
-    width: 100%;
-
-
+    color: var(--blueGrey);
+    margin-bottom: 50px;
 }
 
 .container-accountinfo h2 {
@@ -450,22 +446,21 @@ if vw is less than 880px then:
 }
 
 .submit-accountinfo {
-    background-color: #799DAB;
+    background-color: var(--blueGrey);
     color: white;
     height: 36px;
     border: 0px;
-    width: 105%;
 }
 
 .errors {
-    color: red;
+    color: lightgray;
 }
 
 @media (max-width:700px) {
     .account-info {
         display: flex;
         flex-direction: column;
-
+        padding-inline: 10vw;
     }
 }
 
@@ -473,8 +468,5 @@ if vw is less than 880px then:
     .account-info form {
         display: flex;
         flex-direction: column;
-
-
-
     }
 }
