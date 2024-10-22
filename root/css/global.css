@@ -389,7 +389,7 @@ if vw is less than 880px then:
     font-family: sans-serif;
 }
 
-.container {
+.container-accountinfo {
     grid-column: 2/4;
     color: #799DAB;
     width: 100%;
@@ -397,29 +397,29 @@ if vw is less than 880px then:
 
 }
 
-h2 {
+.container-accountinfo h2 {
     font-size: 18px;
     padding-top: 4rem;
 }
 
-form {
+.form-accountinfo {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     margin-top: 1rem;
 }
 
-.first {
+.firsthalf-accountinfo {
     grid-column: 1/2;
     width: 100%;
 }
 
-.labels {
+.labels-acoountinfo {
     margin-bottom: 0;
     font-size: 12px;
 }
 
-.inputs {
+.inputs-accountinfo {
     width: 100%;
     background-color: #f8f8f8;
     height: 2rem;
@@ -427,16 +427,16 @@ form {
     border: 1px #dfdfdf solid;
 }
 
-.second {
+.secondhalf-accountinfo {
     grid-column: 2/4;
     width: 100%;
 }
 
-.full {
+.full-accountinfo {
     grid-column: 1/3;
 }
 
-.address {
+.address-accountinfo {
     width: 100%;
     background-color: #f8f8f8;
     height: 4rem;
@@ -449,7 +449,7 @@ form {
     border-radius: 0rem;
 }
 
-.submit {
+.submit-accountinfo {
     background-color: #799DAB;
     color: white;
     height: 36px;

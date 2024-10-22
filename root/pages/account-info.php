@@ -33,7 +33,7 @@ $postal = filter_input(INPUT_POST,"postal");
 </head>
 <body>
 <div class="account-info">    
-    <div class="container">
+    <div class="container-accountinfo">
         <h1>Account Setting</h1>
         <p>Below you can observe your information</p>
         <div class="errors">
@@ -43,53 +43,53 @@ $postal = filter_input(INPUT_POST,"postal");
 
         </div>
         <h2>Profile Information</h2>
-        <form action="account-info.php" method="POST">
-            <div class="first">
-                <label for="" class="labels">FIRST NAME</label>
-                <input type="text" class="inputs" name="fname">
+        <form action="account-info.php" method="POST" class="form-accountinfo">
+            <div class="firsthalf-accountinfo">
+                <label for="" class="labels-accountinfo">FIRST NAME</label>
+                <input type="text" class="inputs-accountinfo" name="fname">
             </div>
-            <div class="second">
-                <label for="" class="labels">LAST NAME</label>
-                <input type="text" class="inputs" name="lname">
+            <div class="secondhalf-accountinfo">
+                <label for="" class="labels-accountinfo">LAST NAME</label>
+                <input type="text" class="inputs-accountinfo" name="lname">
             </div>
     
-            <div class="first">
-                <label for="" class="labels">EMAIL ADDRESS</label>
-                <input type="text" class="inputs" name="email">
+            <div class="firsthalf-accountinfo">
+                <label for="" class="labels-accountinfo">EMAIL ADDRESS</label>
+                <input type="text" class="inputs-accountinfo" name="email">
             </div>
-            <div class="second">
-                <label for="" class="labels">PHONE NUMBER</label>
-                <input type="text" class="inputs" name="phone">
+            <div class="secondhalf-accountinfo">
+                <label for="" class="labels-accountinfo">PHONE NUMBER</label>
+                <input type="text" class="inputs-accountinfo" name="phone">
             </div>
         
         <h3>Change Password</h3>
         
-            <div class="first">
-                <label for="" class="labels">NEW PASSWORD</label>
-                <input type="text" class="inputs">
+            <div class="firsthalf-accountinfo">
+                <label for="" class="labels-accountinfo">NEW PASSWORD</label>
+                <input type="text" class="inputs-accountinfo">
             </div>
-            <div class="second">
-                <label for="" class="labels">CONFIRM NEW PASSWORD</label>
-                <input type="text" class="inputs">
+            <div class="secondhalf-accountinfo">
+                <label for="" class="labels-accountinfo">CONFIRM NEW PASSWORD</label>
+                <input type="text" class="inputs-accountinfo">
             </div>
         
         <h4>Address</h4>
         
-            <div class="full">
-                <label for="" class="labels">SHIPPING ADDRESS</label>
-                <input type="text" class="address" name="address">
+            <div class="full-accountinfo">
+                <label for="" class="labels-accountinfo">SHIPPING ADDRESS</label>
+                <input type="text" class="address-accountinfo" name="address">
             </div>
         
-            <div class="first">
-                <label for="" class="labels">STATE</label>
-                <input type="text" class="inputs radius" name="state">
+            <div class="firsthalf-accountinfo">
+                <label for="" class="labels-accountinfo">STATE</label>
+                <input type="text" class="inputs-accountinfo radius" name="state">
             </div>
-            <div class="second">
-                <label for="" class="labels">ZIP CODE</label>
-                <input type="text" class="inputs" name="postal">
+            <div class="secondhalf-accountinfo">
+                <label for="" class="labels-accountinfo">ZIP CODE</label>
+                <input type="text" class="inputs-accountinfo" name="postal">
             </div>
         
-            <input class="submit" type="submit" value="Save Changes" name="submit">
+            <input class="submit-accountinfo" type="submit" value="Save Changes" name="submit">
         </form>
     </div>
 </div>    
