@@ -10,8 +10,8 @@
 </head>
 
 <?php
-include "/app/public/products_rodrigo/Milana-tech-Circle-Solutions-Group-IT1B/root/sections/header.html";
-?>
+  include "../sections/header.html";
+  ?>
 
 <body>
   <div class="container">

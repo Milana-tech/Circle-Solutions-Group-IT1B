@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #799dab;
 }
 
 .container 
@@ -21,10 +22,8 @@ h1
 
 h2 
 {
-
   margin-bottom: 10px;
 }
-
 
 .faculty-section 
 {
@@ -61,7 +60,6 @@ ul
   padding-left: 20px;
 }
 
-
 .student-section 
 {
   display: grid;
@@ -91,7 +89,6 @@ ul
   margin-bottom: 10px;
 }
 
-
 @media (max-width: 768px) 
 {
   .faculty-section,
@@ -107,7 +104,6 @@ ul
     margin: 0 auto;
   }
 }
-
 
 .child-left 
 {
@@ -145,7 +141,6 @@ ul
     justify-content: space-evenly;
   }
 }
-
 
 .section-buttons 
 {
