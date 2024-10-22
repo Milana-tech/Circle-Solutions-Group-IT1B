@@ -37,8 +37,8 @@
         </div>
         <input type="submit" class="btn" value="Create Account">
       </form>
-      <?php
 
+      <?php
       if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $name = filter_input(INPUT_POST, "name");
         $email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
@@ -47,7 +47,7 @@
 
         if (!empty($name) && $email !== FALSE && !empty($password) && !empty($cPassword)) {
           if ($password === $cPassword) {
-            header("Location: http://localhost/products_rodrigo/Milana-tech-Circle-Solutions-Group-IT1B/root/index.php ");
+            header("Location: http://localhost/products_rodrigo/Milana-tech-Circle-Solutions-Group-IT1B/root/index.php");
             exit();
           } elseif ($password != $cPassword) {
             echo "<br>Passwords do not match";
