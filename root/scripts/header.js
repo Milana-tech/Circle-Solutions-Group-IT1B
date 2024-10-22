@@ -12,12 +12,12 @@ function expandedMenuStateChange() {
   }
 
 function expandedUserStateChange(){
-    var x = document.getElementById("userMenuBtn");
-    if (x.className === "userMenuBtn") 
+    var x = document.getElementById("userMenuDropdownBtn");
+    if (x.className === "userMenuDropdownBtn") 
         {
-            x.className = "userMenuBtn expanded";
+            x.className = "userMenuDropdownBtn expanded";
         } else {
-            x.className = "userMenuBtn";
+            x.className = "userMenuDropdownBtn";
         }
   }
   
