@@ -291,10 +291,6 @@ footer>div {
     display: inline-block;
 }
 
-.reachUs>div:nth-child(3) {
-    /* background-color: red; */
-}
-
 .company a {
     color: white;
 }
@@ -363,7 +359,6 @@ if vw is less than 880px then:
         margin: 0px 20px 20px 20px;
     }
 
-
     #userMenuDropdownBtn {
         padding: 5px 5px 5px 2px;
         margin: 5px 10px 5px 2px;
@@ -372,5 +367,106 @@ if vw is less than 880px then:
 
     .header .navMenuBtn img {
         margin: 0;
+    }
+}
+
+.newsletter button {
+    margin-left: 0;
+    border-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    color: white;
+    margin: 0;
+}
+
+.account-info {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+.container-accountinfo {
+    grid-column: 2/4;
+    color: var(--blueGrey);
+    margin-bottom: 50px;
+}
+
+.container-accountinfo h2 {
+    font-size: 18px;
+    padding-top: 4rem;
+}
+
+.form-accountinfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.firsthalf-accountinfo {
+    grid-column: 1/2;
+    width: 100%;
+}
+
+.labels-acoountinfo {
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.inputs-accountinfo {
+    width: 100%;
+    background-color: #f8f8f8;
+    height: 2rem;
+    border: 1px;
+    border: 1px #dfdfdf solid;
+}
+
+.secondhalf-accountinfo {
+    grid-column: 2/4;
+    width: 100%;
+}
+
+.full-accountinfo {
+    grid-column: 1/3;
+}
+
+.address-accountinfo {
+    width: 100%;
+    background-color: #f8f8f8;
+    height: 4rem;
+    border: 1px;
+    border: 1px #dfdfdf solid;
+
+}
+
+.radius {
+    border-radius: 0rem;
+}
+
+.submit-accountinfo {
+    background-color: var(--blueGrey);
+    color: white;
+    height: 36px;
+    border: 0px;
+}
+
+.errors {
+    color: lightgray;
+}
+
+@media (max-width:700px) {
+    .account-info {
+        display: flex;
+        flex-direction: column;
+        padding-inline: 10vw;
+    }
+}
+
+@media (max-width:500px) {
+    .account-info form {
+        display: flex;
+        flex-direction: column;
     }
 }
