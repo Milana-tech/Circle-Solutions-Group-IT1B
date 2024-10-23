@@ -89,7 +89,7 @@ a {
 
 .header ul a {
     text-decoration: none;
-    padding: 10px calc(4vw - 15px) 10px calc(4vw - 15px);
+    padding: 10px calc(5vw - 15px) 10px calc(5vw - 15px);
     border-right: 2px solid var(--blueGrey);
     color: #799dab;
     font-size: 1.75rem;
@@ -263,7 +263,7 @@ footer {
     background-color: var(--blueGrey);
     width: 100%;
     box-sizing: border-box;
-    padding-inline: calc(10px + 4vw);
+    padding-inline: calc(10px + 5vw);
     padding-block: 120px 10px;
     color: white;
 }
@@ -273,25 +273,25 @@ footer>div {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.circleimage {
-    height: 30%;
+.footerCircleimage {
+    height: 160px;
 }
 
-.reachUs {
+.footerReachUs {
     display: block;
 }
 
-.reachUs>div {
+.footerReachUs>div {
     display: inline;
 }
 
-.reachUs img {
+.footerReachUs img {
     margin: auto;
     vertical-align: middle;
     display: inline-block;
 }
 
-.company a {
+.footerCompany a {
     color: white;
 }
 
@@ -372,7 +372,7 @@ if vw is less than 880px then:
     }
 }
 
-.newsletter button {
+.footerNewsletter button {
     margin-left: 0;
     border-color: transparent;
     border-width: 2px;
