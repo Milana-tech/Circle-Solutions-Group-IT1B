@@ -1,94 +1,100 @@
-:root {
+:root
+{
     --blueGrey: #799dab;
     --blue: #C7eaf8;
     --lightBlueGrey: #dcf1f9;
     --darkblue: rgb(8, 68, 84);
 }
 
-.black {
+.black
+{
     color: black;
 }
 
-@font-face {
+@font-face
+{
+font-family: Calibre-Regular;
+/* font-weight: 400; */
+src: url("../fonts/Calibre-Regular.otf") format("opentype");
+}
+
+@font-face
+{
+font-family: Calibre-Bold;
+/* font-weight: 400; */
+src: url("../fonts/Calibre-Bold.otf") format("opentype");
+}
+
+*
+{
     font-family: Calibre-Regular;
-    /* font-weight: 400; */
-    src: url("../fonts/Calibre-Regular.otf") format("opentype");
 }
 
-@font-face {
-    font-family: Calibre-Bold;
-    /* font-weight: 400; */
-    src: url("../fonts/Calibre-Bold.otf") format("opentype");
-}
-
-* {
-    font-family: Calibre-Regular;
-}
-
-.bold {
+.bold
+{
     font-family: Calibre-Bold;
 }
 
-body {
-    margin: 0;
-    padding: 0;
+body
+{
+    margin:0;
+    padding:0;
 }
 
-.content {
-    margin-top: 20px;
-    margin-inline: 10vw;
-    margin-bottom: 20px;
-}
-
-.noBorder {
-    border: none !important;
-}
-
-.header ul {
+ul
+{
     margin: 0;
 }
 
-.header button {
+button
+{
     border: none;
     background-color: transparent;
 }
 
-.header {
+.header
+{
     position: sticky;
     display: grid;
     color: var(--blueGrey);
     background-color: white;
-    top: 0px;
+    top:0px;
     width: 100%;
     box-sizing: content-box;
 }
 
-.header * {
+.header *
+{
     list-style-type: none;
 }
 
-a {
+a
+{
     text-decoration: none;
 }
 
-.header>div:nth-child(1) {
+.header>div:nth-child(1)
+{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: end;
 }
 
-.header .navMenuBtn {
+.navMenuBtn
+{
     display: none;
 }
 
-.header ul {
+.header ul
+{
     display: flex;
     padding: 0;
 }
 
 
-.header ul a {
+.header ul a
+{
     text-decoration: none;
     padding: 10px calc(4vw - 15px) 10px calc(4vw - 15px);
     border-right: 2px solid var(--blueGrey);
@@ -96,16 +102,24 @@ a {
     font-size: 1.75rem;
 }
 
-.header>div>a:first-child {
+.noBorder
+{
+    border: none !important;
+}
+
+.header>div>a:first-child
+{
     margin-right: auto;
     padding: 15px 15px 5px 15px;
 }
 
-.header .logo {
+.logo
+{
     height: 75px;
 }
 
-.header .searchbar {
+.searchbar
+{
     border-style: solid;
     border-color: #D9D9D9;
     border-width: 1px;
@@ -115,83 +129,104 @@ a {
     max-width: 500px;
 }
 
-.header .searchbar.large {
+.searchbar.large
+{
     margin: 20px;
 }
 
-.header .searchbar img {
+.searchbar img
+{
     display: block;
     height: 30px;
     padding-right: 5px;
 }
 
-.header .searchbar input {
+.searchbar input
+{
     border: none;
     padding-left: 10px;
     width: 100%;
 }
 
-.header .searchbar input {
+.searchbar input
+{
     font-size: 1.5rem;
     /* line-height: 90px; */
 }
 
-.header .searchbar input textarea {
+.searchbar input textarea
+{
     line-height: 90px;
 }
 
 /* the placeholder of inputs gets a low opacity on firefox, this is why an additional class is required */
 /* Firefox */
-.header .searchbar input::placeholder {
+.searchbar input::placeholder
+{
     color: var(--blueGrey);
     opacity: 1;
 }
 
 /* Edge 12 -18 */
-.header .searchbar input::-ms-input-placeholder {
+.searchbar input::-ms-input-placeholder 
+{
     color: var(--blueGrey);
 }
 
-#userMenuDropdownBtn {
+.userMenuBtn
+{
     /* padding-inline: calc(4vw - 10px);     */
-    padding: 10px 10px 10px 5px;
-    margin: 10px 20px 10px 5px;
+    padding: 10px;
+    margin: 10px;
     position: inherit;
 }
 
-#userMenuDropdownBtn>img {
+.userMenuBtn > img
+{
     max-height: 20px;
-}
+}   
 
-#userMenuDropdownBtn>img:nth-child(3) {
+.userMenuBtn>img:nth-child(3)
+{
     height: 10px;
     padding-top: 2px;
     padding-bottom: 2px;
 }
 
-#compactSearchbar {
+.compact
+{
     display: none;
 }
 
 
-.header .expandedMenu {
+.header .expandedMenu
+{
     display: none;
 }
 
-.expandedMenu ul {
+.expandedMenu ul
+{
     display: flex;
     flex-direction: column;
 }
 
-.expandedMenu ul li {
+.expandedMenu ul li
+{
     padding: 10px 10px 10px 30px;
 }
 
-.userInfo {
+.userInfo
+{
     display: none;
 }
 
-#userMenuDropdownBtn.expanded+.userInfo {
+.userMenuBtn.expanded>img:nth-child(3)
+{
+    transform: rotate(180deg);
+}
+
+.userMenuBtn.expanded>.userInfo
+{
     position: absolute;
     top: 80px;
     right: calc(10px + 2vw);
@@ -206,61 +241,71 @@ a {
     font-size: 1.5rem;
 }
 
-.header .profile {
+.profile{
     display: grid;
 }
 
-.header .profile>p {
+.profile>p
+{
     grid-column: 2/3;
     padding: 0px 2px 0px 2px;
     margin: 0;
 }
 
-.header .profile>* {
+.profile > *
+{
     padding-right: 100%;
     text-align: start;
 }
 
-.header .userInfo>div {
+.userInfo>div
+{
     display: flex;
-    flex-direction: row;
+    flex-direction: row ;
     justify-content: flex-start;
     padding-left: 20px;
     margin-block: 10px;
 }
 
 
-.header .userInfo>div:first-child {
+.userInfo>div:first-child
+{
     padding-left: 0;
     display: grid;
 }
 
-.header .profile>div {
+.profile>div
+{
     grid-column: 2/3;
     display: block;
     padding-left: 15px;
 }
 
-.header .profile>div>p:nth-child(2) {
+.profile>div>p:nth-child(2)
+{
     color: lightgray;
 }
 
-.header .profile>img {
+.profile>img
+{
     height: 75%;
 }
 
-.header .userInfo>div>a {
+.userInfo>div>a
+{
     color: var(--blueGrey);
 }
 
-.header .userInfo>div>a>img {
+.userInfo>div>a>img
+{
     margin: auto;
-    vertical-align: middle;
+    vertical-align: middle; 
     display: inline-block;
     padding-right: 10px;
 }
 
-footer {
+footer
+{
     background-color: var(--blueGrey);
     width: 100%;
     box-sizing: border-box;
@@ -269,109 +314,128 @@ footer {
     color: white;
 }
 
-footer>div {
+footer>div
+{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.circleimage {
+.circleimage
+{
     height: 30%;
 }
 
-.reachUs {
+.reachUs
+{
     display: block;
 }
 
-.reachUs>div {
+.reachUs > div
+{
     display: inline;
 }
 
-.reachUs img {
+.reachUs img
+{
     margin: auto;
-    vertical-align: middle;
+    vertical-align: middle; 
     display: inline-block;
 }
 
-.company a {
+.reachUs > div:nth-child(3)
+{
+    /* background-color: red; */
+}
+
+.company a
+{
     color: white;
 }
 
-/*
-if vw is less than 880px then:
--header:
-    the navigation links will disappeare
-    the button for showing the navigation links will appear
-    a new set of navigation links will appear on the bottom of the header(.expandedMenu), that will be visible only when the header has the .expanded class
-*/
-
-@media screen and (max-width: 880px) {
-    .header div:nth-child(1) ul {
+/*if vw is less than exactly 1100px then, the menus must be collapsed*/
+ 
+@media screen and (max-width: 1100px)
+{
+    .header div:nth-child(1) ul
+    {
         display: none;
     }
-
-    .header .navMenuBtn {
+    
+    .navMenuBtn
+    {
         display: inherit;
     }
 
-    .header .navMenuBtn img {
+    .navMenuBtn img
+    {
         height: 15px;
         padding: 10px;
         margin: 10px;
     }
 
-    .header {
+    .header
+    {
         margin: 0px 20px 0px 0px;
         flex-wrap: wrap;
     }
 
-    .topnav a.icon {
+    .topnav a.icon
+    {
         float: right;
         display: block;
     }
 
-    .header.expanded .expandedMenu {
+    .header.expanded .expandedMenu
+    {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    footer>div {
+    footer>div
+    {
         grid-template-columns: 1fr 1fr;
-    }
-
-    .header .logo {
-        height: 50px;
     }
 }
 
-@media screen and (max-width: 700px) {
-    footer>div {
+@media screen and (max-width: 700px)
+{
+    footer>div
+    {
         grid-template-columns: 1fr;
     }
 }
 
-@media screen and (max-width: 500px) {
-    .header .large {
+@media screen and (max-width: 600px)
+{
+    .large
+    {
         display: none;
     }
 
-    .header #compactSearchbar {
+    .compact
+    {
         display: flex;
         margin: 0px 20px 20px 20px;
     }
-
-    #userMenuDropdownBtn {
-        padding: 5px 5px 5px 2px;
-        margin: 5px 10px 5px 2px;
-        position: inherit;
-    }
-
-    .header .navMenuBtn img {
-        margin: 0;
-    }
 }
 
-.newsletter button {
+.newsletter>div
+{
+    background-color: var(--blue);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.newsletter input
+{
+    border-color: lightgrey;
+    background-color: transparent;
+    margin-right: 0;
+}
+
+.newsletter button
+{
     margin-left: 0;
     border-color: transparent;
     border-width: 2px;
@@ -379,7 +443,6 @@ if vw is less than 880px then:
     color: white;
     margin: 0;
 }
-
 
 /* About-us css code */
 
@@ -608,7 +671,7 @@ if vw is less than 880px then:
 {
     margin-top: 5rem;
     font-family: sans-serif;
-    color: var(--darkblue);
+    color: var(--blueGrey);
     margin: 4vw;
 }
 
@@ -762,96 +825,5 @@ if vw is less than 880px then:
         display: flex;
         flex-wrap: wrap;
     }
-}
 
-.account-info {
-    background-color: white;
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr 2fr;
-    min-height: 100vh;
-    font-family: sans-serif;
-}
-
-.container-accountinfo {
-    grid-column: 2/4;
-    color: var(--blueGrey);
-    margin-bottom: 50px;
-}
-
-.container-accountinfo h2 {
-    font-size: 18px;
-    padding-top: 4rem;
-}
-
-.form-accountinfo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-.firsthalf-accountinfo {
-    grid-column: 1/2;
-    width: 100%;
-}
-
-.labels-acoountinfo {
-    margin-bottom: 0;
-    font-size: 12px;
-}
-
-.inputs-accountinfo {
-    width: 100%;
-    background-color: #f8f8f8;
-    height: 2rem;
-    border: 1px;
-    border: 1px #dfdfdf solid;
-}
-
-.secondhalf-accountinfo {
-    grid-column: 2/4;
-    width: 100%;
-}
-
-.full-accountinfo {
-    grid-column: 1/3;
-}
-
-.address-accountinfo {
-    width: 100%;
-    background-color: #f8f8f8;
-    height: 4rem;
-    border: 1px;
-    border: 1px #dfdfdf solid;
-
-}
-
-.radius {
-    border-radius: 0rem;
-}
-
-.submit-accountinfo {
-    background-color: var(--blueGrey);
-    color: white;
-    height: 36px;
-    border: 0px;
-}
-
-.errors {
-    color: lightgray;
-}
-
-@media (max-width:700px) {
-    .account-info {
-        display: flex;
-        flex-direction: column;
-        padding-inline: 10vw;
-    }
-}
-
-@media (max-width:500px) {
-    .account-info form {
-        display: flex;
-        flex-direction: column;
-    }
 }
