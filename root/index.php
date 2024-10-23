@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Circle Solutions</title>
     <script src="http://localhost/Milana-tech-Circle-Solutions-Group-IT1B/root/scripts/header.js"></script>
     <link rel="stylesheet" href="http://localhost/Milana-tech-Circle-Solutions-Group-IT1B/root/css/global.css?id=1234" type="text/css">
 </head>
