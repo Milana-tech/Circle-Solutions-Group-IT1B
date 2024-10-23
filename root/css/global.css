@@ -454,13 +454,9 @@ footer>div
     color: rgb(8, 68, 84);
 }
 
-.main {
+.main-about {
     width: 100%;
     background-color: white;
-}
-.navbar {
-    height: 132px;
-    background-color: aliceblue;
 }
 
 .img-bg {
@@ -568,13 +564,10 @@ footer>div
     font-size: 30px;
 }
 
-.footer {
-    height: 132px;
-    background-color: aliceblue;
-}
+
 
 @media only screen and (max-width: 1230px) {  
-    .main {
+    .main-about {
         width: 100%;
       }
 
