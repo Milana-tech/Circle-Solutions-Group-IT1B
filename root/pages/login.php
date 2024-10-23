@@ -3,27 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoginPHP</title>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
-<?php
-
-$valid_email = "user@user.com";
-$valid_password = "password";
-
-
-$email = $_POST['emailaddress'];
-$password = $_POST['password'];
-
-
-if ($email === $valid_email && $password === $valid_password) {
-    echo "<h2>Login successful! Welcome, $email.</h2>";
-    echo "<a href='index.php'>Go back to home page</a>"; 
-} else {
-    echo "<h2>Invalid username or password.</h2>";
-    echo "<a href='index.php'>Try again</a>";
-}
-?>
-<!-- Above add go back to home page hyperlink -->
+    <div class="Container">
+        <div class="Border">
+            <img src="../images/intranet.jpg" alt="Intranet" class="Image">
+        </div>
+    </div>
+    <div class="LoginContainer">
+        <h4>Welcome back!</h4>
+        <h2>Login to your account</h2>
+        <form action="loginIndex.php" method="post">
+            <div class="email">
+                <label for="email">E-mail address:</label>
+                <div class="Register"><a href="./sign-up.php">Create an account</a></div> <!-- Add Signup page hyperlink later -->
+                <input type="text" id="emailaddress" name="emailaddress" required placeholder="Please enter your email...">
+            </div>
+            <div class="password">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Please enter your password...">
+            </div>
+            <div class="login">
+                <input type="submit" value="Login">
+                <p>Forgot your password?</p>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
