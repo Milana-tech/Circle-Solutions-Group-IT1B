@@ -1,172 +1,131 @@
-*
- {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: #799dab;
+.educationBody
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #799DAB;
 }
 
-.container 
+.educationContainer
 {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-h1 
+.educationH1
 {
-  text-align: center;
-  color: #799dab;
-  margin-bottom: 40px;
+    text-align: center;
+    color: #799DAB;
+    margin-bottom: 40px;
 }
 
-h2 
+.educationH2
 {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
 }
 
-.faculty-section 
+.faculty-section
 {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 20px;
-  align-items: center;
-  margin-bottom: 50px;
-  max-width: 500%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
-.faculty-image img  
+.faculty-image img
 {
-  max-width: 100%;
-  height: auto;
+    width: 35vw;
+    height: 45vh; 
 }
 
-.faculty-text 
+.faculty-text
 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .faculty-text p,
 .faculty-text ul
- {
-  margin-bottom: 10px;
+{
+    margin-bottom: 10px;
 }
 
-ul 
+.educationUl
 {
-  list-style-type: disc;
-  padding-left: 20px;
+    list-style: none;
+    padding-left: 0px;
 }
 
-.student-section 
+.student-section
 {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 20px;
-  align-items: center;
-  margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
-.student-image img
+.student-section img
 {
-  width: 100%;
-  max-width: 350px;
-  height: auto;
+    /* width: 100%;
+    max-width: 350px;
+    height: auto; */
+
+    width: 35vw;
+    height: 45vh; 
 }
 
 .student-text
- {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .student-text p,
-.student-text ul 
+.student-text ul
 {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
-@media (max-width: 768px) 
+@media (max-width: 768px)
 {
-  .faculty-section,
-  .student-section
-   {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .faculty-image img,
-  .student-image img 
-  {
-    margin: 0 auto;
-  }
+    .faculty-section,
+    .student-section
+    {
+        margin:  0 auto;
+    }
 }
 
-.child-left 
+.educationBtn
 {
-  border: 1px solid #c6e8f7;
-  float: left; 
-  width: 250px;
-  height: 200px;
-}
-
-.child-right 
-{
-  border: 1px solid #c6e8f7;
-  float: right;
-  width: 250px;
-  height: 200px;
-}
-
-.child-left p,
-.child-left ul
-{
-  margin-inline: 10px;
-}
-
-.child-right p,
-.child-right ul 
-{
-  margin-inline: 10px;
-}
-
-@media (min-width: 768px) 
-{
-  .parent
-   {
     display: flex;
-    justify-content: space-evenly;
-  }
+    gap: 10px;
+    justify-content: center;
+    padding-top: 10px;
 }
 
-.section-buttons 
+.education-seePackages
 {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  padding-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+
+    background-color: white;
+    border: 1px solid #799DAB;
+    color: #799DAB;
 }
 
-.cart-btn,
-.buy-btn 
+.education-seePackages:hover
 {
-  padding: 10px 5px;
-  font-size: 14px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3 ease;
-
-  background-color: white;
-  border: 1px solid #799dab;
-  color: #799dab;
+    background-color: #799DAB;
+    color: white;
 }
 
-.buy-btn:hover,
-.cart-btn:hover 
-{
-  background-color: #799dab;
-  color: white;
-}
+/* sign up  */

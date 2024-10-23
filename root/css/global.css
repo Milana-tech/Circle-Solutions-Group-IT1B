@@ -479,3 +479,397 @@ if vw is less than 880px then:
         flex-direction: column;
     }
 }
+
+/* products education */
+.educationBody
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #799DAB;
+}
+
+.educationContainer
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.educationH1
+{
+    text-align: center;
+    color: #799DAB;
+    margin-bottom: 40px;
+}
+
+.educationH2
+{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.faculty-section
+{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.faculty-image img
+{
+    width: 35vw;
+    height: 45vh; 
+}
+
+.faculty-text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.faculty-text p,
+.faculty-text ul
+{
+    margin-bottom: 10px;
+}
+
+.educationUl
+{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.student-section
+{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.student-section img
+{
+    width: 35vw;
+    height: 45vh; 
+}
+
+.student-text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.student-text p,
+.student-text ul
+{
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px)
+{
+    .faculty-section,
+    .student-section
+    {
+        margin:  0 auto;
+    }
+}
+
+.educationBtn
+{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.education-seePackages
+{
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+
+    background-color: white;
+    border: 1px solid #799DAB;
+    color: #799DAB;
+}
+
+.education-seePackages:hover
+{
+    background-color: #799DAB;
+    color: white;
+}
+
+/* products healthcare */
+.healthcareBody
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: #799DAB;
+}
+
+.healthcareContainer
+{
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+.healthcareH1
+{
+   text-align: center;
+   color: #799DAB;
+   margin-bottom: 40px;
+}
+
+.healthcareH2
+{
+   margin-bottom: 10px;
+}
+
+.comms-section
+{
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   gap: 20px;
+   align-items: center;
+   margin-bottom: 50px;
+}
+
+.comms-image img
+{
+   width: 100%;
+   max-width: 350px;
+   height: auto;
+}
+
+.comms-text
+{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-wrap: balance;
+}
+
+.comms-text p,
+.comms-text ul
+{
+   margin-bottom: 10px;
+}
+
+.efficiency-section
+{
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   gap: 20px;
+   align-items: center;
+   margin-bottom: 50px;
+}
+
+.efficiency-image img
+{
+   width: 100%;
+   max-width: 350px;
+   height: auto;
+}
+
+.efficiency-text
+{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.efficiency-text p,
+.efficiency-text ul
+{
+   margin-bottom: 10px;
+}
+
+.efficiency-section,
+.efficiency-text
+{
+   text-align: right;
+   text-wrap: balance;
+}
+
+@media (max-width: 768px)
+{
+   .comms-section,
+   .efficiency-section
+   {
+       grid-template-columns: 1fr;
+       text-align: center;
+   }
+
+   .comms-image img,
+   .efficiency-image .comms-image
+   {
+       margin: 0 auto;
+   }
+}
+
+.healthcareBtn
+{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.healthcare-seePackages
+{
+   padding: 10px 20px;
+   font-size: 1rem;
+   border: none;
+   cursor: pointer;
+   transition: background-color 0.3 ease;
+
+   background-color: white;
+   border: 1px solid #799DAB;
+   color: #799DAB;
+}
+
+.healthcare-seePackages:hover
+{
+   background-color: #799DAB;
+   color: white;
+}
+
+/* sign up */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #799dab;
+  }
+  
+  body {
+    background-color: #f7f8fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-section,
+  .image-section {
+    padding: 20px;
+    flex: 1;
+  }
+  
+  .form-section {
+    background-color: #f0f4f8;
+  }
+  
+  h2 {
+    color: #799dab;
+    font-weight: bold;
+  }
+  
+  p {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  a {
+    color: #799dab;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .checkbox label {
+    display: inline;
+  }
+  
+  .btn {
+    background-color: #c6e8f7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .btn:hover {
+    background-color: #799dab;
+  }
+  
+  .image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .form-section,
+    .image-section {
+      padding: 10px;
+    }
+    .btn {
+      padding: 8px 15px;
+    }
+  }
+  
+  .errorMsg
+  {
+      padding-top: 10px;
+  }

@@ -9,7 +9,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sign up | Circle Solutions</title>
   <link rel="stylesheet" href="../css/global.css" type="text/css" />
-  <link rel="stylesheet" href="../css/sign-up.css" type="text/css" />
 </head>
 
 <body>
@@ -53,7 +52,7 @@
             header("Location: http://localhost/products_rodrigo/Milana-tech-Circle-Solutions-Group-IT1B/root/index.php");
             exit();
           } elseif ($password != $cPassword) {
-            echo "<br>Passwords do not match";
+            echo "<p class = 'errors errorMsg'>Passwords do not match</p>";
           }
         } else {
           if ($email === FALSE) {

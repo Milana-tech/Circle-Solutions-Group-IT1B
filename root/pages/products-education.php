@@ -3,19 +3,18 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="/root/scripts/header.js"></script>
-  <link rel="stylesheet" href="../css/products-education.css" type="text/css" />
   <link rel="stylesheet" href="../css/global.css" type="text/css">
   <title>Education | Circle Solutions</title>
 </head>
 
-<body>
+<body class="educationBody">
   <?php
   include "../sections/header.html";
   ?>
-  <div class="container">
-    <h1>Education</h1>
+  <div class="educationContainer">
+    <h1 class="educationH1">Education</h1>
 
     <!-- Faculty Section -->
     <div class="faculty-section">
@@ -23,7 +22,7 @@
         <img src="../images/faculty.png" alt="Faculty Image" />
       </div>
       <div class="faculty-text">
-        <h2>Faculty</h2>
+        <h2 class="educationH2">Faculty</h2>
         <p>
           <b><i>Empower faculty with the news and information they need</i></b>
         </p>
@@ -32,7 +31,7 @@
           and the information they need to succeed.
         </p>
         <p>Why faculty loves Circle Solutions:</p>
-        <ul>
+        <ul class="educationUl">
           <li>Centralized info hubs for department news</li>
           <li>One-click access to key tools and links</li>
           <li>Targeted newsletters that reduce inbox clutter</li>
@@ -43,16 +42,16 @@
     <!-- Student Section -->
     <div class="student-section">
       <div class="student-text">
-        <h2>Students</h2>
+        <h2 class="educationH2">Students</h2>
         <p>
-          <b><i>Create a safe, cohesive community for students</i></b>
+          <i><b>Create a safe, cohesive community for students</b></i>
         </p>
         <p>
           Circle Solutions ensures students are connected to your comms, and
           special student pricing makes it easy.
         </p>
         <p>Why students love Circle Solutions:</p>
-        <ul>
+        <ul class="educationUl">
           <li>Communities to engage with campus organizations</li>
           <li>Critical notifications during emergencies</li>
           <li>Accessible university news and event registrations</li>
@@ -62,11 +61,13 @@
         <img src="../images/students.png" alt="Student Image" />
       </div>
     </div>
-    <button class="cart-btn">Add to cart</button>
+    <div class="educationBtn">
+      <a href="./packages.html"><button class="education-seePackages">See packages</button></a>
+    </div>
   </div>
 
   <?php
-  include "/app/public/products_rodrigo/Milana-tech-Circle-Solutions-Group-IT1B/root/sections/footer.html";
+  include "../sections/footer.html";
   ?>
 
 </body>
