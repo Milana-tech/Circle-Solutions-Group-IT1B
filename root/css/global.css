@@ -282,13 +282,16 @@ footer>div {
 }
 
 .footerReachUs>div {
-    display: inline;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
 }
 
 .footerReachUs img {
-    margin: auto;
-    vertical-align: middle;
-    display: inline-block;
+    margin-top: 10px;
+    /* margin: auto; */
+    /* vertical-align: middle; */
+    /* display: inline-block; */
 }
 
 .footerCompany a {
