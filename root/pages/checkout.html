@@ -10,89 +10,87 @@
 </head>
 
 <body>
-    <main class="container">
-        <div class="content">
-            <div class="arrow">
-                <a href="/link/to/site">
-                    <img src="../images/arrow.png" alt="Arrow">
-                </a>
-            </div>
-            <div class="home">
-                <div class="left">
-                    <div class="header01">
-                        <p class="head">Personal</p>
-                        <p class="head">Billing</p>
-                        <p class="head">Confirmation</p>
-                    </div>
-                    <div class="form">
-                        <form action="link/to/php">
-                            <div class="first-last-name">
-                                <div class="half">
-                                    <label for="fname">First Name*</label>
-                                    <input type="text" class="pieces" id="fname" name="fname" required>
-                                </div>
-                                <div class="half">
-                                    <label for="lname">Last Name*</label>
-                                    <input type="text" class="pieces" name="lname" id="lname" required>
-                                </div>
-                            </div>
-                            <div class="email-phone">
-                                <div class="half">
-                                    <label for="email">Email Address*</label>
-                                    <input type="text" class="pieces" name="email" id="email" required>
-                                </div>
-                                <div class="half">
-                                    <label for="phonenumber">Phone Number*</label>
-                                    <input type="text" class="pieces" name="phonenumber" id="phonenumber" required>
-                                </div>
-                            </div>
-                            <div class="details">
-                                <div class="full">
-                                    <label for="email">Street Address*</label>
-                                    <input type="text" name="address" id="address" required>
-                                </div>
-                                <div class="full">
-                                    <label for="city">Town / City*</label>
-                                    <input type="text" name="city" id="city" required>
-                                </div>
-                                <div class="full">
-                                    <label for="email">Country*</label>
-                                    <input type="text" name="country" id="country" required>
-                                </div>
-                                <div class="full">
-                                    <label for="postcode">Postcode / Zip*</label>
-                                    <input type="text" name="postcode" id="postcode" required>
-                                </div>
-                            </div>
-                            <div class="button">
-                                <input type="submit" value="Proceed to Next Step">
-                            </div>
-                        </form>
-                    </div>
+    <main class="checkout-container">
+        <div class="image-arrow">
+            <a href="/link/to/site">
+                <img src="../images/arrow.png" alt="Arrow">
+            </a>
+        </div>
+        <!-- <div class="left-and-right-side"> -->
+            <div class="checkout-left-side">
+                <div class="header01">
+                    <p class="text-inside">Personal</p>
+                    <p class="text-inside">Billing</p>
+                    <p class="text-inside">Confirmation</p>
                 </div>
-                <div class="right">
-                    <div class="header2">
-                        <p class="card">Card Details</p>
-                    </div>
-                    <div class="row1">
-                        <p>PRODUCT</p>
-                        <p>VALUE</p>
-                    </div>
-                    <hr>
-                    <div class="row1 padding">
-                        <p>PACKAGE 1</p>
-                        <p>$180</p>
-                    </div>
-                    <hr>
-                    <div class="row1">
-                        <p>TAXES</p>
-                        <p>$20</p>
-                    </div>
-                    <hr>
-                    <div class="row1 padding">
-                        <p>Total</p>
-                        <p><strong>$200</strong></p>
-                    </div>
+                <div class="checkout-form">
+                    <form action="link/to/php">
+                        <div class="flex_names">
+                            <div class="half">
+                                <label for="checkout_fname">First Name*</label>
+                                <input type="text" id="checkout_fname" name="checkout_fname" required>
+                            </div>
+                            <div class="half">
+                                <label for="checkout_lname">Last Name*</label>
+                                <input type="text" name="checkout_lname" id="checkout_lname" required>
+                            </div>
+                        </div>
+                        <div class="flex_num_address">
+                            <div class="half">
+                                <label for="checkout_email">Email Address*</label>
+                                <input type="text" name="checkout_email" id="checkout_email" required>
+                            </div>
+                            <div class="half">
+                                <label for="checkout_phonenumber">Phone Number*</label>
+                                <input type="text" name="checkout_phonenumber" id="checkout_phonenumber" required>
+                            </div>
+                        </div>
+                        <div class="checkout-details">
+                            <div class="full">
+                                <label for="checkout_street">Street Address*</label>
+                                <input type="text" name="checkout_street" id="checkout_street" required>
+                            </div>
+                            <div class="full">
+                                <label for="checkout_town">Town / City*</label>
+                                <input type="text" name="checkout_town" id="checkout_town" required>
+                            </div>
+                            <div class="full">
+                                <label for="checkout_country">Country*</label>
+                                <input type="text" name="checkout_country" id="checkout_country" required>
+                            </div>
+                            <div class="full">
+                                <label for="checkout_postcode">Postcode / Zip*</label>
+                                <input type="text" name="checkout_postcode" id="checkout_postcode" required>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <input type="submit" value="Proceed to Next Step">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="checkout-right-side">
+                <div class="text_inside_for_right">
+                    <p>Card Details</p>
+                </div>
+                <div class="row">
+                    <p>PRODUCT</p>
+                    <p>VALUE</p>
+                </div>
+                <hr>
+                <div class="row padding">
+                    <p>PACKAGE 1</p>
+                    <p>$180</p>
+                </div>
+                <hr>
+                <div class="row">
+                    <p>TAXES</p>
+                    <p>$20</p>
+                </div>
+                <hr>
+                <div class="row padding">
+                    <p>Total</p>
+                    <p><strong>$200</strong></p>
                 </div>
             </div>
         </div>

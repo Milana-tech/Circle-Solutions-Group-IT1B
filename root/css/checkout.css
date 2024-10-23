@@ -16,93 +16,55 @@
 
 main
 {
-    padding-right: 280px;
-    padding-left: 280px;
-    padding-top: 10px;
-    padding-bottom: 50px;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    padding-bottom: 30px;
+    padding-top: 30px;
     color: var(--blueGrey);
-    @media screen and (max-width: 430px)
-    {
-        padding-left: 15px;
-    }
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: 2fr 1.5fr;
 }
 
-
-.home
+.flex_names
 {
     display: flex;
-    flex-direction: row;
-    @media screen and (max-width: 430px)
-    {
-        display: flex;
-        flex-direction: column-reverse;
-    }
 }
 
-.content
+.flex_num_address
 {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    display: flex;
 }
 
-.arrow
+.image-arrow
 {
-    grid-column: span 2;
     background-color: white;
+    grid-column: 1/6;
 }
 
-.right
+.checkout-right-side
 {
     border: 1px solid #DEDFE1;
     background-color: #F9F9F9;
-    width: 535px;
     height: 580px;
-
-    @media screen and (max-width: 430px)
-    {
-        width: 530px;
-        height: 580px;
-    }
 }
 
-.left
+.checkout-left-side
 {
     border: 1px solid #DEDFE1;
     margin-right: 40px;
-    width: 700px;
-    @media screen and (max-width: 430px)
-    {
-        width: 530px;
-        height: 390px;
-    }
 }
 
-.form
+.left-and-right-side 
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.checkout-form
 {
     padding: 20px;
     font-size: 1rem;
-    @media screen and (max-width: 430px)
-    {
-        font-size: 2rem;
-    }
-}
-
-.first-last-name
-{
-    display: flex;
-    @media screen and (max-width: 430px)
-    {
-        display: block;
-    }
-}
-
-.email-phone
-{
-    display: flex;
-    @media screen and (max-width: 430px)
-    {
-        display: block;
-    } 
 }
 
 .header01
@@ -116,15 +78,10 @@ main
     padding-left: 50px;
     padding-bottom: 50px;
     font-weight: 600;
-    font-size: 1.5rem;
-    @media screen and (max-width: 430px) 
-    {
-        padding-right: 5px;
-        font-size: 2rem;
-    } 
+    font-size: 1.5rem; 
 }
 
-.head
+.text-inside
 {
     color: white
 }
@@ -137,7 +94,7 @@ main
     flex: 1 1 50%;
 }
 
-.details
+.checkout-details
 {
     padding: 20px;
 }
@@ -157,11 +114,6 @@ input
     padding-top: 10px;
     padding-left: 15px;
     padding-bottom: 20px;
-    @media screen and (max-width: 430px) 
-    {
-        width: 200px;
-        height: 100px;
-    } 
 }
 
 .button input[type="submit"]
@@ -177,12 +129,6 @@ input
     height: 55px;
     font-size: 1.5rem;
     font-weight: 550;
-    @media screen and (max-width: 430px)
-    {
-        width: 400px;
-        height: 60px;
-        font-size: 2rem;
-    }
 }
 
 .full
@@ -197,24 +143,18 @@ label
     padding-bottom: 10px;
 }
 
-.header2
+.text_inside_for_right
 {
     display: flex;
     align-items: center;
     padding-left: 40px;
     background-color: #799DAB;
     color: white;
-    width: 535px;
     height: 80px;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    @media screen and (max-width: 430px)
-    {
-        width: 530px;
-        font-size: 2rem;
-    } 
 }
 
 hr
@@ -222,7 +162,7 @@ hr
     border-top: 1.5px dashed #DEDFE1;
 }
 
-.row1
+.row
 {
     display: flex;
     justify-content: space-between;
@@ -232,10 +172,6 @@ hr
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    @media screen and (max-width: 430px)
-    {
-        font-size: 2rem;
-    } 
 }
 
 .padding
@@ -244,4 +180,124 @@ hr
     padding-left: 30px;
     padding-top: 15px;
     padding-bottom: 130px;
+}
+
+@media screen and (max-width: 768px)
+{
+    main 
+    {
+        padding: 0px;
+    }
+
+    .left-and-right-side 
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .checkout-right-side 
+    {
+ 
+    }
+
+    .checkout-left-side 
+    {
+
+    }
+
+    .checkout-form
+    {
+    font-size: 2.5rem;
+    }
+
+    .header01
+    {
+    font-size: 2rem;
+    }
+
+    .text_inside_for_right 
+    {
+        font-size: 2rem;
+    }
+
+    .row
+    {
+    font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 430px)
+{   
+    main
+    {
+        grid-template-columns: 1fr 1fr;
+        height: 100vh; 
+    }
+
+    .checkout-right-side
+    {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .header01
+    {
+        padding-left: 10px;
+    }
+
+    .checkout-left-side
+    {
+        grid-column: 2;
+        grid-row: 3;
+        width: 100%;
+    }
+
+    .checkout-form
+    {
+    font-size: 2rem;
+    }
+
+    .flex_names
+    {
+    display: block;
+    }
+
+    .flex_num_address
+    {
+    display: block;
+    }
+
+    .header01
+    {
+        display: flex;
+        margin: auto;
+        font-size: 2.5rem;
+        padding-right: 5px;
+        text-align: left;
+    }
+
+    .button
+    {
+    width: 200px;
+    height: 100px;
+    }
+
+    .button input[type="submit"]
+    {
+    width: 400px;
+    height: 60px;
+    font-size: 2rem;
+    }
+
+    .text_inside_for_right
+    {
+    font-size: 2.5rem;
+    padding-top: 10px;
+
+    }
+
+    .row
+    {
+    font-size: 2rem;
+    } 
 }
