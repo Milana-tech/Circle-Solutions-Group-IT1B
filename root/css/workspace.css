@@ -119,3 +119,30 @@ img
     width:60%;
     margin-inline: auto;
 }
+.review
+{
+    border: 1px gray solid;
+    background-color: white;
+    color: gray;
+    border-radius: 10px;
+    margin-inline:5% ;
+    padding: 5px;
+    margin-block: 20px;
+}
+.review img
+{
+    width:100px;
+    height: 25px;
+
+}
+.review h4
+{
+    color: black;
+}
+.top-review
+{
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+    justify-content: space-between;
+}
