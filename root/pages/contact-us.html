@@ -13,7 +13,7 @@
         <div class="topest">
             <h1 class="dark-blue center"><strong>Contact Us</strong></h1>
             <p class="dark-blue center">Any questions or remarks? Just write us a message!</p>
-        </div></div>
+        </div>
         <div class="grid">
             <div class="whole-div">
                 <div class="square-info">
@@ -29,59 +29,66 @@
                     <div class="circle2">
                     </div>
                 </div>
-                <div class="form-right"> 
-                    <div class="first-name flex">
-                        <form action="contact-us.html" method="sPOST">        
+                <div class="form-right">
+                    <form action="link/to/php">
                         <div class="flex">
-                            <div class="first name">
-                                <label for="fname">First Name</label><br>
-                                <input type="text" name="fname" placeholder="Please enter your name" required id="fname"><br>
+                            <div class="first name position">
+                                <label for="fname">First Name</label>
+                                <input type="text" class="full-width" name="fname" placeholder="Please enter your name" id="fname" required>
                             </div>
-                            <div class="second name">
-                                <label for="lname">Last Name</label><br>
-                                <input type="text" name="lname" placeholder="Please enter your last name" required id="lname"><br>
-                            </div>
-                        </div>
-                        <div class="flex2">
-                            <div class="third name">
-                                <label for="email">Email</label><br>
-                                <input type="text" name="email" placeholder="Please enter your email" required id="email"><br>
-                            </div>
-                            <div class="forth name">
-                                <label for="phone number">Phone Number</label><br>
-                                <input type="text" name="phone" placeholder="Please enter your number" required id="phone"><br>
+                            <div class="second name position">
+                                <label for="lname">Last Name</label>
+                                <input type="text" class="full-width" name="lname" placeholder="Please enter your last name" id="lname" required>
                             </div>
                         </div>
-                    </div>          
-                    <p class="subject dark-blue"><strong>Select Subject</strong></p>
-                    <div class="radio-container">
-                        <input type="radio" name="inquiry" id="general">
-                        <label for="general">General Inquiry</label>
-                        <input type="radio" name="inquiry" id="product">
-                        <label for="product">Product/Service Inquiries</label>
-                        <input type="radio" name="inquiry" id="collaboration">
-                        <label for="collaboration">Collaboration Inquiries</label>
-                        <input type="radio" name="inquiry" id="payment">
-                        <label for="payment">Billing and Payment Inquiries</label>
-                    </div>
-                    <p class="dark-blue">Message</p>
-                    <input type="text" name="message" class="custom-input" placeholder="Write you message..." required id="message">
+                        <div class="flex">
+                            <div class="third name position">
+                                <label for="email">Email</label>
+                                <input type="text" class="full-width" name="email" placeholder="Please enter your email" id="email" required>
+                            </div>
+                            <div class="forth name position">
+                                <label for="phonenumber">Phone Number</label><br>
+                                <input type="text" class="full-width" name="phonenumber" placeholder="Please enter your number" id="phonenumber" required><br>
+                            </div>
+                        </div>
+                        <p class="subject dark-blue"><strong>Select Subject</strong></p>
+                        <div class="radio-container">
+                            <div class="radios">
+                                <input type="radio" name="inquiry" id="general" required>
+                                <label for="general">General Inquiry</label>
+                            </div>
+                            <div class="radios">
+                                <input type="radio" name="inquiry" id="product" required>
+                                <label for="product">Product/Service Inquiries</label>
+                            </div>
+                            <div class="radios">
+                                <input type="radio" name="inquiry" id="collaboration" required>
+                                <label for="collaboration">Collaboration Inquiries</label>
+                            </div>
+                            <div class="radios">
+                                <input type="radio" name="inquiry" id="payment" required>
+                                <label for="payment">Billing and Payment Inquiries</label>
+                            </div>
+                        </div>
+                            <p class="dark-blue">Message</p>
+                            <input type="text" name="message" class="custom-input" placeholder="Write you message..."
+                                id="message" required>
+                            <div class="button">
+                                <input type="submit" value="Send message">
+                            </div>
                     </form>
-                    <div class="button">
-                        <input type="submit" value="Send message">
-                    </div>
                     <div class="air">
                         <img src="../images/ee9158ca0835b430d0b6ef56e2d7385e.png" class="airport" alt="airpot">
                     </div>
                 </div>
             </div>
-        <div class="box-question">
-            <p  class="dark-blue padding"><b>Still have questions?</b></p>
-            <p class="dark-blue">Can’t find the answer you’re looking for? Take a look on our Q&A page!</p>
-        <div class="button-question">
-            <p class="dark-blue"><b>Get answers</b></p>
-        </div>
-            </div>            
+            <div class="box-question">
+                <p class="dark-blue padding"><b>Still have questions?</b></p>
+                <p class="dark-blue">Can’t find the answer you’re looking for? Take a look on our Q&A page!</p>
+                <div class="button-question">
+                    <p class="dark-blue"><b>Get answers</b></p>
+                </div>
+            </div>
         </div>
     </main>
 </body>
