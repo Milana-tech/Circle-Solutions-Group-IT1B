@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="../css/global.css" type="text/css">
 </head>
 <body class="workspacebody">
-    <?php
-        include "../sections/header.html";
-    ?>
+    <section class="navbar-workspace">
+        <?php
+            include "../sections/header.html";
+        ?>
+    </section>
     <div class="work">
         <h1>Circle Workspace</h1>
     </div>
@@ -46,14 +48,11 @@
                 <input type="submit" value="Buy now" class="secondbutton">
             </div>
         </div>
-
-
-
-
-
-
-
-
+        <div class="footer">
+        <?php
+            include "../sections/footer.html";
+        ?>
+        </div>
     </div>
 
 </body>

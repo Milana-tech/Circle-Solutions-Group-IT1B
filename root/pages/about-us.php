@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="../css/global.css">
 </head>
 <body class="aboutbody">
-    <div class="main">
+    <div class="main-about">
         <section class="navbar">
             <?php
-            include "../sections/header.html";
-        ?>
+                include "../sections/header.html";
+            ?>
         </section>
         <div class="img-bg">
-            <img src="/Milana-tech-Circle-Solutions-Group-IT1B/root/images/Screenshot 2024-10-11 204828.png" alt="" class="img-bg">
+            <img src="../images/Screenshot 2024-10-11 204828.png" alt="" class="img-bg">
         </div>
         <div class="about">
             <div class="aboutheader">
@@ -57,7 +57,9 @@
         </div>
         </div>
         <div class="footer">
-            Footer section
+        <?php
+            include "../sections/footer.html";
+        ?>
         </div>
 </body>
 </html>
