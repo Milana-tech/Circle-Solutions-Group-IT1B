@@ -1,0 +1,27 @@
+.Faq-ask{
+    display: grid;
+    background-color:#799DAB;
+    justify-items:center;
+    padding: 5px;
+    color: white;
+}
+
+.Faq-questions{
+    background-color: lightblue;
+    width: 16cm;
+}
+
+.contain-Faq {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    color: darkgreen;
+}
+
+.grid-container-Faq {
+    grid-column: 2 / 3;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
