@@ -762,8 +762,8 @@ if vw is less than 880px then:
         display: flex;
         flex-wrap: wrap;
     }
+}
 
-=======
 .account-info {
     background-color: white;
     display: grid;
