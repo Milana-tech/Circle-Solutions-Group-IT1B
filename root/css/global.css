@@ -1,3 +1,4 @@
+/* global start */
 :root {
     --blueGrey: #799dab;
     --blue: #C7eaf8;
@@ -42,6 +43,18 @@ body {
 .noBorder {
     border: none !important;
 }
+
+.errors {
+    color: #ff0033;
+}
+
+.radius {
+    border-radius: 0rem;
+}
+
+/* global end */
+/* ======================================== */
+/* header start */
 
 .header ul {
     margin: 0;
@@ -132,7 +145,6 @@ a {
 
 .header .searchbar input {
     font-size: 1.5rem;
-    /* line-height: 90px; */
 }
 
 .header .searchbar input textarea {
@@ -259,6 +271,67 @@ a {
     padding-right: 10px;
 }
 
+@media screen and (max-width: 880px) {
+    .header div:nth-child(1) ul {
+        display: none;
+    }
+
+    .header .navMenuBtn {
+        display: inherit;
+    }
+
+    .header .navMenuBtn img {
+        height: 15px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .header {
+        margin: 0px 20px 0px 0px;
+        flex-wrap: wrap;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .header.expanded .expandedMenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header .logo {
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header .large {
+        display: none;
+    }
+
+    .header #compactSearchbar {
+        display: flex;
+        margin: 0px 20px 20px 20px;
+    }
+
+    #userMenuDropdownBtn {
+        padding: 5px 5px 5px 2px;
+        margin: 5px 10px 5px 2px;
+        position: inherit;
+    }
+
+    .header .navMenuBtn img {
+        margin: 0;
+    }
+}
+
+/* header end */
+/* ======================================== */
+/* footer start */
+
 footer {
     background-color: var(--blueGrey);
     width: 100%;
@@ -295,78 +368,15 @@ footer>div {
     color: white;
 }
 
-/*
-if vw is less than 880px then:
--header:
-    the navigation links will disappeare
-    the button for showing the navigation links will appear
-    a new set of navigation links will appear on the bottom of the header(.expandedMenu), that will be visible only when the header has the .expanded class
-*/
-
 @media screen and (max-width: 880px) {
-    .header div:nth-child(1) ul {
-        display: none;
-    }
-
-    .header .navMenuBtn {
-        display: inherit;
-    }
-
-    .header .navMenuBtn img {
-        height: 15px;
-        padding: 10px;
-        margin: 10px;
-    }
-
-    .header {
-        margin: 0px 20px 0px 0px;
-        flex-wrap: wrap;
-    }
-
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-
-    .header.expanded .expandedMenu {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
     footer>div {
         grid-template-columns: 1fr 1fr;
-    }
-
-    .header .logo {
-        height: 50px;
     }
 }
 
 @media screen and (max-width: 700px) {
     footer>div {
         grid-template-columns: 1fr;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .header .large {
-        display: none;
-    }
-
-    .header #compactSearchbar {
-        display: flex;
-        margin: 0px 20px 20px 20px;
-    }
-
-    #userMenuDropdownBtn {
-        padding: 5px 5px 5px 2px;
-        margin: 5px 10px 5px 2px;
-        position: inherit;
-    }
-
-    .header .navMenuBtn img {
-        margin: 0;
     }
 }
 
@@ -378,6 +388,10 @@ if vw is less than 880px then:
     color: white;
     margin: 0;
 }
+
+/* footer end */
+/* ======================================== */
+/* account info start */
 
 .account-info {
     background-color: white;
@@ -441,19 +455,11 @@ if vw is less than 880px then:
 
 }
 
-.radius {
-    border-radius: 0rem;
-}
-
 .submit-accountinfo {
     background-color: var(--blueGrey);
     color: white;
     height: 36px;
     border: 0px;
-}
-
-.errors {
-    color: lightgray;
 }
 
 @media (max-width:700px) {
@@ -471,111 +477,112 @@ if vw is less than 880px then:
     }
 }
 
-.container-packages
-{
+/* account info end */
+/* ======================================== */
+/* packages start */
+
+.container-packages {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 150px 1fr 1fr ;
+    grid-template-rows: 150px 1fr 1fr;
     margin-inline: 5rem;
     gap: 1rem;
-    color:  #799DAB ;
+    color: #799DAB;
     min-height: 90vh;
 }
-.categori-packages h1
-{
+
+.categori-packages h1 {
     font-size: 20px;
     grid-column: 2/3;
     margin-bottom: 0;
 }
-.categori-packages
-{
-    width: 50% ;
+
+.categori-packages {
+    width: 50%;
     height: 100%;
     border: solid #799DAB 1px;
     margin-left: 50%;
     display: grid;
     grid-template-columns: 10px auto 5px;
-    
+
 }
-.flexholder-packages
-{
+
+.flexholder-packages {
     display: flex;
     flex-direction: column;
     grid-column: 2/3;
     gap: 1rem;
-    
+
 }
-.rightsection-packages
-{
+
+.rightsection-packages {
     grid-column: 2/5;
     margin-inline: 5%;
 }
 
-.rightsection-packages input
-{
+.rightsection-packages input {
     width: 100%;
     height: 2rem;
-    border: 1px solid  #799DAB ;
+    border: 1px solid #799DAB;
     border-radius: 0;
     position: relative;
 }
 
- .searchbar-packages ::placeholder
-{  
-    color:#799DAB;
+.searchbar-packages ::placeholder {
+    color: #799DAB;
 }
-.pic-packages
-{
+
+.pic-packages {
 
     margin-block: 5px;
-    margin-inline:10%;
+    margin-inline: 10%;
 
 }
-.pic-packages img
-{
+
+.pic-packages img {
     width: 90%;
     height: 80%;
-  
+
 }
-.first-packages 
-{
+
+.first-packages {
     grid-column: 2/3;
 }
-.second-packages
-{
+
+.second-packages {
     grid-column: 3/4;
 }
-.third-packages
-{
+
+.third-packages {
     grid-column: 4/5;
 }
-.forth-packages
-{
+
+.forth-packages {
     grid-column: 3/4;
 }
-@media (max-width:1244px){
-    .categori-packages{
+
+@media (max-width:1244px) {
+    .categori-packages {
         display: none;
     }
 }
-@media (max-width:800px){
-    .container-packages
-    {
+
+@media (max-width:800px) {
+    .container-packages {
         display: flex;
         flex-direction: column;
     }
 
-    .pic-packages{
-        width:60;
+    .pic-packages {
+        width: 60;
         height: 50%;
-        margin-inline:auto ;
+        margin-inline: auto;
     }
 
 
-@media (max-width:400px){
+    @media (max-width:400px) {
 
-        .rightsection-packages h1
-        {
+        .rightsection-packages h1 {
             font-size: 25px;
 
         }
@@ -583,30 +590,36 @@ if vw is less than 880px then:
     }
 }
 
-.review
-{
+/* packages end */
+/* ======================================== */
+/* products review start */
+
+.review {
     border: 1px gray solid;
     background-color: white;
     color: gray;
     border-radius: 10px;
-    margin-inline:5% ;
+    margin-inline: 5%;
     padding: 5px;
     margin-block: 20px;
 }
-.review img
-{
-    width:100px;
+
+.review img {
+    width: 100px;
     height: 25px;
 
 }
-.review h4
-{
+
+.review h4 {
     color: black;
 }
-.top-review
-{
+
+.top-review {
     display: flex;
     align-items: center;
     text-wrap: nowrap;
     justify-content: space-between;
 }
+
+/* products review end */
+/* ======================================== */
