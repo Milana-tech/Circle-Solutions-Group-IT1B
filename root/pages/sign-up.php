@@ -12,6 +12,11 @@
 </head>
 
 <body>
+    <?php
+        include "../sections/header.html";
+    ?>
+    <div id="sign-up">
+      
   <div class="container">
     <div class="form-section">
       <h2>Signup</h2>
@@ -67,6 +72,7 @@
     <div class="image-section">
       <img src="../images/intranet.jpg" alt="intranet" />
     </div>
+  </div>
   </div>
 </body>
 

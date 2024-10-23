@@ -1242,14 +1242,14 @@ footer>div {
 /* ======================================== */
 /* sign up start*/
 
-* {
+#sign-up * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     color: #799dab;
   }
   
-  body {
+#sign-up {
     background-color: #f7f8fc;
     display: flex;
     justify-content: center;
@@ -1257,7 +1257,7 @@ footer>div {
     height: 100vh;
   }
   
-  .container {
+#sign-up .container {
     display: flex;
     width: 100%;
     max-width: 1200px;
@@ -1266,63 +1266,63 @@ footer>div {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  .form-section,
-  .image-section {
+#sign-up  .form-section,
+#sign-up  .image-section {
     padding: 20px;
     flex: 1;
   }
   
-  .form-section {
+#sign-up  .form-section {
     background-color: #f0f4f8;
   }
   
-  h2 {
+#sign-up   h2 {
     color: #799dab;
     font-weight: bold;
   }
   
-  p {
+#sign-up p {
     margin-bottom: 20px;
     font-size: 14px;
   }
   
-  a {
+  #sign-up a {
     color: #799dab;
     text-decoration: none;
   }
   
-  a:hover {
+  #sign-up a:hover {
     text-decoration: underline;
   }
   
-  .form-group {
+  #sign-up .form-group {
     margin-bottom: 20px;
   }
   
-  label {
+  #sign-up label {
     display: block;
     margin-bottom: 5px;
     
   }
   
-  input[type="text"],
-  input[type="email"],
-  input[type="password"] {
+  #sign-up input[type="text"],
+  #sign-up input[type="email"],
+  #sign-up input[type="password"] {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
   }
   
-  input[type="checkbox"] {
+  #sign-up input[type="checkbox"] {
     margin-right: 10px;
   }
   
-  .checkbox label {
+  #sign-up .checkbox label {
     display: inline;
   }
   
-  .btn {
+  #sign-up .btn {
     background-color: #c6e8f7;
     color: white;
     padding: 10px 20px;
@@ -1332,17 +1332,17 @@ footer>div {
     width: 100%;
   }
   
-  .btn:hover {
+  #sign-up .btn:hover {
     background-color: #799dab;
   }
   
-  .image-section {
+  #sign-up .image-section {
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .image-section img {
+  #sign-up .image-section img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
@@ -1350,22 +1350,22 @@ footer>div {
   
   /* Responsive Design */
   @media (max-width: 768px) {
-    .container {
+    #sign-up .container {
       flex-direction: column;
     }
   }
   
   @media (max-width: 320px) {
-    .form-section,
-    .image-section {
+    #sign-up .form-section,
+    #sign-up .image-section {
       padding: 10px;
     }
-    .btn {
+    #sign-up .btn {
       padding: 8px 15px;
     }
   }
   
-  .errorMsg
+  #sign-up .errorMsg
   {
       padding-top: 10px;
   }
