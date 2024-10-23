@@ -264,7 +264,7 @@ footer {
     width: 100%;
     box-sizing: border-box;
     padding-inline: calc(10px + 5vw);
-    padding-block: 120px 10px;
+    padding-block: 120px 40px;
     color: white;
 }
 
@@ -289,9 +289,6 @@ footer>div {
 
 .footerReachUs img {
     margin-top: 10px;
-    /* margin: auto; */
-    /* vertical-align: middle; */
-    /* display: inline-block; */
 }
 
 .footerCompany a {
