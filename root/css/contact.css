@@ -254,6 +254,369 @@ input
     align-items: center;
 }
 
+@media screen and (max-width: 1024px)
+{
+    .contact-grid
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-left
+    {
+      grid-row: 2;
+    }
+
+    .contact-right
+    {
+        padding: 0;
+    }
+    
+    .contact-left-text
+    {
+        font-size: 1.5rem;
+    }
+
+    .contact-inline
+    {
+        font-size: 2rem;
+    }
+
+    input 
+    {
+        font-size: 2rem;
+        width: 90%;
+    }
+
+    .contact-flex01
+    {
+        display: block;
+    }
+
+    .contact-flex02
+    {
+        display: block;
+    }
+    
+    .radio-container
+    {
+        flex-direction: column;
+        font-size: 2.5rem;
+        white-space: nowrap;
+        padding: 10px;
+    }
+
+    .contact-radios
+    {
+        display: flex;
+        flex-direction: row;
+        white-space: nowrap;
+        padding-bottom: 20px;
+    }
+
+    .radio-container input[type="radio"]
+    {
+        margin-right: 5px;
+    }
+
+    .air 
+    {
+        display: none;
+    }
+
+    .contact-darkblue
+    {
+        font-size: 2rem;
+        margin-left: 20px;
+    }
+
+    .custom-input
+    {
+        width: 70%;
+        margin-left: 20px;
+    }
+
+    .contact-button
+    {
+    padding-left: 30px;
+    }
+
+    .contact-button input[type="submit"]
+    {
+    font-size: 2rem; 
+    width: 50%;
+    }
+
+    
+    .contact-icons
+    {
+        font-size: 2rem;
+    }
+
+    .icons-contact
+    {
+        width: 5%;
+    }
+
+    .location-icon
+    {
+        width: 4%;
+    }
+
+    .box-question
+    {
+        width: 100%;
+    }
+
+    .button-question
+    {
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 820px)
+{
+    .contact-grid
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-left
+    {
+      grid-row: 2;
+    }
+
+    .contact-right
+    {
+        padding: 0;
+    }
+    
+    .contact-left-text
+    {
+        font-size: 1.5rem;
+    }
+
+    .contact-inline
+    {
+        font-size: 2rem;
+    }
+
+    input 
+    {
+        font-size: 2rem;
+        width: 90%;
+    }
+
+    .contact-flex01
+    {
+        display: block;
+    }
+
+    .contact-flex02
+    {
+        display: block;
+    }
+    
+    .radio-container
+    {
+        flex-direction: column;
+        font-size: 2.5rem;
+        white-space: nowrap;
+        padding: 10px;
+    }
+
+    .contact-radios
+    {
+        display: flex;
+        flex-direction: row;
+        white-space: nowrap;
+        padding-bottom: 20px;
+    }
+
+    .radio-container input[type="radio"]
+    {
+        margin-right: 5px;
+    }
+
+    .air 
+    {
+        display: none;
+    }
+
+    .contact-darkblue
+    {
+        font-size: 2rem;
+        margin-left: 20px;
+    }
+
+    .custom-input
+    {
+        width: 70%;
+        margin-left: 20px;
+    }
+
+    .contact-button
+    {
+    padding-left: 30px;
+    }
+
+    .contact-button input[type="submit"]
+    {
+    font-size: 2rem; 
+    width: 50%;
+    }
+
+    
+    .contact-icons
+    {
+        font-size: 2rem;
+    }
+
+    .icons-contact
+    {
+        width: 5%;
+    }
+
+    .location-icon
+    {
+        width: 4%;
+    }
+
+    .box-question
+    {
+        width: 100%;
+    }
+
+    .button-question
+    {
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 768px)
+{
+    .contact-grid
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-left
+    {
+      grid-row: 2;
+    }
+
+    .contact-right
+    {
+        padding: 0;
+    }
+    
+    .contact-left-text
+    {
+        font-size: 1.5rem;
+    }
+
+    .contact-inline
+    {
+        font-size: 2rem;
+    }
+
+    input 
+    {
+        font-size: 2rem;
+        width: 90%;
+    }
+
+    .contact-flex01
+    {
+        display: block;
+    }
+
+    .contact-flex02
+    {
+        display: block;
+    }
+    
+    .radio-container
+    {
+        flex-direction: column;
+        font-size: 2.5rem;
+        white-space: nowrap;
+        padding: 10px;
+    }
+
+    .contact-radios
+    {
+        display: flex;
+        flex-direction: row;
+        white-space: nowrap;
+        padding-bottom: 20px;
+    }
+
+    .radio-container input[type="radio"]
+    {
+        margin-right: 5px;
+    }
+
+    .air 
+    {
+        display: none;
+    }
+
+    .contact-darkblue
+    {
+        font-size: 2rem;
+        margin-left: 20px;
+    }
+
+    .custom-input
+    {
+        width: 70%;
+        margin-left: 20px;
+    }
+
+    .contact-button
+    {
+    padding-left: 30px;
+    }
+
+    .contact-button input[type="submit"]
+    {
+    font-size: 2rem; 
+    width: 50%;
+    }
+
+    
+    .contact-icons
+    {
+        font-size: 2rem;
+    }
+
+    .icons-contact
+    {
+        width: 5%;
+    }
+
+    .location-icon
+    {
+        width: 4%;
+    }
+
+    .box-question
+    {
+        width: 100%;
+    }
+
+    .button-question
+    {
+        width: 90%;
+    }
+}
+
+
 @media screen and (max-width: 430px) 
 {
     .contact-grid
