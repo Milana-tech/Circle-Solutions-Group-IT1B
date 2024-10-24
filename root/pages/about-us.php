@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circle Solutions</title>
-    <script src="/root/scripts/header.js"></script>
+    <script src="http://localhost/Milana-tech-Circle-Solutions-Group-IT1B/root/scripts/header.js"></script>
     <link rel="stylesheet" href="../css/global.css" type="text/css">
 </head>
 <body class="aboutbody">
-    <div class="main-about">
-        <section class="navbar">
             <?php
                 include "../sections/header.html";
             ?>
-        </section>
+    <div class="main-about">
         <div class="img-bg">
             <img src="../images/Screenshot 2024-10-11 204828.png" alt="" class="img-bg">
         </div>
@@ -57,10 +55,8 @@
             </div>
         </div>
         </div>
-        <div class="footer">
         <?php
             include "../sections/footer.html";
         ?>
-        </div>
 </body>
 </html>
