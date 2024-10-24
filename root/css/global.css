@@ -271,6 +271,50 @@ a {
     padding-right: 10px;
 }
 
+footer {
+    background-color: var(--blueGrey);
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: calc(10px + 4vw);
+    padding-block: 120px 10px;
+    color: white;
+}
+
+footer>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.circleimage {
+    height: 30%;
+}
+
+.reachUs {
+    display: block;
+}
+
+.reachUs>div {
+    display: inline;
+}
+
+.reachUs img {
+    margin: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.company a {
+    color: white;
+}
+
+/*
+if vw is less than 880px then:
+-header:
+    the navigation links will disappeare
+    the button for showing the navigation links will appear
+    a new set of navigation links will appear on the bottom of the header(.expandedMenu), that will be visible only when the header has the .expanded class
+*/
+
 @media screen and (max-width: 880px) {
     .header div:nth-child(1) ul {
         display: none;
@@ -923,4 +967,302 @@ footer>div {
         height: fit-content;
     }
 }
+
 /* Checkout end */
+/* ======================================== */
+/* Healthcare and education shared PART 1(media queries in PART 2, under healthcare and education) start */
+
+.healthcareEducationBody
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: #799DAB;
+}
+
+.healthcareEducationContainer
+{
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+.healthcareEducationH1
+{
+   text-align: center;
+   color: var(--blueGrey);
+   margin-bottom: 40px;
+}
+
+.healthcareEducationImg img
+{
+   width: 100%;
+   max-width: 350px;
+   height: auto;
+}
+
+.healthcareEducation-seePackages
+{
+   padding: 10px 20px;
+   font-size: 1rem;
+   border: none;
+   cursor: pointer;
+   transition: background-color 0.3 ease;
+
+   background-color: white;
+   border: 1px solid #799DAB;
+   color: #799DAB;
+}
+
+.healthcareEducation-seePackages:hover
+{
+   background-color: #799DAB;
+   color: white;
+}
+
+.healthcareEducationH2,
+.faculty-text p,
+.faculty-text ul,
+.student-text p,
+.student-text ul,
+.comms-text p,
+.comms-text ul,
+.efficiency-text p,
+.efficiency-text ul
+{
+    margin-bottom: 10px;
+}
+
+.efficiency-text
+.faculty-text,
+.student-text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.healthcareBtn,
+.educationBtn
+{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.faculty-section,
+.comms-section
+{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.student-section,
+.efficiency-section
+{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+/* Healthcare and education shared PART 1(media queries in PART 2, under healthcare and education) end */
+/* ======================================== */
+/* education start */
+
+.educationUl
+{
+    list-style: none;
+    padding-left: 0px;
+}
+
+@media (max-width: 768px)
+{
+    .faculty-section,
+    .student-section
+    {
+        margin:  0 auto;
+    }
+}
+/* education end */
+/* ======================================== */
+/* healthcare start */
+
+.comms-text
+{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-wrap: balance;
+}
+
+.efficiency-section,
+.efficiency-text
+{
+   text-align: right;
+   text-wrap: balance;
+}
+
+/* healthcare end */
+/* ======================================== */
+/* healthcare and education PART 2 (with media queries, PART 1 is before healthcare and education) start*/
+
+@media (max-width: 768px)
+{
+   .comms-section,
+   .efficiency-section,
+   .student-section,
+   .faculty-section
+   {
+       grid-template-columns: 1fr;
+       text-align: center;
+   }
+
+   .comms-image img,
+   .efficiency-image .comms-image,
+   .faculty-image,
+   .student-section img
+   {
+       margin: 0 auto;
+   }
+}
+
+/* healthcare and education PART 2 (with media queries, PART 1 is before healthcare and education) end */
+/* ======================================== */
+/* sign up start*/
+
+#sign-up * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #799dab;
+  }
+  
+#sign-up {
+    background-color: #f7f8fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+#sign-up .container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+#sign-up  .form-section,
+#sign-up  .image-section {
+    padding: 20px;
+    flex: 1;
+  }
+  
+#sign-up  .form-section {
+    background-color: #f0f4f8;
+  }
+  
+#sign-up   h2 {
+    color: #799dab;
+    font-weight: bold;
+  }
+  
+#sign-up p {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  #sign-up a {
+    color: #799dab;
+    text-decoration: none;
+  }
+  
+  #sign-up a:hover {
+    text-decoration: underline;
+  }
+  
+  #sign-up .form-group {
+    margin-bottom: 20px;
+  }
+  
+  #sign-up label {
+    display: block;
+    margin-bottom: 5px;
+    
+  }
+  
+  #sign-up input[type="text"],
+  #sign-up input[type="email"],
+  #sign-up input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #sign-up input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  #sign-up .checkbox label {
+    display: inline;
+  }
+  
+  #sign-up .btn {
+    background-color: #c6e8f7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  #sign-up .btn:hover {
+    background-color: #799dab;
+  }
+  
+  #sign-up .image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #sign-up .image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #sign-up .container {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    #sign-up .form-section,
+    #sign-up .image-section {
+      padding: 10px;
+    }
+    #sign-up .btn {
+      padding: 8px 15px;
+    }
+  }
+  
+  #sign-up .errorMsg
+  {
+      padding-top: 10px;
+  }
+
+  /* sign up end */
+/* ======================================== */
