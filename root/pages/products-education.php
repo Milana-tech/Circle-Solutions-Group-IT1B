@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="/root/scripts/header.js"></script>
   <link rel="stylesheet" href="../css/global.css" type="text/css">
-  <title>Education | Circle Solutions</title>
+  <title>Circle Solutions</title>
 </head>
 
 <body class="healthcareEducationBody">
