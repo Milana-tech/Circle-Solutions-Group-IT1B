@@ -35,7 +35,7 @@
                 <li> Analytics</li>
                 <li>Limited users (up to50)</li>
             </ul> 
-            <input type="submit" value="Add to my cart" class="firstbutton">
+            
             <input type="submit" value="Buy now" class="secondbutton">
         </div>
             <div class="platinium"> <h1>Large Companies</h1>
@@ -44,7 +44,7 @@
                     <li> Analytics</li>
                     <li>Limited users (up to500)</li>
                 </ul> 
-                <input type="submit" value="Add to my cart" class="firstbutton">
+                
                 <input type="submit" value="Buy now" class="secondbutton">
             </div>
         </div>
