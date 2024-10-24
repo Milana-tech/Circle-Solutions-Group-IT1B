@@ -40,14 +40,19 @@
             // <p>Circle Workspace</p>
             // </div>
 
-            $pageNameArray = ["", "", "", "", "", ""];
+            $pageNameArray = ["product-workspace-small.php", "product-workspace-large.php", "product-dots-small.php", "product-dots-large.php", "products-healthcare.php", "products-education.php"];
             $imgNameArray = ["first.jpg", "first.jpg", "second.jpg", "second.jpg", "third.jpg", "image.jpg"];
             $titleArray = ["Circle Workspace for small companies", "Circle Workspace for large companies", "Circle D.O.T.S for small companies", "Circle D.O.T.S. for large companies", "Healthcare", "Education"];
-            $priceArray = ["140,00&#8364/month", "760,00&#8364/month", "180,00&#8364/month", "799,00&#8364/month", "", ""];
+            
+            $priceArray = ["", "", "", "", "", ""];
+            //prices can be displayed in under the title of the package by giving them a value
+            // $priceArray = ["140,00&#8364/month", "760,00&#8364/month", "180,00&#8364/month", "799,00&#8364/month", "", ""];
+
+
 
             function createProductHref($pageName)
             {
-                return "./pages/$pageName";
+                return "./$pageName";
             }
 
             function createImagePath($imageName)

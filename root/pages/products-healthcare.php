@@ -49,7 +49,7 @@ include "../sections/header.html";
       </div>
     </div>
     <div class="healthcareBtn">
-      <a href="./packages.html"><button class="healthcareEducation-seePackages">See packages</button></a>
+      <a href="./packages.php"><button class="healthcareEducation-seePackages">See packages</button></a>
     </div>
   </div>
 </body>

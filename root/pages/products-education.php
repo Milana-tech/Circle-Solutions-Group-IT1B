@@ -62,7 +62,7 @@
       </div>
     </div>
     <div class="educationBtn">
-      <a href="./packages.html"><button class="healthcareEducation-seePackages">See packages</button></a>
+      <a href="./packages.php"><button class="healthcareEducation-seePackages">See packages</button></a>
     </div>
   </div>
 
