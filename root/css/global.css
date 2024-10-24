@@ -1393,6 +1393,10 @@ footer>div {
     margin-block: 50px;
 }
 
+.productPage a{
+    width: fit-content;
+}
+
 .productPage h4{
     color: var(--blueGrey);
 }
