@@ -757,7 +757,6 @@ footer>div {
 @media screen and (max-width: 820px) {
     .checkout_container {
         grid-template-columns: 1fr;
-        height: 100vh;
         padding: 0;
         margin-right: 10vw;
         margin-left: 10vw;
