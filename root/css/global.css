@@ -11,13 +11,11 @@
 
 @font-face {
     font-family: Calibre-Regular;
-    /* font-weight: 400; */
     src: url("../fonts/Calibre-Regular.otf") format("opentype");
 }
 
 @font-face {
     font-family: Calibre-Bold;
-    /* font-weight: 400; */
     src: url("../fonts/Calibre-Bold.otf") format("opentype");
 }
 
@@ -54,7 +52,7 @@ body {
 
 /* global end */
 /* ======================================== */
-/* header start */
+/* header.html start */
 
 .header ul {
     margin: 0;
@@ -66,6 +64,7 @@ body {
 }
 
 .header {
+    z-index: 1;
     position: sticky;
     display: grid;
     color: var(--blueGrey);
@@ -270,14 +269,6 @@ a {
     padding-right: 10px;
 }
 
-/*
-if vw is less than 880px then:
--header:
-    the navigation links will disappeare
-    the button for showing the navigation links will appear
-    a new set of navigation links will appear on the bottom of the header(.expandedMenu), that will be visible only when the header has the .expanded class
-*/
-
 @media screen and (max-width: 880px) {
     .header div:nth-child(1) ul {
         display: none;
@@ -335,9 +326,9 @@ if vw is less than 880px then:
     }
 }
 
-/* header end */
+/* header.html end */
 /* ======================================== */
-/* footer start */
+/* footer.html start */
 footer {
     background-color: var(--blueGrey);
     width: 100%;
@@ -430,9 +421,9 @@ footer>div {
     color: white;
 }
 
-/* footer end */
+/* footer.html end */
 /* ======================================== */
-/* account info start */
+/* account-info.php start */
 
 .account-info {
     background-color: white;
@@ -518,9 +509,9 @@ footer>div {
     }
 }
 
-/* account info end */
+/* account-info.php end */
 /* ======================================== */
-/* packages start */
+/* packages.php start */
 
 .container-packages {
     display: grid;
@@ -528,7 +519,6 @@ footer>div {
     margin-inline: 10vw;
     gap: 1rem;
     color: #799DAB;
-    /* min-height: 90vh; */
 }
 
 .category-packages h1 {
@@ -591,7 +581,6 @@ footer>div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: space-evenly; */
 }
 
 @media (max-width:1244px) {
@@ -620,40 +609,9 @@ footer>div {
     }
 }
 
-/* packages end */
+/* packages.php end */
 /* ======================================== */
-/* products review start */
-
-.review {
-    border: 1px gray solid;
-    background-color: white;
-    color: gray;
-    border-radius: 10px;
-    margin-inline: 5%;
-    padding: 5px;
-    margin-block: 20px;
-}
-
-.review img {
-    width: 100px;
-    height: 25px;
-
-}
-
-.review h4 {
-    color: black;
-}
-
-.top-review {
-    display: flex;
-    align-items: center;
-    text-wrap: nowrap;
-    justify-content: space-between;
-}
-
-/* products review end */
-/* ======================================== */
-/* Checkout start */
+/* checkout.php start */
 
 .checkout_container * {
     margin: 0;
@@ -748,9 +706,6 @@ footer>div {
 .checkoutButton {
     height: fit-content;
     padding: 20px;
-    /* padding-top: 10px;
-    padding-left: 15px;
-    padding-bottom: 20px; */
     text-wrap: wrap;
 }
 
@@ -912,9 +867,9 @@ footer>div {
     }
 }
 
-/* Checkout end */
+/* checkout.php end */
 /* ======================================== */
-/* Healthcare and education shared PART 1(media queries in PART 2, under healthcare and education) start */
+/* products-education.php and products-healthcare.php shared PART 1(media queries in PART 2, under healthcare and education) start */
 
 .healthcareEducationBody {
     margin: 0;
@@ -1003,9 +958,9 @@ footer>div {
     margin-bottom: 50px;
 }
 
-/* Healthcare and education shared PART 1(media queries in PART 2, under healthcare and education) end */
+/* products-education.php and products-healthcare.php shared PART 1(media queries in PART 2, under healthcare and education) end */
 /* ======================================== */
-/* education start */
+/* products-education.php start */
 
 .educationUl {
     list-style: none;
@@ -1020,9 +975,9 @@ footer>div {
     }
 }
 
-/* education end */
+/* products-education.php end */
 /* ======================================== */
-/* healthcare start */
+/* products-healthcare.php start */
 
 .comms-text {
     display: flex;
@@ -1037,9 +992,9 @@ footer>div {
     text-wrap: balance;
 }
 
-/* healthcare end */
+/* products-healthcare.php end */
 /* ======================================== */
-/* healthcare and education PART 2 (with media queries, PART 1 is before healthcare and education) start*/
+/* products-education.php and products-healthcare.php PART 2 (with media queries, PART 1 is before healthcare and education) start*/
 
 @media (max-width: 768px) {
 
@@ -1059,9 +1014,9 @@ footer>div {
     }
 }
 
-/* healthcare and education PART 2 (with media queries, PART 1 is before healthcare and education) end */
+/* products-education.php and products-healthcare.php PART 2 (with media queries, PART 1 is before healthcare and education) end */
 /* ======================================== */
-/* sign up start*/
+/* sign-up.php start*/
 
 #sign-up * {
     box-sizing: border-box;
@@ -1075,9 +1030,8 @@ footer>div {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-
+  }
+  
 #sign-up .container {
     display: flex;
     width: 100%;
@@ -1192,5 +1146,367 @@ footer>div {
     padding-top: 10px;
 }
 
-/* sign up end */
+/* sign-up.php end */
+/* ======================================== */
+/* about-us.php start */
+
+:root {
+    --darkblue: rgb(8, 68, 84);
+}
+
+.aboutbody {
+    color: rgb(8, 68, 84);
+}
+
+.main-about {
+    width: 100%;
+    background-color: white;
+}
+
+.img-bg {
+    width: 100%;
+
+}
+
+.about {
+    background: rgb(245, 254, 254);
+    width: 71%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 9.8em;
+    font-family: sans-serif;
+    padding-top: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.aboutheader {
+    font-size: 39px;
+    width: 65%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.about-info {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.OS-section {
+    display: flex;
+    padding-top: 50px;
+}
+
+.OS {
+    font-size: 125px;
+    line-height: 0px;
+    padding-top: 90px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.OS-info1 {
+    font-size: 30px;
+    padding-left: 76px;
+    font-family: sans-serif;
+}
+
+.ctd-section {
+    display: flex;
+    padding-top: 50px;
+}
+
+.ctd-info2 {
+    font-size: 30px;
+    padding-right: 33px;
+}
+
+.ctd {
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+.FR-section {
+    display: flex;
+    padding-top: 50px;
+}
+
+.FR {
+    font-size: 70px;
+    line-height: 0px;
+    font-weight: bolder;
+    padding-top: 22px;
+}
+
+.FR-info3 {
+    padding-left: 163px;
+    font-size: 30px;
+}
+
+.cs-section {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    display: flex;
+}
+
+.cs {
+    font-size: 70px;
+    font-weight: bolder;
+    padding-top: 0px;
+    padding-right: 30px;
+}
+
+.cs-info4 {
+    padding-top: 6px;
+    padding-right: 60px;
+    font-size: 30px;
+}
+
+
+
+@media only screen and (max-width: 1230px) {
+    .main-about {
+        width: 100%;
+    }
+
+    .about {
+        width: 100%;
+        bottom: 0em;
+    }
+
+    .img-bg {
+        display: none;
+    }
+
+    .aboutheader {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .about-info {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .OS-section {
+        display: grid;
+        padding-top: 50px;
+    }
+
+    .OS {
+        font-size: 65px;
+        padding-top: 10px;
+        font-size: 32px;
+    }
+
+    .OS-info1 {
+        font-family: sans-serif;
+        font-size: 16px;
+        padding-left: 0px;
+    }
+
+    .ctd-section {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        padding-top: 50px;
+    }
+
+    .ctd-info2 {
+        padding-left: 70px;
+        font-size: 16px;
+        padding-left: 0px;
+    }
+
+    .ctd {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-row: 1 / 2;
+        margin-bottom: auto;
+        font-size: 32px;
+    }
+
+    .FR-section {
+        display: grid;
+        padding-top: 50px;
+    }
+
+    .FR {
+        font-size: 32px;
+    }
+
+    .FR-info3 {
+        padding-left: 75px;
+        padding-left: 0px;
+        font-size: 16px;
+    }
+
+    .cs-section {
+        font-size: 20px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .cs {
+        grid-row: 1 / 2;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        font-size: 32px;
+    }
+
+    .cs-info4 {
+        padding-left: 75px;
+        padding-left: 0px;
+        font-size: 16px;
+    }
+}
+
+/* about-us.php start */
+/* ======================================== */
+/* product-workspace-large.php start */
+
+.productPage {
+    color: var(--blueGrey);
+    margin-inline: 10vw;
+    margin-block: 50px;
+}
+
+.productPage a{
+    width: fit-content;
+}
+
+.productPage h4{
+    color: var(--blueGrey);
+}
+
+.productPageContent {
+    display: flex;
+    font-size: 1.25rem;
+    justify-content: space-between;
+}
+
+.productPageImages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    gap: 10px;
+    width: fit-content;
+    height: fit-content;
+    max-width: 300px;
+    flex-shrink: 0;
+}
+
+.productPageImages img {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.productPageImages img:nth-child(1) {
+    grid-column: 1/3;
+}
+
+.productPageDescription {
+    margin-inline: 5vw;
+}
+
+.productPageContent button {
+    color: #008AB8;
+    background-color: transparent;
+    border-color: #008AB8;
+    border-style: solid;
+    font-size: 1.5rem;
+    padding: 5px 20px;
+}
+
+.productPageFeatures {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+.productPageFeatures li {
+    margin-bottom: 10px;
+}
+
+.productPageFeatures div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .productPageFeatures {
+        flex-shrink: 1;
+        margin-right: 0;
+    }
+}
+
+
+@media only screen and (max-width: 1110px) {
+    .productPageContent {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+    .productPageImages{
+        width: 100%;
+    }
+    .productPageDescription{
+        grid-row: 2/3;
+        grid-column: 1/3;
+    }
+    .productPageFeatures{
+        padding-left: 20px;
+        margin-left: auto;
+        width: fit-content;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .productPageImages{
+        margin-inline: auto;
+    }
+    .productPageDescription{
+        grid-row-start: 2;
+        grid-column: 1/2;
+    }
+    .productPageFeatures{
+        grid-row-start: 3;
+        margin-inline: 5vw;
+    }
+}
+
+.review {
+    border: 1px gray solid;
+    background-color: white;
+    color: gray;
+    border-radius: 10px;
+    padding: 5px;
+    margin-block: 20px;
+}
+
+.review img {
+    width: 100px;
+    height: 25px;
+
+}
+
+.top-review {
+    display: flex;
+    align-items: center;
+    text-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* product-workspace-large.php end */
 /* ======================================== */
