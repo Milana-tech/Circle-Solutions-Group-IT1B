@@ -14,8 +14,8 @@
     include "../sections/header.html";
     ?>
     <div class="container-packages">
-        <div class="categori-packages">
-            <h1>Categori</h1>
+        <div class="category-packages">
+            <h1>Category</h1>
             <div class="flexholder-packages">
                 <div><input type="checkbox"> <label for="a">Circle products</label></div>
                 <div><input type="checkbox"> <label for="">Health care</label></div>
@@ -29,91 +29,75 @@
             </div>
             <p>Below you can find all products we have</p>
         </div>
-        <?php
-        //packages are rendered dynamically using this template
-        //
-        // <div class="item-packages">
-        // <a href="../pages/product-workspace-large.php">
-        //     <img src="../images/first.jpg" alt="workspace">
-        // </a>
-        // <p>Circle Workspace</p>
-        // </div>
-
-        $hrefArray = ["first.jpg","","","","",""];
-        $imgNameArray = ["first.jpg","","","","",""];
-        $altNameArray = ["workspace","","","","",""];
-        $titleArray = ["Circle Workspace for Small Companies","","","","",""];
-        $priceArray = ["","","","","",""];
-
-        function createPackageItem($href, $imgName, $altName, $title, $price)
-        {
-            $packageString = "";
-            $packageString .= "<div class='pick-packages'><a href='../pages/images/";
-            //add package name for image
-            $packageString .= $imgName;
-            $packageString .= "' alt='";
-            //add package name for alt text
-            $packageString .= $altName;
-            $packageString .= "'> </a><p>";
-            //add package title
-            $packageString .= $title;
-            $packageString .= "</p></div>";
-
-            return $packageString;
-        }
-        ?>
         <div class="items-section-packages">
+            <?php
+            //packages are rendered dynamically using this template
+            //
+            // <div class="item-packages">
+            // <a href="../pages/product-workspace-large.php">
+            //     <img src="../images/first.jpg" alt="workspace">
+            // </a>
+            // <p>Circle Workspace</p>
+            // </div>
 
-            <div class="first-packages item -packages">
-                <a href="../pages/product-workspace-large.php">
-                    <img src="../images/first.jpg" alt="workspace">
-                </a>
-                <p>Circle Workspace</p>
-            </div>
-            <div class="first-packages item -packages">
-                <a href="../pages/product-workspace-large.php">
-                    <img src="../images/first.jpg" alt="workspace">
-                </a>
-                <p>Circle Workspace</p>
-            </div>
-            <div class="first-packages item -packages">
-                <a href="../pages/product-workspace-large.php">
-                    <img src="../images/first.jpg" alt="workspace">
-                </a>
-                <p>Circle Workspace</p>
-            </div>
-            <div class="first-packages item -packages">
-                <a href="../pages/product-workspace-large.php">
-                    <img src="../images/first.jpg" alt="workspace">
-                </a>
-                <p>Circle Workspace</p>
-            </div>
-            <div class="first-packages item -packages">
-                <a href="../pages/product-workspace-large.php">
-                    <img src="../images/first.jpg" alt="workspace">
-                </a>
-                <p>Circle Workspace</p>
-            </div>
+            $pageNameArray = ["", "", "", "", "", ""];
+            $imgNameArray = ["first.jpg", "first.jpg", "second.jpg", "second.jpg", "third.jpg", "image.jpg"];
+            $titleArray = ["Circle Workspace for small companies", "Circle Workspace for large companies", "Circle D.O.T.S for small companies", "Circle D.O.T.S. for large companies", "Healthcare", "Education"];
+            $priceArray = ["140,00&#8364/month", "760,00&#8364/month", "180,00&#8364/month", "799,00&#8364/month", "", ""];
+
+            function createProductHref($pageName)
+            {
+                return "./pages/$pageName";
+            }
+
+            function createImagePath($imageName)
+            {
+                return "../images/$imageName";
+            }
+
+            function createAltText($text)
+            {
+                return "image for $text";
+            }
+
+            function createPriceParagraph($price)
+            {
+                if (!$price == null) {
+                    if (strlen($price) > 0) {
+                        return "<p>$price</p>";
+                    }
+                }
+                return "";
+            }
+
+
+            function createPackageItem($href, $imageSrc, $altText, $title, $price)
+            {
+                $priceParagraph = createPriceParagraph($price);
+                $packageString = "
+                <div class='item-packages'>
+                    <a href='$href'>
+                        <img src='$imageSrc' alt='$altText'>
+                        <div>
+                            <p>$title</p>
+                            $priceParagraph
+                        </div>
+                    </a>
+                </div>
+            ";
+                return $packageString;
+            }
+
+            for ($index = 0; $index < count($titleArray); $index++) {
+                $href = createProductHref($pageNameArray[$index]);
+                $imageSrc = createImagePath($imgNameArray[$index]);
+                $altText = createAltText($titleArray[$index]);
+                $title = $titleArray[$index];
+                $price = $priceArray[$index];
+                echo createPackageItem($href, $imageSrc, $altText, $title, $price);
+            }
+            ?>
         </div>
-        <!-- 
-        <div class="second-packages pic-packages">
-            <a href="../pages/product-dots-large.php">
-                <img src="../images/second.jpg" alt="circledots">
-            </a>
-            <p>Circle D.O.T.S</p>
-        </div>
-        <div class="third-packages pic-packages">
-            <a href="../pages/products_healthcare.php">
-                <img src="../images/third.jpg" alt="healthcare">
-            </a>
-            <p>Health Care</p>
-        </div>
-        <div class="forth-packages pic-packages">
-            <a href="../pages/products_education.php">
-                <img src="../images/image.jpg" alt="Education">
-            </a>
-            <p>Education</p>
-        </div> -->
     </div>
     <?php
     include "../sections/footer.html";
