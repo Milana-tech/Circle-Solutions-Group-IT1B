@@ -15,24 +15,26 @@
     ?>
     <div class="productPage">
         <div>
-            <h1>Circle Workspace for large companies</h1>
+            <h1>Circle D.O.T.S. for large companies</h1>
         </div>
         <div class="productPageContent">
             <div class="productPageImages">
-            <img src="../images/intranet.jpg" alt="intranet">
-                <img src="../images/dots.jpg" alt="dots">
-                <img src="../images/communication.jpg" alt="communication">
+                <img src="../images/knowledge-management.jpg" alt="knowledge-management">
+                <img src="../images/app-management.png" alt="app-management">
+                <img src="../images/communication-information.jpg" alt="communication-information">
             </div>
             <div class="productPageDescription">
                 <h3>
                     Description
                 </h3>
                 <ul>
-                    <li> Circle workspace centralizes documents from multiple sources, enabling seamless online and offline collaboration.</li>
-                    <hr>
-                    <li>Display information from applications directly in Circle Workspace. At a glance, see all your unread emails, appointments, news, recently edited documents and more.</li>
-                    <hr>
-                    <li>Circle workspace simplifies workplace creation and administration, integrating current and future technologies in one platform.</li>
+            <li> Circle D.O.T.S. enables targeted news distribution and analysis, keeping global businesses aligned amidst change</li>
+            <hr>
+            <li>Circle D.O.T.S. fosters trust and collaboration through organic community-building channels and pages.</li>
+            <hr>
+            <li>Circle D.O.T.S. centralizes resources, applications, and knowledge for easy access and increased productivity.</li>
+            <hr>
+            <li>Circle D.O.T.S. empowers data-driven optimization with a user-friendly analytics dashboard for continuous improvement.</li>
                 </ul>
             </div>
             <div class="productPageFeatures">
@@ -49,7 +51,7 @@
                     <a href="./checkout.php">
                         <button >Buy now</button>
                     </a>
-                    <p>&#8364 760 per month</p>
+                    <p>&#8364 799 per month</p>
                 </div>
             </div>
         </div>
@@ -78,5 +80,3 @@
     include "../sections/footer.html";
     ?>
 </body>
-
-</html>

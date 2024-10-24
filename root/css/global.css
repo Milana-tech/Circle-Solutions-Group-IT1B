@@ -1415,6 +1415,7 @@ footer>div {
 
 .productPageImages img {
     width: 100%;
+    aspect-ratio: 1;
 }
 
 .productPageImages img:nth-child(1) {

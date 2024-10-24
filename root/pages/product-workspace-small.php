@@ -15,7 +15,7 @@
     ?>
     <div class="productPage">
         <div>
-            <h1>Circle Workspace for large companies</h1>
+            <h1>Circle Workspace for small companies</h1>
         </div>
         <div class="productPageContent">
             <div class="productPageImages">
@@ -42,14 +42,14 @@
                         <li> Document Management</li>
                         <li> Content Management</li>
                         <li> Analytics</li>
-                        <li> Up to 500 users</li>
+                        <li> Up to 50 users</li>
                     </ul>
                 </div>
                 <div>
                     <a href="./checkout.php">
                         <button >Buy now</button>
                     </a>
-                    <p>&#8364 760 per month</p>
+                    <p>&#8364 180 per month</p>
                 </div>
             </div>
         </div>
