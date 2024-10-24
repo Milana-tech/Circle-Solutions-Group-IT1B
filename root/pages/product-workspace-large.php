@@ -12,14 +12,45 @@
     <?php
     include "../sections/header.html";
     ?>
-    <div class="workspacebody">
-        <div class="work">
-            <h1>Circle Workspace</h1>
+    <div class="productPage">
+        <div>
+            <h1>Circle Workspace for large companies</h1>
         </div>
-        <div class="container-workspace">
-            <div class="firstimage"><img src="../images/app-management.png" alt="app-management" class="workimage"></div>
-            <div class="secondimage"><img src="../images/communication-information.jpg" alt="communication-information" class="workimage"></div>
-            <div class="thirdimage"><img src="../images/knowledge-management.jpg" alt="knowledge-management" class="workimage"></div>
+        <div class="productPageContent">
+            <div class="productPageImages">
+                <img src="../images/knowledge-management.jpg" alt="knowledge-management">
+                <img src="../images/app-management.png" alt="app-management">
+                <img src="../images/communication-information.jpg" alt="communication-information">
+            </div>
+            <div class="productPageDescription">
+                <h3>
+                    Description
+                </h3>
+                <ul>
+                    <li> Circle workspace centralizes documents from multiple sources, enabling seamless online and offline collaboration.</li>
+                    <hr>
+                    <li>Display information from applications directly in Circle Workspace. At a glance, see all your unread emails, appointments, news, recently edited documents and more.</li>
+                    <hr>
+                    <li>Circle workspace simplifies workplace creation and administration, integrating current and future technologies in one platform.</li>
+                </ul>
+            </div>
+            <div class="productPageFeatures">
+                <div>
+                    <h3>Features</h3>
+                    <ul>
+                        <li> Document Management</li>
+                        <li> Content Management</li>
+                        <li> Analytics</li>
+                        <li> Up to 500 users</li>
+                    </ul>
+                </div>
+                <div>
+                    <button>Buy now</button>
+                    <p>&#8364 760 per month</p>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container-workspace">
             <div class="package">
                 <ul>
                     <li> Circle workspace centralizes documents from multiple sources, enabling seamless online and offline collaboration.</li>
@@ -31,28 +62,33 @@
             </div>
             <div class="plans">
                 <div class="gold">
-                    <h1>Small Companies</h1>
+                    <h1>Circle Workspace for large companies</h1>
                     <ul>
                         <li> Document Management</li>
                         <li> Content Management</li>
                         <li> Analytics</li>
-                        <li>Limited users (up to50)</li>
+                        <li> Up to 500 users</li>
                     </ul>
 
-                    <input type="submit" value="Buy now" class="secondbutton">
-                </div>
-                <div class="platinium">
-                    <h1>Large Companies</h1>
-                    <ul>
-                        <li> Document Management</li>
-                        <li> Content Management</li>
-                        <li> Analytics</li>
-                        <li>Limited users (up to500)</li>
-                    </ul>
-
-                    <input type="submit" value="Buy now" class="secondbutton">
+                    <div>
+                        <input type="submit" value="Buy now" class="secondbutton">
+                        <p>&#8364 760 per month</p>
+                    </div>
                 </div>
             </div>
+        </div> -->
+
+        <div class="review">
+            <div class="top-review">
+                <h4>John Dough</h4> <img src="../images/stars.png" alt="stars">
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo natus cupiditate numquam repellat tempore placeat consequatur temporibus, at suscipit? Voluptatum praesentium facilis magni expedita perspiciatis suscipit voluptate fugit minima dolor.</p>
+        </div>
+        <div class="review">
+            <div class="top-review">
+                <h4>Petty Dwarves</h4> <img src="../images/stars.png" alt="stars">
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo natus cupiditate numquam repellat tempore placeat consequatur temporibus, at suscipit? Voluptatum praesentium facilis magni expedita perspiciatis suscipit voluptate fugit minima dolor.</p>
         </div>
     </div>
     <?php
