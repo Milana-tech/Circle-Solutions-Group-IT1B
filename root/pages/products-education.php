@@ -9,20 +9,20 @@
   <title>Education | Circle Solutions</title>
 </head>
 
-<body class="educationBody">
+<body class="healthcareEducationBody">
   <?php
   include "../sections/header.html";
   ?>
-  <div class="educationContainer">
-    <h1 class="educationH1">Education</h1>
+  <div class="healthcareEducationContainer">
+    <h1 class="healthcareEducationH1">Education</h1>
 
     <!-- Faculty Section -->
     <div class="faculty-section">
-      <div class="faculty-image">
+      <div class="healthcareEducationImg">
         <img src="../images/faculty.png" alt="Faculty Image" />
       </div>
       <div class="faculty-text">
-        <h2 class="educationH2">Faculty</h2>
+        <h2 class="healthcareEducationH2">Faculty</h2>
         <p>
           <b><i>Empower faculty with the news and information they need</i></b>
         </p>
@@ -42,7 +42,7 @@
     <!-- Student Section -->
     <div class="student-section">
       <div class="student-text">
-        <h2 class="educationH2">Students</h2>
+        <h2 class="healthcareEducationH2">Students</h2>
         <p>
           <i><b>Create a safe, cohesive community for students</b></i>
         </p>
@@ -57,12 +57,12 @@
           <li>Accessible university news and event registrations</li>
         </ul>
       </div>
-      <div class="student-image">
+      <div class="healthcareEducationImg">
         <img src="../images/students.png" alt="Student Image" />
       </div>
     </div>
     <div class="educationBtn">
-      <a href="./packages.html"><button class="education-seePackages">See packages</button></a>
+      <a href="./packages.html"><button class="healthcareEducation-seePackages">See packages</button></a>
     </div>
   </div>
 

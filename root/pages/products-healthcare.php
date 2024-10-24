@@ -8,22 +8,22 @@
   <title>Healthcare | Circle Solutions</title>
 </head>
 
+
+<body class="healthcareEducationBody">
 <?php
 include "../sections/header.html";
 ?>
-
-<body class="healthcareBody">
-  <div class="healthcareContainer">
-    <h1 class="healthcareH1">Healthcare</h1>
+  <div class="healthcareEducationContainer">
+    <h1 class="healthcareEducationH1">Healthcare</h1>
 
     <!-- Comms Section -->
     <div class="comms-section">
-      <div class="comms-image">
+      <div class="healthcareEducationImg">
         <img src="../images/healthcare-comms.png" alt="comms image" />
       </div>
       <div class="comms-text">
         <p>
-        <h2 class="healthcareH2"><i>Simplify comms work</i></h2>
+        <h2 class="healthcareEducationH2">Simplify comms work</h2>
         </p>
         <p>
           Easily plan and distribute you communications using a
@@ -37,19 +37,19 @@ include "../sections/header.html";
     <div class="efficiency-section">
       <div class="efficiency-text">
         <p>
-        <h2 class="healthcareH2"><i>Increase employee efficiency</i></h2>
+        <h2 class="healthcareEducationH2">Increase employee efficiency</h2>
         </p>
         <p>
           Make life easier for on-the-move employees with centralized content,
           real-time updates on operational disruptions, and front door access to systems and services.
         </p>
       </div>
-      <div class="efficiency-image">
+      <div class="healthcareEducationImg">
         <img src="../images/efficiency.png" alt="efficiency image" />
       </div>
     </div>
     <div class="healthcareBtn">
-      <a href="./packages.html"><button class="healthcare-seePackages">See packages</button></a>
+      <a href="./packages.html"><button class="healthcareEducation-seePackages">See packages</button></a>
     </div>
   </div>
 </body>
