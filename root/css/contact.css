@@ -1,10 +1,3 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 @font-face
 {
 font-family: Calibre-Regular;
@@ -12,37 +5,67 @@ font-weight: 400;
 src: url("../fonts/Calibre-Regular.otf") format("opentype");
 }
 
-main
-{
-    padding: 10px 80px 10px 20px;
-}
-
 body
 {
     font-family: Calibre-Regular;
 }
 
-.circle
+.a-href-contact
 {
-    /* width: 270px;
-    height: 270px;
-    background-color: #C7EAF8;
-    border-radius: 100%; */
-    width: 350px;
-    height: 175px; 
+    text-decoration: none;
+}
+
+.contact-container
+{
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+
+.contact-header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-flex-center
+{
+    margin: 0;
+    text-align: center;
+}
+
+.contact-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.contact-content
+{
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 60px 30px rgba(0, 0, 0, 0.03);
+    overflow: hidden;
+}
+
+
+.contact-circle
+{
+    width: 360px;
+    height: 200px;
+    /* width: 70%;
+    height: 25%;  */
     background-color: #C7EAF8;
     border-radius: 270px 270px 0 0;
     position: absolute;
     bottom: -1px;
     right: -100px;
-    /* bottom: -90px;
-    right: -70px; */
 }
 
-.circle2
+.contact-circle2
 {
-    width: 130px;
-    height: 130px;
+    width: 175px;
+    height: 170px;
     background-color: rgba(220, 241, 249, 0.50);
     border-radius: 100%;
     position: absolute;
@@ -50,70 +73,33 @@ body
     right: 110px; 
 }
 
-.grid
-{
-    display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
-}
-
-.whole-div
-{
-    box-sizing: content-box;
-    padding: 20px;
-    width: 1300px;
-    height: 650px;
-    display: grid;
-    grid-column-start: 2;
-    grid-template-columns: 1fr 2fr;
-    border-radius: 15px;
-    box-shadow: 0px 0px 60px 30px rgba(0, 0, 0, 0.03);
-    overflow: hidden;
-}
-
-.topest
-{
-    padding-bottom: 15px;
-}
-
-.square-info
+.contact-left
 {
     padding: 40px 20px;
-    border-radius: 10px;
-    width: 500px;
-    height: 650px;
+    border-radius: 0.5rem;
     background-color: #799DAB;
     position: relative;
 }
 
-.content
+.contact-right
+{
+    padding: 100px;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 60px 30px rgba(0, 0, 0, 0.03);
+}
+
+.contact-left-text
 {
     margin-bottom: 80px;
     padding: 0px 20px;
 }
 
-.dark-blue
+.contact-darkblue
 {
     color: #799dab;
 }
 
-.white
-{
-    color: white;
-}
-
-.grey
-{
-    color: #C9C9C9;
-    font-size: 1.5rem;
-}
-
-.center
-{
-    display: flex;
-    justify-content: center;
-}
-
-.dark-blue h1
+.contact-darkblue h1
 {
     font-size: 40px;
     font-style: normal;
@@ -121,68 +107,57 @@ body
     line-height: normal;
 }
 
-.box-question
+.contact-white
 {
-    width: 300px;
-    height: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
+    color: white;
 }
 
-img
+#contact-grey
 {
-    width: 20px;
+    color: #C9C9C9;
+    font-size: 1.5rem;
+}
+
+.icons-contact
+{
+    width: 5%;
     margin: 0px 20px;
 }
 
-.icons
+.contact-icons
 {
     font-size: 1em;
     padding: 20px 30px;
-    display: inline-flex;
-    align-items: center;
 }
 
-.icon3
+.location-icon
 {
-    width: 15px;
+    width: 4%;
 }
 
-.form-right
-{
-    box-sizing: content-box;
-    padding: 30px 60px;
-}
-
-.flex
+.contact-row
 {
     display: flex;
-    padding-bottom: 45px;
-}
-
-.position
-{
+    flex-direction: column;
+    padding: 20px;
     flex: 1 1 50%;
-    margin-right: 120px;
 }
 
-.flex2
+.contact-flex01
 {
     display: flex;
 }
 
-.number
-{   
+.contact-flex02
+{
     display: flex;
-    flex: 1 1 100%;
 }
 
 .radio-container
 {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 10px;
+    margin: 10px;
 }
 
 .radio-container input[type="radio"]
@@ -202,22 +177,6 @@ label
     color: #799DAB;
 }
 
-.flex
-{
-    display: flex;
-}
-
-.flex2
-{
-    display: flex;
-    padding-top: 50px;
-}
-
-.subject
-{
-    margin-bottom: 20px;
-}
-
 input 
 {
     outline: none; 
@@ -228,26 +187,21 @@ input
     margin-bottom: 20px; 
 }
 
-.full-width
-{
-    width: 100%;
-}
-
 .custom-input
 {
     width: 75%;
 }
 
-.button
+.contact-button
 {
     padding-top: 40px;
     padding-left: 470px;
 }
 
-.button input[type="submit"]
+.contact-button input[type="submit"]
 {
     padding: 15px 7px;
-    font-size: 16px; 
+    font-size: 1rem; 
     background-color: #799DAB;
     color: white;
     border-radius: 5px;
@@ -271,48 +225,170 @@ input
 {
     display: block; 
     margin: 0 auto; 
-    width: 340px; 
-    height: auto;
+    width: 40%; 
     transform: rotate(-29.753deg);
 }
 
-.grid
+.air
 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: fixed;
 }
 
 .box-question
 {
-    width: 990px;
-    height: 120px;
-    display: flex;
-    flex-shrink: 0;
-    flex-direction: column;
-    align-items: flex-start; 
-    padding: 20px; 
-    position: relative; 
+    width: 70%;
+    grid-column: 6 / 1;
+    padding-right: 5px;
+    padding-left: 5px; 
     background-color: rgba(220, 241, 249, 1);
     margin-top: 20px;
-    margin-right: 400px;
 }
 
-.button-question {
+.button-question
+{
     background-color: rgba(237, 250, 255, 1);
-    position: absolute;
-    top: 35px;
-    bottom: 50px; 
-    right: 10px; 
+    width: 10%;
+    text-align: center;
     cursor: pointer;
-    display: inline-flex;
-    height: 50px;
     padding: 0px 20px 0px 15px;
     align-items: center;
-    flex-shrink: 0;
 }
 
-.padding
+@media screen and (max-width: 430px) 
 {
-    padding: 5px 0px;
+    .contact-grid
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-button
+    {
+    padding-left: 30px;
+    }
+
+    .contact-button input[type="submit"]
+    {
+    font-size: 2rem; 
+    width: 50%;
+    }
+
+    .contact-header
+    {
+        display: none;
+    }
+
+    .radio-container
+    {
+        flex-direction: column;
+        font-size: 2.5rem;
+        white-space: nowrap;
+        padding: 10px;
+    }
+
+    .contact-radios
+    {
+        display: flex;
+        flex-direction: row;
+        white-space: nowrap;
+        padding-bottom: 20px;
+    }
+
+    .air 
+    {
+        display: none;
+    }
+
+    .contact-selector
+    {
+        display: flex;
+        flex-direction: column;
+        padding-right: 20px;
+    }
+
+    .contact-darkblue
+    {
+        font-size: 2.5rem;
+        margin-left: 20px;
+    }
+
+    .contact-right
+    {
+        padding: 0;
+    }
+
+    .contact-left
+    {
+      grid-row: 2;
+    }
+    
+    .contact-flex01
+    {
+        display: block;
+    }
+
+    .contact-flex02
+    {
+        display: block;
+    }
+
+    .contact-left-text
+    {
+        font-size: 1.5rem;
+    }
+
+    .contact-inline
+    {
+        font-size: 2rem;
+    }
+
+    input 
+    {
+        font-size: 2rem;
+        width: 90%;
+    }
+
+    .custom-input
+    {
+        width: 65%;
+        margin-left: 20px;
+    }
+
+    .radio-container
+    {
+        display: flex;
+        align-items: flex-start;
+        margin: 10px;
+        white-space: wrap;
+    }
+
+    .radio-container input[type="radio"]
+    {
+        margin-right: 5px;
+    }
+
+    .contact-icons
+    {
+        font-size: 2rem;
+    }
+
+    .icons-contact
+    {
+        width: 5%;
+    }
+
+    .location-icon
+    {
+        width: 4%;
+    }
+
+    .box-question
+    {
+        width: 100%;
+    }
+
+    .button-question
+    {
+        width: 90%;
+    }
 }
