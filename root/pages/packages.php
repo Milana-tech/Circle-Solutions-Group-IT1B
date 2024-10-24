@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="../css/global.css" type="text/css">
 </head>
 <body>
+    <?php
+        include "../sections/header.html";
+    ?>
     <div class="container-packages">
         <div class="categori-packages">
             <h1>Categori</h1>
@@ -28,5 +31,8 @@
         <div class="third-packages pic-packages"> <a href="../pages/products_healthcare.php"><img src="../images/third.jpg" alt="healthcare"></a><p>Health Care</p> </div>
         <div class="forth-packages pic-packages"> <a href="../pages/products_education.php"><img src="../images/image.jpg" alt="Education"></a><p>Education</p> </div>
     </div>
+    <?php
+        include "../sections/footer.html";
+    ?>
 </body>
 </html>
