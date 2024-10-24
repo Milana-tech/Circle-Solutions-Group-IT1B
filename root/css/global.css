@@ -647,7 +647,7 @@ footer>div {
 .top-review {
     display: flex;
     align-items: center;
-    text-wrap: nowrap;
+    text-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -1420,6 +1420,10 @@ footer>div {
     color: var(--blueGrey);
     margin-inline: 10vw;
     margin-block: 50px;
+}
+
+.productPage h4{
+    color: var(--blueGrey);
 }
 
 .productPageContent {

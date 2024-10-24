@@ -50,45 +50,25 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="container-workspace">
-            <div class="package">
-                <ul>
-                    <li> Circle workspace centralizes documents from multiple sources, enabling seamless online and offline collaboration.</li>
-                    <hr>
-                    <li>Display information from applications directly in Circle Workspace. At a glance, see all your unread emails, <br>appointments, news, recently edited documents and more.</li>
-                    <hr>
-                    <li>Circle workspace simplifies workplace creation and administration, integrating current and future technologies in one platform.</li>
-                </ul>
-            </div>
-            <div class="plans">
-                <div class="gold">
-                    <h1>Circle Workspace for large companies</h1>
-                    <ul>
-                        <li> Document Management</li>
-                        <li> Content Management</li>
-                        <li> Analytics</li>
-                        <li> Up to 500 users</li>
-                    </ul>
-
-                    <div>
-                        <input type="submit" value="Buy now" class="secondbutton">
-                        <p>&#8364 760 per month</p>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
         <div class="review">
             <div class="top-review">
-                <h4>John Dough</h4> <img src="../images/stars.png" alt="stars">
+                <h4>John Dough, Senior Operations Coordinator - Cookiegenerator inc.
+
+                </h4> <img src="../images/stars.png" alt="stars">
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo natus cupiditate numquam repellat tempore placeat consequatur temporibus, at suscipit? Voluptatum praesentium facilis magni expedita perspiciatis suscipit voluptate fugit minima dolor.</p>
+            <p>A user friendly, customizable platform for communication and shared work spaces. Easy to create a customized internal platform for company communications, news, and resources for employee needs through pre-built templates</p>
         </div>
         <div class="review">
             <div class="top-review">
-                <h4>Petty Dwarves</h4> <img src="../images/stars.png" alt="stars">
+                <h4>Petty Dwarves, Director of Marketing and Communications - Little Cloths ltd.</h4> <img src="../images/stars.png" alt="stars">
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo natus cupiditate numquam repellat tempore placeat consequatur temporibus, at suscipit? Voluptatum praesentium facilis magni expedita perspiciatis suscipit voluptate fugit minima dolor.</p>
+            <p>The ability to quickly communicate and scale collaboration is second to none. Users across the globe can receive information, connect and collaborate in real time - answer questions quickly and publicly to avoid duplicative emails.</p>
+        </div>
+        <div class="review">
+            <div class="top-review">
+                <h4>Halluci Absinthe, People Operations Manager - Green Fairy Company</h4> <img src="../images/stars.png" alt="stars">
+            </div>
+            <p>Our onboarding experience has greatly improved thanks to Happeo's Pages. Instead of having a quick meeting and sending out slides to new employees, we now have an entire Page they can easily refer to.</p>
         </div>
     </div>
     <?php
