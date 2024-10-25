@@ -1,3 +1,7 @@
+<?php
+ob_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circle Solutions</title>
-    <script src="http://localhost/Milana-tech-Circle-Solutions-Group-IT1B/root/scripts/header.js"></script>
+    <script src="../scripts/header.js"></script>
     <link rel="stylesheet" href="../css/global.css" type="text/css">
 </head>
 
@@ -34,30 +38,27 @@
                 <div class="contact-circle2">
                 </div>
             </div>
-            <div class="contact-right">
-                <form action="link/to/php">
+            <div class="contact-right form-group">
+                <form action="<?php echo $_SERVER["PHP_SELF"] ?>" method="POST">
                     <div class="contact-flex01">
                         <div class="contact-row">
-                            <label for="contact-fname" class="contact-inline">First Name</label>
-                            <input type="text" name="contact-fname" placeholder="Please enter your name"
-                                id="contact-fname" required>
+                            <label for="fname" class="contact-inline">First Name</label>
+                            <input type="text" name="fname" placeholder="Please enter your name" id="fname" required>
                         </div>
                         <div class="contact-row">
-                            <label for="contact-lname" class="contact-inline">Last Name</label>
-                            <input type="text" name="contact-lname" placeholder="Please enter your last name"
-                                id="contact-lname" required>
+                            <label for="lname" class="contact-inline">Last Name</label>
+                            <input type="text" name="lname" placeholder="Please enter your last name" id="lname" required>
                         </div>
                     </div>
                     <div class="contact-flex02">
                         <div class="contact-row">
-                            <label for="contact-email" class="contact-inline">Email</label>
-                            <input type="text" name="contact-email" placeholder="Please enter your email"
-                                id="contact-email" required>
+                            <label for="email" class="contact-inline">Email</label>
+                            <input type="text" name="email" placeholder="Please enter your email" id="email" required>
                         </div>
                         <div class="contact-row">
-                            <label for="contact-phonenumber" class="contact-inline">Phone Number</label>
-                            <input type="text" name="contact-phonenumber" placeholder="Please enter your number"
-                                id="contact-phonenumber" required>
+                            <label for="phonenumber" class="contact-inline">Phone Number</label>
+                            <input type="text" name="phonenumber" placeholder="Please enter your number"
+                                id="phonenumber" required>
                         </div>
                     </div>
                     <div class="contact-nowrap">
@@ -65,24 +66,20 @@
                     </div>
                     <div class="radio-container">
                         <div class="contact-radios">
-                            <input type="radio" class="contact-selector" name="contactselect[]" id="contact-inquiry"
-                                required>
-                            <label for="contact-inquiry">General Inquiry</label>
+                            <input type="radio" name="inquiry" id="general" required>
+                            <label for="general">General Inquiry</label>
                         </div>
                         <div class="contact-radios">
-                            <input type="radio" class="contact-selector" name="contactselect[]" id="contact-product"
-                                required>
-                            <label for="contact-product">Product/Service Inquiries</label>
+                            <input type="radio" name="inquiry" id="product" required>
+                            <label for="product">Product/Service Inquiries</label>
                         </div>
                         <div class="contact-radios">
-                            <input type="radio" class="contact-selector" name="contactselect[]"
-                                id="contact-collaboration" required>
-                            <label for="contact-collaboration">Collaboration Inquiries</label>
+                            <input type="radio" name="inquiry" id="collaboration" required>
+                            <label for="collaboration">Collaboration Inquiries</label>
                         </div>
                         <div class="contact-radios">
-                            <input type="radio" class="contact-selector" name="contactselect[]" id="contact-payment"
-                                required>
-                            <label for="contact-payment">Billing and Payment Inquiries</label>
+                            <input type="radio" name="inquiry" id="payment" required>
+                            <label for="payment">Billing and Payment Inquiries</label>
                         </div>
                     </div>
                     <div class="contact-nowrap">
@@ -94,6 +91,17 @@
                         <input type="submit" name="contact-button" id="contact-button" value="Send message">
                     </div>
                 </form>
+                <?php
+                if ($_SERVER["REQUEST_METHOD"]  == "POST") {
+                    $email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
+
+                    if (!empty($email)) {
+                        echo "<p class='errors'> Message sent successfully! </p>";
+                    } else {
+                        echo "<p class='errors'> Error your messasge was not sent. Invalid email. </p>";
+                    }
+                }
+                ?>
                 <div class="air">
                     <img src="../images/ee9158ca0835b430d0b6ef56e2d7385e.png" class="airport" alt="airpot">
                 </div>
@@ -111,6 +119,7 @@
         </div>
     </main>
     <?php
+    ob_end_flush();
     include "../sections/footer.html";
     ?>
 </body>

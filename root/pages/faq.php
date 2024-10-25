@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Solutions</title>
+    <script src="../scripts/header.js"></script>
     <link rel="stylesheet" href="../css/global.css" type="text/css">
-    <title>FAQ</title>
 </head>
 
 <body>
-
+    <?php
+    include "../sections/header.html";
+    ?>
     <div class="faq">
         <div class="Faq-ask">
             <h2> Ask us anything</h2>
@@ -108,10 +111,9 @@
             </div>
             <div class="box-question faq-question">
                 <p class="contact-darkblue contact-inline"><b>Still have questions?</b></p>
-                <p class="contact-darkblue contact-inline">Can't find the answer you're looking for? Take a look on our
-                    Q&A page!</p>
+                <p class="contact-darkblue contact-inline">Can't find the answer you're looking for? Please chat to our friendly team.</p>
                 <div class="button-question">
-                    <a href="./faq.php" class="a-href-contact">
+                    <a href="./contact-us.php" class="a-href-contact">
                         <p class="contact-darkblue contact-inline"><b>Get answers</b></p>
                     </a>
                 </div>
@@ -120,6 +122,10 @@
 
 
     </div>
+
+    <?php
+    include "../sections/footer.html";
+    ?>
 
 </body>
 
