@@ -42,8 +42,9 @@ body {
     border: none !important;
 }
 
-.errors {
+.form-group .errors {
     color: #ff0033;
+    padding-top: 10px;
 }
 
 .radius {
