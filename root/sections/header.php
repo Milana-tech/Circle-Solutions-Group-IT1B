@@ -43,7 +43,6 @@
                     </button>';
         } else {
             echo '
-                    <div>
                     <a href="login.php" class="userMenuDropdownBtn">
                         <img src="../images/userIcon.png" alt="User icon" class="icon">
                     </a>
