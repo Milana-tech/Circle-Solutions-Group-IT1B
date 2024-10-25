@@ -3,24 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/about.css">
+    <title>Circle Solutions</title>
+    <script src="http://localhost/Milana-tech-Circle-Solutions-Group-IT1B/root/scripts/header.js"></script>
+    <link rel="stylesheet" href="../css/global.css" type="text/css">
 </head>
-<body>
-    <div class="main">
-        <section class="navbar">
+<body class="aboutbody">
             <?php
                 include "../sections/header.html";
             ?>
-        </section>
+    <div class="main-about">
         <div class="img-bg">
-            <img src="/Milana-tech-Circle-Solutions-Group-IT1B/root/images/Screenshot 2024-10-11 204828.png" alt="" class="img-bg">
+            <img src="../images/Screenshot 2024-10-11 204828.png" alt="" class="img-bg">
         </div>
         <div class="about">
-            <div class="backimg">
-                <!-- back button -->
-            </div>
             <div class="aboutheader">
                 On a mission to empower communicators worldwide
             </div>
@@ -32,8 +27,8 @@
                     <div class="OS-info1">
                         Circle solution was founded in 2018 with the goal of equipping companies to reach every employee with inspiring communication — the key to impacting business success. More than 200 enterprises later, we are on a mission to help the world's best organizations inspire their people to reach their fullest potential, together. Our journey is about turning that inspired effort into extraordinary stories of success, change, and excellence.
                     </div>
-            </div>
-            <div class="ctd-section">
+                </div>
+          <div class="ctd-section">
                 <div class="ctd-info2">
                     Our mission is to bridge communication and collaboration within organizations, ensuring that information flows seamlessly and effectively among all stakeholders.
                 </div>
@@ -59,9 +54,9 @@
             </div>
             </div>
         </div>
-        <div class="footer">
-            Footer section
         </div>
-    </div>
+        <?php
+            include "../sections/footer.html";
+        ?>
 </body>
 </html>
