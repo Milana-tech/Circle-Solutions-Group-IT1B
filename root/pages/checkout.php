@@ -11,7 +11,7 @@
 
 <body>
     <?php
-        include "../sections/header.html";
+    include "../sections/header.html";
     ?>
     <main class="checkout_container">
         <div class="checkout_image_arrow">
@@ -25,8 +25,8 @@
                 <p class="header01_paragraph">Billing</p>
                 <p class="header01_paragraph">Confirmation</p>
             </div>
-            <div class="checkout_form">
-                <form action="link/to/php">
+            <div class="checkout_form form-group">
+                <form action="<?php echo $_SERVER["PHP_SELF"] ?>" method="POST">
                     <div class="checkout_flex01">
                         <div class="checkout_half">
                             <label for="checkout_fname" class="checkout_label">First name*</label>
@@ -44,7 +44,7 @@
                         </div>
                         <div class="checkout_half">
                             <label for="checkout_phonenumber" class="checkout_label">Phone Number*</label>
-                            <input type="text" name="checkout_phonenumber" id="checkout_phonenumber" required>
+                            <input type="text" name="checkout_phonenumber" maxlength="10" id="checkout_phonenumber" required>
                         </div>
                     </div>
                     <div class="checkout_flex3">
@@ -62,13 +62,29 @@
                         </div>
                         <div class="checkout_flex_full">
                             <label for="checkout_postcode" class="checkout_label">Postcode / Zip*</label>
-                            <input type="text" name="checkout_postcode" id="checkout_postcode" required>
+                            <input type="text" name="checkout_postcode" id="checkout_postcode" maxlength="7" required>
                         </div>
                     </div>
                     <div class="checkoutButton">
                         <input type="submit" class="checkoutButton" value="Proceed to Next Step">
                     </div>
                 </form>
+
+                <?php
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    $email = filter_input(INPUT_POST, "checkout_email", FILTER_VALIDATE_EMAIL);
+                    
+                    if(!empty($email))
+                    {
+                        echo "Purchase completed!";
+                    }
+                    else
+                    {
+                        echo "<p class='errors'> Error. Invalid email. </p>";
+                    }
+                }
+                ?>
+
             </div>
         </div>
         <div class="checkout_second_side">
@@ -98,7 +114,7 @@
         </div>
     </main>
     <?php
-        include "../sections/footer.html";
+    include "../sections/footer.html";
     ?>
 </body>
 
