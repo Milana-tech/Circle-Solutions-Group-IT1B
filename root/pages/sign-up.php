@@ -1,5 +1,9 @@
 <?php
 ob_start();
+session_start();
+    if (!isset($_SESSION['loggedIn'])) {
+        $_SESSION['loggedIn'] = false;
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +18,7 @@ ob_start();
 
 <body>
   <?php
-  include "../sections/header.html";
+  include "../sections/header.php";
   ?>
   <div id="sign-up" class="accountFormTypePage">
 
@@ -77,11 +81,8 @@ ob_start();
   </div>
   <?php
   include "../sections/footer.html";
+  ob_end_flush();
   ?>
 </body>
 
 </html>
-
-<?php
-ob_end_flush();
-?>

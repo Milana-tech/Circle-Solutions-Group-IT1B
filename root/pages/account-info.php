@@ -1,4 +1,9 @@
 <?php
+ob_start();
+session_start();
+    if (!isset($_SESSION['loggedIn'])) {
+        $_SESSION['loggedIn'] = false;
+    }
 $error = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $fname = filter_input(INPUT_POST, "fname");
@@ -34,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body>
     <?php
-        include "../sections/header.html";
+        include "../sections/header.php";
     ?>
     <div class="account-info">
         <div class="container-accountinfo">
@@ -99,6 +104,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
     <?php
         include "../sections/footer.html";
+        ob_end_flush();
     ?>
 </body>
 

@@ -1,3 +1,11 @@
+<?php
+ob_start();
+session_start();
+    if (!isset($_SESSION['loggedIn'])) {
+        $_SESSION['loggedIn'] = false;
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +19,7 @@
 
 <body>
     <?php
-    include "../sections/header.html";
+    include "../sections/header.php";
     ?>
     <div class="content home">
         <div>
@@ -28,6 +36,7 @@
     </div>
     <?php
     include "../sections/footer.html";
+    ob_end_flush();
     ?>
 </body>
 
