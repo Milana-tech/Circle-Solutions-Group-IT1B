@@ -1393,11 +1393,11 @@ footer>div {
     margin-block: 50px;
 }
 
-.productPage a{
+.productPage a {
     width: fit-content;
 }
 
-.productPage h4{
+.productPage h4 {
     color: var(--blueGrey);
 }
 
@@ -1472,14 +1472,17 @@ footer>div {
         display: grid;
         grid-template-columns: auto 1fr;
     }
-    .productPageImages{
+
+    .productPageImages {
         width: 100%;
     }
-    .productPageDescription{
+
+    .productPageDescription {
         grid-row: 2/3;
         grid-column: 1/3;
     }
-    .productPageFeatures{
+
+    .productPageFeatures {
         padding-left: 20px;
         margin-left: auto;
         width: fit-content;
@@ -1487,14 +1490,16 @@ footer>div {
 }
 
 @media only screen and (max-width: 580px) {
-    .productPageImages{
+    .productPageImages {
         margin-inline: auto;
     }
-    .productPageDescription{
+
+    .productPageDescription {
         grid-row-start: 2;
         grid-column: 1/2;
     }
-    .productPageFeatures{
+
+    .productPageFeatures {
         grid-row-start: 3;
         margin-inline: 5vw;
     }
@@ -1523,4 +1528,69 @@ footer>div {
 }
 
 /* product-workspace-large.php end */
+/* ======================================== */
+/* index.php start*/
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 0;
+    color: var(--blueGrey);
+}
+
+.home>div:first-child {
+    margin-block: 15vh;
+    flex-shrink: 0;
+}
+
+.home p {
+    font-size: 2rem;
+    max-width: 400px;
+}
+
+.home a {
+    color: var(--blueGrey);
+    font-size: 1.5rem;
+    background-color: var(--blue);
+    padding: 10px 40px;
+}
+
+.home>div:last-child {
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+.home img {
+    width: 100%;
+}
+
+.homeSmallImage {
+    display: none;
+}
+
+@media screen and (max-width: 1400px) {
+    .homeLargeImage {
+        display: none;
+    }
+
+    .home {
+        width: 90vw ;
+    }
+
+    .homeSmallImage {
+        display: inherit;
+        margin-left: auto;
+    }
+
+    .homeDivSmallImage {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .home>div:first-child {
+        width: 100%;
+    }
+}
+
+/* index.php end*/
 /* ======================================== */
