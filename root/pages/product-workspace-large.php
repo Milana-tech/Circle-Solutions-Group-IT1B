@@ -46,7 +46,7 @@
                     </ul>
                 </div>
                 <div>
-                    <a href="./checkout.php?price=760">
+                    <a href="./checkout.php?price=760&name=Circle Workspace large">
                         <button>Buy now</button>
                     </a>
                     <p>&#8364; 760 per month</p>

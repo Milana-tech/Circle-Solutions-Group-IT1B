@@ -12,9 +12,10 @@
 <body>
 <?php
     include "../sections/header.html";
-    $price = isset($_GET['price']) ? $_GET['price'] : 0;
+    $total = isset($_GET['price']) ? $_GET['price'] : 0;
     $taxes = 20;
-    $total = $price + $taxes;
+    $price = $total - $taxes;
+    $name = isset($_GET['name']) ? $_GET['name'] : "ERROR";
     ?>
     <main class="checkout_container">
         <div class="checkout_image_arrow">
@@ -84,7 +85,7 @@
             </div>
             <hr class="checkout_hr">
             <div class="checkout_row checkout_padding">
-                <p>PACKAGE 1</p>
+                <p><?php echo $name?></p>
                 <p>&#8364; <?php echo number_format($price, 2); ?></p>
             </div>
             <hr class="checkout_hr">
