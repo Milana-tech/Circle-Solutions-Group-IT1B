@@ -1,15 +1,18 @@
 <?php
 session_start();
 ob_start();
+if (!isset($_SESSION['loggedIn'])) {
+    $_SESSION['loggedIn'] = false;
+}
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
     if (str_ends_with($email, '.com') && $password == "user") {
-        $_SESSION['loggedin'] = true;
+        $_SESSION['loggedIn'] = true;
         $_SESSION['email'] = $email;
-        header("Location: account-info.php");
+        header("Location: index.php");
         exit();
     } else {
         $_SESSION['error_message'] = "Invalid email format or credintenitals";
@@ -17,8 +20,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit();
     }
 }
-
-ob_end_flush();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,13 +28,13 @@ ob_end_flush();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circle Solutions</title>
-    <script src="http://localhost/Milana-tech-Circle-Solutions-Group-IT1B/root/scripts/header.js"></script>
+    <script src="../scripts/header.js"></script>
     <link rel="stylesheet" href="../css/global.css" type="text/css">
 </head>
 
 <body>
     <?php
-    include "../sections/header.html";
+    include "../sections/header.php";
     ?>
 
     <div class="accountFormTypePage">
@@ -58,16 +59,17 @@ ob_end_flush();
                     <input type="submit" class="btn" value="Login">
                 </form>
                 <?php
-        if (isset($_SESSION['error_message'])) {
-            echo "<p style='color: red;'>" . htmlspecialchars($_SESSION['error_message']) . "</p>";
-            unset($_SESSION['error_message']);
-        }
-        ?>
+                if (isset($_SESSION['error_message'])) {
+                    echo "<p style='color: red;'>" . htmlspecialchars($_SESSION['error_message']) . "</p>";
+                    unset($_SESSION['error_message']);
+                }
+                ?>
             </div>
         </div>
     </div>
     <?php
     include "../sections/footer.html";
+    ob_end_flush();
     ?>
 </body>
 

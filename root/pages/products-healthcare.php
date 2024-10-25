@@ -1,3 +1,10 @@
+<?php
+ob_start();
+session_start();
+    if (!isset($_SESSION['loggedIn'])) {
+        $_SESSION['loggedIn'] = false;
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,13 +12,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Circle Solutions</title>
-    <script src="http://localhost/Milana-tech-Circle-Solutions-Group-IT1B/root/scripts/header.js"></script>
+    <script src="../scripts/header.js"></script>
     <link rel="stylesheet" href="../css/global.css" type="text/css">
 </head>
 
 <body class="healthcareEducationBody">
 <?php
-include "../sections/header.html";
+include "../sections/header.php";
 ?>
   <div class="healthcareEducationContainer">
     <h1 class="healthcareEducationH1">Healthcare</h1>
@@ -56,6 +63,7 @@ include "../sections/header.html";
 
 <?php
   include "../sections/footer.html";
+  ob_end_flush();
   ?>
 
 </html>

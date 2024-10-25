@@ -1,3 +1,10 @@
+<?php
+ob_start();
+session_start();
+    if (!isset($_SESSION['loggedIn'])) {
+        $_SESSION['loggedIn'] = false;
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,13 +12,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circle Solutions</title>
-    <script src="http://localhost/Milana-tech-Circle-Solutions-Group-IT1B/root/scripts/header.js"></script>
+    <script src="../scripts/header.js"></script>
     <link rel="stylesheet" href="../css/global.css" type="text/css">
 </head>
 
 <body>
     <?php
-    include "../sections/header.html";
+    include "../sections/header.php";
     ?>
     <div class="productPage">
         <div>
@@ -46,10 +53,10 @@
                     </ul>
                 </div>
                 <div>
-                    <a href="./checkout.php">
-                        <button >Buy now</button>
+                    <a href="./checkout.php?price=760&name=Circle Workspace large">
+                        <button>Buy now</button>
                     </a>
-                    <p>&#8364 760 per month</p>
+                    <p>&#8364; 760 per month</p>
                 </div>
             </div>
         </div>
@@ -76,6 +83,7 @@
     </div>
     <?php
     include "../sections/footer.html";
+    ob_end_flush();
     ?>
 </body>
 
