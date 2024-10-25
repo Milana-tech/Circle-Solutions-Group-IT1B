@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="../css/contact.css" type="text/css">
+    <link rel="stylesheet" href="../css/global.css" type="text/css">
 </head>
 
 <body>
+    <?php
+    include "../sections/header.html";
+    ?>
     <main class="contact-container">
         <div class="contact-header contact-heading-wrap">
             <h1 class="contact-darkblue contact-flex-center"><strong>Contact Us</strong></h1>
@@ -57,7 +61,7 @@
                         </div>
                     </div>
                     <div class="contact-nowrap">
-                    <p class="contact-darkblue"><strong>Select Subject</strong></p>
+                        <p class="contact-darkblue"><strong>Select Subject</strong></p>
                     </div>
                     <div class="radio-container">
                         <div class="contact-radios">
@@ -82,7 +86,7 @@
                         </div>
                     </div>
                     <div class="contact-nowrap">
-                    <p class="contact-darkblue">Message</p>
+                        <p class="contact-darkblue">Message</p>
                     </div>
                     <input type="text" name="contact-message" class="custom-input" placeholder="Write you message..."
                         id="contact-message" required>
@@ -106,6 +110,9 @@
             </div>
         </div>
     </main>
+    <?php
+    include "../sections/footer.html";
+    ?>
 </body>
 
 </html>
