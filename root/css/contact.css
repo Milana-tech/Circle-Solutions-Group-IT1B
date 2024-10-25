@@ -15,6 +15,20 @@ body
     text-decoration: none;
 }
 
+.contact-nowrap
+{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.contact-heading-wrap h1{
+    font-size: 2rem;
+}
+
+.contact-heading-wrap p{
+    font-size: 1.5rem;
+}
+
 .contact-container
 {
     margin-right: 10vw;
@@ -53,12 +67,10 @@ body
 {
     width: 360px;
     height: 200px;
-    /* width: 70%;
-    height: 25%;  */
     background-color: #C7EAF8;
     border-radius: 270px 270px 0 0;
     position: absolute;
-    bottom: -1px;
+    bottom: 0px;
     right: -100px;
 }
 
@@ -101,7 +113,7 @@ body
 
 .contact-darkblue h1
 {
-    font-size: 40px;
+    font-size: 1.75rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -115,24 +127,16 @@ body
 #contact-grey
 {
     color: #C9C9C9;
-    font-size: 1.5rem;
 }
 
 .icons-contact
 {
-    width: 5%;
     margin: 0px 20px;
 }
 
 .contact-icons
 {
-    font-size: 1em;
     padding: 20px 30px;
-}
-
-.location-icon
-{
-    width: 4%;
 }
 
 .contact-row
@@ -158,6 +162,8 @@ body
     display: flex;
     align-items: flex-start;
     margin: 10px;
+    flex-wrap: wrap;
+    white-space: nowrap;
 }
 
 .radio-container input[type="radio"]
@@ -168,8 +174,8 @@ body
 .radio-container label
 {
     display: inline-block;
-    width: calc(100% - 30px); 
-    word-wrap: break-word; 
+    word-wrap: break-word;
+    text-wrap:wrap;
 }
 
 label
@@ -183,7 +189,7 @@ input
     border: none; 
     border-bottom: 1px solid rgb(0, 0, 0); 
     padding: 5px 0; 
-    font-size: 14px;  
+    font-size: 1rem;  
     margin-bottom: 20px; 
 }
 
@@ -194,26 +200,20 @@ input
 
 .contact-button
 {
+    display: flex;
+    justify-content: end;
     padding-top: 40px;
-    padding-left: 470px;
 }
 
 .contact-button input[type="submit"]
 {
     padding: 15px 7px;
-    font-size: 1rem; 
     background-color: #799DAB;
     color: white;
     border-radius: 5px;
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.12);
     border: none; 
-    cursor: pointer; 
-    width: 240px;
-}
-
-.radio-container
-{
-    white-space: nowrap;
+    cursor: pointer;
 }
 
 .radio-container input[type="radio"]
@@ -229,11 +229,6 @@ input
     transform: rotate(-29.753deg);
 }
 
-.air
-{
-    position: fixed;
-}
-
 .box-question
 {
     width: 70%;
@@ -247,11 +242,13 @@ input
 .button-question
 {
     background-color: rgba(237, 250, 255, 1);
-    width: 10%;
     text-align: center;
     cursor: pointer;
     padding: 0px 20px 0px 15px;
     align-items: center;
+    width: auto;
+    margin-inline: 10px;
+    max-width: 300px;
 }
 
 @media screen and (max-width: 1284px)
@@ -261,27 +258,15 @@ input
         padding: 30px;
     }
 
-    /* .contact-circle
-    {
-        width: 90%;
-        height: 20%;
-        bottom: -1px;
-        right: -100px;
-    }
-    
-    .contact-circle2
-    {
-        width: 50%;
-        height: 20%;
-        position: absolute;
-        bottom: 50px; 
-        right: 5px; 
-    } */
-
     .box-question
     {
         width: 90%;
         margin-top: 10px;
+        padding: 0;
+    }
+
+    .contact-circle{
+        background-color: rgb(199, 234, 248, 0.5);
     }
 }
 
@@ -296,27 +281,12 @@ input
     .contact-left
     {
       grid-row: 2;
+      overflow-x: hidden;
     }
 
     .contact-right
     {
         padding: 0;
-    }
-    
-    .contact-left-text
-    {
-        font-size: 1.5rem;
-    }
-
-    .contact-inline
-    {
-        font-size: 2rem;
-    }
-
-    input 
-    {
-        font-size: 2rem;
-        width: 90%;
     }
 
     .contact-flex01
@@ -332,8 +302,6 @@ input
     .radio-container
     {
         flex-direction: column;
-        font-size: 2.5rem;
-        white-space: nowrap;
         padding: 10px;
     }
 
@@ -345,11 +313,6 @@ input
         padding-bottom: 20px;
     }
 
-    .radio-container input[type="radio"]
-    {
-        margin-right: 5px;
-    }
-
     .air 
     {
         display: none;
@@ -357,7 +320,6 @@ input
 
     .contact-darkblue
     {
-        font-size: 2rem;
         margin-left: 20px;
     }
 
@@ -370,30 +332,9 @@ input
     .contact-button
     {
     padding-left: 30px;
+    margin-right: 40px;
     }
-
-    .contact-button input[type="submit"]
-    {
-    font-size: 2rem; 
-    width: 50%;
-    }
-
     
-    .contact-icons
-    {
-        font-size: 2rem;
-    }
-
-    .icons-contact
-    {
-        width: 5%;
-    }
-
-    .location-icon
-    {
-        width: 4%;
-    }
-
     .box-question
     {
         width: 100%;
@@ -401,7 +342,16 @@ input
 
     .button-question
     {
-        width: 90%;
+        padding: 0;
+    }
+
+    
+    .contact-heading-wrap h1{
+        font-size: 1.5rem;
+    }
+
+    .contact-heading-wrap p{
+        font-size: 1rem;
     }
 }
 
@@ -414,11 +364,6 @@ input
         grid-template-columns: 1fr;
     }
 
-    .contact-left
-    {
-      grid-row: 2;
-    }
-
     .contact-right
     {
         padding: 0;
@@ -427,17 +372,6 @@ input
     .contact-left-text
     {
         font-size: 1.5rem;
-    }
-
-    .contact-inline
-    {
-        font-size: 2rem;
-    }
-
-    input 
-    {
-        font-size: 2rem;
-        width: 90%;
     }
 
     .contact-flex01
@@ -449,14 +383,6 @@ input
     {
         display: block;
     }
-    
-    .radio-container
-    {
-        flex-direction: column;
-        font-size: 2.5rem;
-        white-space: nowrap;
-        padding: 10px;
-    }
 
     .contact-radios
     {
@@ -466,20 +392,9 @@ input
         padding-bottom: 20px;
     }
 
-    .radio-container input[type="radio"]
-    {
-        margin-right: 5px;
-    }
-
     .air 
     {
         display: none;
-    }
-
-    .contact-darkblue
-    {
-        font-size: 2rem;
-        margin-left: 20px;
     }
 
     .custom-input
@@ -493,51 +408,21 @@ input
     padding-left: 30px;
     }
 
-    .contact-button input[type="submit"]
-    {
-    font-size: 2rem; 
-    width: 50%;
-    }
-
-    
-    .contact-icons
-    {
-        font-size: 2rem;
-    }
-
-    .icons-contact
-    {
-        width: 5%;
-    }
-
-    .location-icon
-    {
-        width: 4%;
-    }
-
     .box-question
     {
         width: 100%;
-    }
-
-    .button-question
-    {
-        width: 90%;
     }
 }
 
 
 @media screen and (max-width: 768px)
 {
+
     .contact-grid
     {
         display: grid;
         grid-template-columns: 1fr;
-    }
-
-    .contact-left
-    {
-      grid-row: 2;
+        font-size: 1rem;
     }
 
     .contact-right
@@ -552,13 +437,7 @@ input
 
     .contact-inline
     {
-        font-size: 2rem;
-    }
-
-    input 
-    {
-        font-size: 2rem;
-        width: 90%;
+        font-size: 1rem;
     }
 
     .contact-flex01
@@ -570,14 +449,6 @@ input
     {
         display: block;
     }
-    
-    .radio-container
-    {
-        flex-direction: column;
-        font-size: 2.5rem;
-        white-space: nowrap;
-        padding: 10px;
-    }
 
     .contact-radios
     {
@@ -585,11 +456,7 @@ input
         flex-direction: row;
         white-space: nowrap;
         padding-bottom: 20px;
-    }
-
-    .radio-container input[type="radio"]
-    {
-        margin-right: 5px;
+        text-wrap: auto;
     }
 
     .air 
@@ -597,10 +464,10 @@ input
         display: none;
     }
 
-    .contact-darkblue
+    .contact-darkblue,
+    .contact-left-text
     {
-        font-size: 2rem;
-        margin-left: 20px;
+        font-size: 1rem;
     }
 
     .custom-input
@@ -614,36 +481,9 @@ input
     padding-left: 30px;
     }
 
-    .contact-button input[type="submit"]
-    {
-    font-size: 2rem; 
-    width: 50%;
-    }
-
-    
-    .contact-icons
-    {
-        font-size: 2rem;
-    }
-
-    .icons-contact
-    {
-        width: 5%;
-    }
-
-    .location-icon
-    {
-        width: 4%;
-    }
-
     .box-question
     {
         width: 100%;
-    }
-
-    .button-question
-    {
-        width: 90%;
     }
 }
 
@@ -659,25 +499,6 @@ input
     .contact-button
     {
     padding-left: 30px;
-    }
-
-    .contact-button input[type="submit"]
-    {
-    font-size: 2rem; 
-    width: 50%;
-    }
-
-    .contact-header
-    {
-        display: none;
-    }
-
-    .radio-container
-    {
-        flex-direction: column;
-        font-size: 2.5rem;
-        white-space: nowrap;
-        padding: 10px;
     }
 
     .contact-radios
@@ -700,20 +521,9 @@ input
         padding-right: 20px;
     }
 
-    .contact-darkblue
-    {
-        font-size: 2.5rem;
-        margin-left: 20px;
-    }
-
     .contact-right
     {
         padding: 0;
-    }
-
-    .contact-left
-    {
-      grid-row: 2;
     }
     
     .contact-flex01
@@ -731,15 +541,9 @@ input
         font-size: 1.5rem;
     }
 
-    .contact-inline
-    {
-        font-size: 2rem;
-    }
-
     input 
     {
-        font-size: 2rem;
-        width: 90%;
+        /* width: 90%; */
     }
 
     .custom-input
@@ -748,41 +552,13 @@ input
         margin-left: 20px;
     }
 
-    .radio-container
-    {
-        display: flex;
-        align-items: flex-start;
-        margin: 10px;
-        white-space: wrap;
-    }
-
-    .radio-container input[type="radio"]
-    {
-        margin-right: 5px;
-    }
-
-    .contact-icons
-    {
-        font-size: 2rem;
-    }
-
-    .icons-contact
-    {
-        width: 5%;
-    }
-
-    .location-icon
-    {
-        width: 4%;
-    }
-
     .box-question
     {
         width: 100%;
     }
-
-    .button-question
-    {
-        width: 90%;
-    }
+   
+.icons-contact
+{
+    margin-inline: 2px;
+}
 }

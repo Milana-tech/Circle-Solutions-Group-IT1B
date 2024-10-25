@@ -10,16 +10,16 @@
 
 <body>
     <main class="contact-container">
-        <div class="contact-header">
+        <div class="contact-header contact-heading-wrap">
             <h1 class="contact-darkblue contact-flex-center"><strong>Contact Us</strong></h1>
             <p class="contact-darkblue contact-flex-center">Any questions or remarks? Just write us a message!</p>
         </div>
         <div class="contact-grid">
             <!-- <div class="contact-content"> -->
             <div class="contact-left">
-                <div class="contact-left-text">
+                <div class="contact-left-text contact-heading-wrap">
                     <h1 class="contact-white">Contact Information</h1>
-                    <small id="contact-grey">Say something to start a live chat!</small>
+                    <p id="contact-grey">Say something to start a live chat!</p>
                 </div>
                 <div class="contact-inline-icons">
                     <p class="contact-icons contact-white"><img src="../icons/bxs_phone-call.png" class="icons-contact" alt="phone">+31 6567788234</p>
@@ -57,7 +57,9 @@
                                 id="contact-phonenumber" required>
                         </div>
                     </div>
+                    <div class="contact-nowrap">
                     <p class="contact-darkblue"><strong>Select Subject</strong></p>
+                    </div>
                     <div class="radio-container">
                         <div class="contact-radios">
                             <input type="radio" class="contact-selector" name="contactselect[]" id="contact-inquiry"
@@ -80,7 +82,9 @@
                             <label for="contact-payment">Billing and Payment Inquiries</label>
                         </div>
                     </div>
+                    <div class="contact-nowrap">
                     <p class="contact-darkblue">Message</p>
+                    </div>
                     <input type="text" name="contact-message" class="custom-input" placeholder="Write you message..."
                         id="contact-message" required>
                     <div class="contact-button">
