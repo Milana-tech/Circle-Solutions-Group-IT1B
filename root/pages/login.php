@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header("Location: index.php");
         exit();
     } else {
-        $_SESSION['error_message'] = "Invalid email format or credintenitals";
+        $_SESSION['error_message'] = "Invalid email format or credentials";
         header("Location: login.php");
         exit();
     }
