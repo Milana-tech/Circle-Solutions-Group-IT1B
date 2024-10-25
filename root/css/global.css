@@ -1625,7 +1625,7 @@ footer>div {
 .contact-circle {
     width: 360px;
     height: 200px;
-    background-color: var(--blueGrey);
+    background-color: var(--blue);
     border-radius: 270px 270px 0 0;
     position: absolute;
     bottom: 0px;
