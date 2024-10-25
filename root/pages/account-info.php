@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["submit"])) {
         if (empty($fname) || empty($lname) || empty($email) || empty($phone) || empty($address) || empty($state) || empty($postal)) {
 
-            $error = "<p class='errors'> Please fill all of the filed</P>";
+            $error = "<p class='errors'> Please fill out all of the fileds</P>";
         } else {
             $error = "";
         }
@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circle Solutions</title>
-    <script src="http://localhost/Milana-tech-Circle-Solutions-Group-IT1B/root/scripts/header.js"></script>
+    <script src="../scripts/header.js"></script>
     <link rel="stylesheet" href="../css/global.css" type="text/css">
 </head>
 
@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     ?>
     <div class="account-info">
         <div class="container-accountinfo">
-            <h1>Account Setting</h1>
+            <h1>Account Settings</h1>
             <p>Below you can observe your information</p>
             <div class="errors">
                 <?php
