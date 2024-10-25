@@ -46,11 +46,6 @@ body {
     border: none !important;
 }
 
-.errors {
-    color: #008AB8;
-    padding-top: 15px;
-}
-
 .radius {
     border-radius: 0rem;
 }
@@ -2071,3 +2066,9 @@ footer>div {
     }
 }
 /* faq.php end  */
+/* ======================================== */
+/* global PART 2 */
+.errors {
+    color: #008AB8;
+    padding-top: 15px;
+}
