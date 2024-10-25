@@ -19,7 +19,7 @@
     ?>
     <main class="checkout_container">
         <div class="checkout_image_arrow">
-            <a href="/link/to/site">
+            <a onclick="history.back()">
                 <img src="../images/arrow.png" alt="Arrow">
             </a>
         </div>
