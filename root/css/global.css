@@ -1029,24 +1029,23 @@ footer>div {
 
 /* products-education.php and products-healthcare.php PART 2 (with media queries, PART 1 is before healthcare and education) end */
 /* ======================================== */
-/* sign-up.php start*/
+/* sign-up.php, login.php, account-recovery.php start*/
 
-#sign-up * {
+.accountFormTypePage * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     color: #799dab;
 }
 
-#sign-up {
+.accountFormTypePage {
     background-color: #f7f8fc;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
 }
 
-#sign-up .container {
+.accountFormTypePage .container {
     display: flex;
     width: 100%;
     max-width: 1200px;
@@ -1055,64 +1054,59 @@ footer>div {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#sign-up .form-section,
-#sign-up .image-section {
+.accountFormTypePage .form-section,
+.accountFormTypePage .image-section {
     padding: 20px;
     flex: 1;
 }
 
-#sign-up .form-section {
+.accountFormTypePage .form-section {
     background-color: #f0f4f8;
 }
 
-#sign-up h2 {
+.accountFormTypePage h2 {
     color: #799dab;
     font-weight: bold;
 }
 
-#sign-up p {
+.accountFormTypePage p {
     margin-bottom: 20px;
-    font-size: 14px;
 }
 
-#sign-up a {
+.accountFormTypePage a {
     color: #799dab;
     text-decoration: none;
 }
 
-#sign-up a:hover {
-    text-decoration: underline;
-}
-
-#sign-up .form-group {
+.accountFormTypePage .form-group {
     margin-bottom: 20px;
 }
 
-#sign-up label {
+.accountFormTypePage label {
     display: block;
     margin-bottom: 5px;
 
 }
 
-#sign-up input[type="text"],
-#sign-up input[type="email"],
-#sign-up input[type="password"] {
+.accountFormTypePage input[type="text"],
+.accountFormTypePage input[type="email"],
+.accountFormTypePage input[type="password"] {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-#sign-up input[type="checkbox"] {
+.accountFormTypePage input[type="checkbox"] {
     margin-right: 10px;
 }
 
-#sign-up .checkbox label {
+.accountFormTypePage .checkbox label {
     display: inline;
 }
 
-#sign-up .btn {
-    background-color: #c6e8f7;
+.accountFormTypePage .btn {
+    background-color: var(--blueGrey);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -1121,46 +1115,46 @@ footer>div {
     width: 100%;
 }
 
-#sign-up .btn:hover {
-    background-color: #799dab;
-}
-
-#sign-up .image-section {
+.accountFormTypePage .image-section {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#sign-up .image-section img {
+.accountFormTypePage .image-section img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
 }
 
+.accountFormTypePage a{
+    text-decoration: underline;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
-    #sign-up .container {
+    .accountFormTypePage .container {
         flex-direction: column;
     }
 }
 
 @media (max-width: 320px) {
 
-    #sign-up .form-section,
-    #sign-up .image-section {
+    .accountFormTypePage .form-section,
+    .accountFormTypePage .image-section {
         padding: 10px;
     }
 
-    #sign-up .btn {
+    .accountFormTypePage .btn {
         padding: 8px 15px;
     }
 }
 
-#sign-up .errorMsg {
+.accountFormTypePage .errorMsg {
     padding-top: 10px;
 }
 
-/* sign-up.php end */
+/* sign-up.php, login.php, account-recovery.php end */
 /* ======================================== */
 /* about-us.php start */
 
@@ -1574,7 +1568,7 @@ footer>div {
     }
 
     .home {
-        width: 90vw ;
+        width: 90vw;
     }
 
     .homeSmallImage {
