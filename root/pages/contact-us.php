@@ -1,3 +1,7 @@
+<?php
+ob_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,10 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="../css/contact.css" type="text/css">
+    <link rel="stylesheet" href="../css/global.css" type="text/css">
 </head>
 
 <body>
-    <main class="main-container">
+    <main class="main-container form-group">
         <div class="topest">
             <h1 class="dark-blue center"><strong>Contact Us</strong></h1>
             <p class="dark-blue center">Any questions or remarks? Just write us a message!</p>
@@ -30,7 +35,7 @@
                     </div>
                 </div>
                 <div class="form-right">
-                    <form action="link/to/php">
+                    <form action="<?php echo $_SERVER["PHP_SELF"] ?>" method="POST">
                         <div class="flex">
                             <div class="first name position">
                                 <label for="fname">First Name</label>
@@ -48,7 +53,7 @@
                             </div>
                             <div class="forth name position">
                                 <label for="phonenumber">Phone Number</label><br>
-                                <input type="text" class="full-width" name="phonenumber" placeholder="Please enter your number" id="phonenumber" required><br>
+                                <input type="text" class="full-width" name="phonenumber" placeholder="Please enter your number" maxlength="10" id="phonenumber" required><br>
                             </div>
                         </div>
                         <p class="subject dark-blue"><strong>Select Subject</strong></p>
@@ -70,13 +75,25 @@
                                 <label for="payment">Billing and Payment Inquiries</label>
                             </div>
                         </div>
-                            <p class="dark-blue">Message</p>
-                            <input type="text" name="message" class="custom-input" placeholder="Write you message..."
-                                id="message" required>
-                            <div class="button">
-                                <input type="submit" value="Send message">
-                            </div>
+                        <p class="dark-blue">Message</p>
+                        <input type="text" name="message" class="custom-input" placeholder="Write you message..."
+                            id="message" required>
+                        <div class="button">
+                            <input type="submit" value="Send message">
+                        </div>
                     </form>
+
+                    <?php
+                    if ($_SERVER["REQUEST_METHOD"]  == "POST") {
+                        $email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
+
+                        if (!empty($email)) {
+                            echo "<p class='errors'> Message sent successfully! </p>";
+                        } else {
+                            echo "<p class='errors'> Error your messasge was not sent. Invalid email. </p>";
+                        }
+                    }
+                    ?>
                     <div class="air">
                         <img src="../images/ee9158ca0835b430d0b6ef56e2d7385e.png" class="airport" alt="airpot">
                     </div>
@@ -94,3 +111,6 @@
 </body>
 
 </html>
+<?php
+ob_end_flush();
+?>
