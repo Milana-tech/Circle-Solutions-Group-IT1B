@@ -103,7 +103,7 @@
                 <p class="contact-darkblue contact-inline">Can’t find the answer you’re looking for? Take a look on our
                     Q&A page!</p>
                 <div class="button-question">
-                    <a href="link/to/faq/page" class="a-href-contact">
+                    <a href="./faq.php" class="a-href-contact">
                         <p class="contact-darkblue contact-inline"><b>Get answers</b></p>
                     </a>
                 </div>
