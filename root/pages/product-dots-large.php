@@ -48,10 +48,10 @@
                     </ul>
                 </div>
                 <div>
-                    <a href="./checkout.php">
+                    <a href="./checkout.php?price=799">
                         <button >Buy now</button>
                     </a>
-                    <p>&#8364 799 per month</p>
+                    <p>&#8364; 799 per month</p>
                 </div>
             </div>
         </div>
