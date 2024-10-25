@@ -9,6 +9,9 @@
 </head>
 
 <body>
+    <?php
+        include "../sections/header.html";
+    ?>
     <main class="checkout_container">
         <div class="checkout_image_arrow">
             <a href="/link/to/site">
@@ -93,6 +96,9 @@
         </div>
         </div>
     </main>
+    <?php
+        include "../sections/footer.html";
+    ?>
 </body>
 
 </html>
