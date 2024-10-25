@@ -20,7 +20,7 @@ session_start();
             ?>
     <div class="main-about">
         <div class="img-bg">
-            <img src="../images/Screenshot 2024-10-11 204828.png" alt="" class="img-bg">
+            <img src="../images/circleSolutionsWide.png" alt="" class="img-bg">
         </div>
         <div class="about">
             <div class="aboutheader">
