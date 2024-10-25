@@ -12,6 +12,16 @@
 <body>
     <?php
     include "../sections/header.html";
+
+    
+    $errorMessage = "Recovery link sent to your email";
+
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        if (empty($_POST["email"])) {
+            $errorMessage = "Please enter your email.";
+        }
+    }
     ?>
     <div class="accountFormTypePage">
         <div class="container">
@@ -25,7 +35,12 @@
                 <form action="" method="POST">
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Email" required />
+                        <input type="email" id="email" name="email" placeholder="Email" />
+                        <?php
+                        if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($errorMessage)) {
+                            echo "<p class='errors'>$errorMessage</p>";
+                        }
+                        ?>
                     </div>
                     <input type="submit" class="btn" value="Send recovery email">
                 </form>
