@@ -12,10 +12,14 @@
 <body>
     <?php
     include "../sections/header.html";
+    $total = isset($_GET['price']) ? $_GET['price'] : 0;
+    $taxes = 20;
+    $price = $total - $taxes;
+    $name = isset($_GET['name']) ? $_GET['name'] : "ERROR";
     ?>
     <main class="checkout_container">
         <div class="checkout_image_arrow">
-            <a href="/link/to/site">
+            <a onclick="history.back()">
                 <img src="../images/arrow.png" alt="Arrow">
             </a>
         </div>
@@ -73,13 +77,10 @@
                 <?php
                 if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $email = filter_input(INPUT_POST, "checkout_email", FILTER_VALIDATE_EMAIL);
-                    
-                    if(!empty($email))
-                    {
+
+                    if (!empty($email)) {
                         echo "Purchase completed!";
-                    }
-                    else
-                    {
+                    } else {
                         echo "<p class='errors'> Error. Invalid email. </p>";
                     }
                 }
@@ -97,18 +98,18 @@
             </div>
             <hr class="checkout_hr">
             <div class="checkout_row checkout_padding">
-                <p>PACKAGE 1</p>
-                <p>$180</p>
+                <p><?php echo $name ?></p>
+                <p>&#8364; <?php echo number_format($price, 2); ?></p>
             </div>
             <hr class="checkout_hr">
             <div class="checkout_row">
                 <p>TAXES</p>
-                <p>$20</p>
+                <p>&#8364; <?php echo number_format($taxes, 2); ?></p>
             </div>
             <hr class="checkout_hr">
             <div class="checkout_row checkout_padding">
                 <p>Total</p>
-                <p><strong>$200</strong></p>
+                <p><strong>&#8364; <?php echo number_format($total, 2); ?></strong></p>
             </div>
         </div>
         </div>

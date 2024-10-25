@@ -46,10 +46,10 @@
                     </ul>
                 </div>
                 <div>
-                    <a href="./checkout.php">
+                    <a href="./checkout.php?price=180&name=Circle Workspace small">
                         <button >Buy now</button>
                     </a>
-                    <p>&#8364 180 per month</p>
+                    <p>&#8364; 180 per month</p>
                 </div>
             </div>
         </div>
