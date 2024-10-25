@@ -389,6 +389,7 @@ footer>div {
     border-style: solid;
     color: white;
     margin: 0;
+    cursor: pointer;
 }
 
 .footerNewsletter>form {
