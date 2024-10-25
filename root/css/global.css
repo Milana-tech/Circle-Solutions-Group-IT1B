@@ -2040,6 +2040,12 @@ footer>div {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     color: var(--blueGrey);
+    margin-top: 20px;
+}
+
+.faq-question{
+    grid-column: 2/3;
+    margin-bottom: 10px;
 }
 
 .grid-container-Faq {
@@ -2047,19 +2053,17 @@ footer>div {
     display: grid;
     gap: 2em;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+    .grid-container-Faq {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 700px) {
     .grid-container-Faq {
         grid-template-columns: 1fr;
     }
 }
-
-.Faq-button {
-    border-color: transparent;
-    float: right;
-    border: 2px solid transparent;
-}
-
 /* faq.php end  */
