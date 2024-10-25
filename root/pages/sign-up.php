@@ -55,7 +55,7 @@ ob_start();
 
           if (!empty($name) && $email !== FALSE && !empty($password) && !empty($cPassword)) {
             if ($password === $cPassword) {
-              header("Location: http://localhost/products_rodrigo/Milana-tech-Circle-Solutions-Group-IT1B/root/index.php");
+              header("Location: ../index.php");
               exit();
             } elseif ($password != $cPassword) {
               echo "<p class = 'errors errorMsg'>Passwords do not match</p>";
