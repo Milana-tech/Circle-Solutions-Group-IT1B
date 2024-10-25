@@ -60,8 +60,7 @@ session_start();
 
          
           if (!empty($name) && $email !== FALSE && !empty($password) && !empty($cPassword)) {
-            if ($password === $cPassword) {
-            //  issue starts might be here   
+            if ($password === $cPassword) {  
              header("Location: index.php");
               exit();
             } elseif ($password != $cPassword) {
