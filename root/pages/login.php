@@ -55,7 +55,7 @@ ob_end_flush();
                         <input type="password" id="password" name="password" placeholder="Password" required />
                     </div>
                     <a href="./account-recovery.php">Forgot password?</a>
-                    <input type="submit" class="btn" value="Create Account">
+                    <input type="submit" class="btn" value="Login">
                 </form>
                 <?php
         if (isset($_SESSION['error_message'])) {
