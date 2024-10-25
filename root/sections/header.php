@@ -16,9 +16,16 @@
                 alt="Expand navigation menu">
         </button>
         <ul>
-            <li>
-                <a href="./login.php">login</a>
-            </li>
+            <?php
+            if ($_SESSION['loggedIn'] == true) {
+            } else {
+                echo "
+                    <li>
+                        <a href='./login.php'>login</a>
+                    </li>
+                    ";
+            }
+            ?>
             <li>
                 <a href="./contact-us.php">contact
                     us</a>
@@ -28,10 +35,23 @@
                     href="./about-us.php">about us</a>
             </li>
         </ul>
-        <button class="userMenuDropdownBtn" onclick="expandedUserStateChange()" id="userMenuDropdownBtn">
-            <img src="../images/userIcon.png" alt="User icon"
-                class="icon">
-        </button>
+        <?php
+        if ($_SESSION['loggedIn'] == true) {
+            echo '
+                    <button class="userMenuDropdownBtn" onclick="expandedUserStateChange()" id="userMenuDropdownBtn">
+                        <img src="../images/userIcon.png" alt="User icon" class="icon">
+                    </button>';
+        } else {
+            echo '
+                    <button>
+                    <a href="login.php" class="userMenuDropdownBtn">
+                        <img src="../images/userIcon.png" alt="User icon" class="icon">
+                    </a></button>
+                    ';
+        }
+
+        ?>
+
         <div class="userInfo">
             <div class="profile">
                 <img src="../images/userProfile.png"
@@ -56,7 +76,7 @@
                 </a>
             </div>
             <div>
-                <a href="./login.php">
+                <a href="./sign-out.php">
                     <img src="../images/signOutIcon.png"
                         alt="Sign out" class="icon">
                     sign out
@@ -83,11 +103,11 @@
     </div>
     <div>
         <form action="GET" class="searchbar" id="compactSearchbar">
-                <input type="search" placeholder="search">
-                <a href="./faq.php">
-                    <img src="../images/searchIcon.png"
-                        alt="Search icon" class="icon">
-                </a>
+            <input type="search" placeholder="search">
+            <a href="./faq.php">
+                <img src="../images/searchIcon.png"
+                    alt="Search icon" class="icon">
+            </a>
         </form>
     </div>
 </div>

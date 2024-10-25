@@ -1,3 +1,10 @@
+<?php
+ob_start();
+session_start();
+    if (!isset($_SESSION['loggedIn'])) {
+        $_SESSION['loggedIn'] = false;
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +18,7 @@
 
 <body>
     <?php
-    include "../sections/header.html";
+    include "../sections/header.php";
     $total = isset($_GET['price']) ? $_GET['price'] : 0;
     $taxes = 20;
     $price = $total - $taxes;
@@ -115,7 +122,8 @@
         </div>
     </main>
     <?php
-    include "../sections/footer.html";
+        include "../sections/footer.html";
+        ob_end_flush();
     ?>
 </body>
 

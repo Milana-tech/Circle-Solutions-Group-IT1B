@@ -23,6 +23,10 @@
     font-family: Calibre-Regular;
 }
 
+.hidden{
+    display: none;
+}
+
 .bold {
     font-family: Calibre-Bold;
 }

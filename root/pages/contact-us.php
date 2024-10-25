@@ -1,7 +1,10 @@
 <?php
 ob_start();
+session_start();
+    if (!isset($_SESSION['loggedIn'])) {
+        $_SESSION['loggedIn'] = false;
+    }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +18,7 @@ ob_start();
 
 <body>
     <?php
-    include "../sections/header.html";
+    include "../sections/header.php";
     ?>
     <main class="contact-container">
         <div class="contact-header contact-heading-wrap">
@@ -119,8 +122,8 @@ ob_start();
         </div>
     </main>
     <?php
-    ob_end_flush();
     include "../sections/footer.html";
+    ob_end_flush();
     ?>
 </body>
 
