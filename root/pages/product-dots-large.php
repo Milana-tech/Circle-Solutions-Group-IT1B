@@ -55,10 +55,10 @@ session_start();
                     </ul>
                 </div>
                 <div>
-                    <a href="./checkout.php">
+                    <a href="./checkout.php?price=799&name=Circle D.O.T.S. large">
                         <button >Buy now</button>
                     </a>
-                    <p>&#8364 799 per month</p>
+                    <p>&#8364; 799 per month</p>
                 </div>
             </div>
         </div>
