@@ -254,6 +254,37 @@ input
     align-items: center;
 }
 
+@media screen and (max-width: 1284px)
+{
+    .contact-right
+    {
+        padding: 30px;
+    }
+
+    /* .contact-circle
+    {
+        width: 90%;
+        height: 20%;
+        bottom: -1px;
+        right: -100px;
+    }
+    
+    .contact-circle2
+    {
+        width: 50%;
+        height: 20%;
+        position: absolute;
+        bottom: 50px; 
+        right: 5px; 
+    } */
+
+    .box-question
+    {
+        width: 90%;
+        margin-top: 10px;
+    }
+}
+
 @media screen and (max-width: 1024px)
 {
     .contact-grid
