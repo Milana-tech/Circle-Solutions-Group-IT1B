@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header("Location: index.php");
         exit();
     } else {
-        $_SESSION['error_message'] = "Invalid email format or credintenitals";
+        $_SESSION['error_message'] = "Invalid email format or credentials";
         header("Location: login.php");
         exit();
     }
@@ -60,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </form>
                 <?php
                 if (isset($_SESSION['error_message'])) {
-                    echo "<p style='color: red;'>" . htmlspecialchars($_SESSION['error_message']) . "</p>";
+                    echo "<p class='errors'>" . htmlspecialchars($_SESSION['error_message']) . "</p>";
                     unset($_SESSION['error_message']);
                 }
                 ?>

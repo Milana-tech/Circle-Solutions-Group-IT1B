@@ -46,11 +46,6 @@ body {
     border: none !important;
 }
 
-.errors {
-    color: #ff0033;
-    padding-top: 10px;
-}
-
 .radius {
     border-radius: 0rem;
 }
@@ -108,7 +103,7 @@ a {
     text-decoration: none;
     padding: 10px calc(5vw - 15px) 10px calc(5vw - 15px);
     border-right: 2px solid var(--blueGrey);
-    color: #799dab;
+    color: var(--blueGrey);
     font-size: 1.75rem;
 }
 
@@ -167,17 +162,17 @@ a {
     color: var(--blueGrey);
 }
 
-#userMenuDropdownBtn {
+.userMenuDropdownBtn {
     padding: 10px 10px 10px 5px;
     margin: 10px 20px 10px 5px;
     position: inherit;
 }
 
-#userMenuDropdownBtn>img {
+.userMenuDropdownBtn>img {
     max-height: 20px;
 }
 
-#userMenuDropdownBtn>img:nth-child(3) {
+.userMenuDropdownBtn>img:nth-child(3) {
     height: 10px;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -524,7 +519,7 @@ footer>div {
     grid-template-columns: 1fr 3fr;
     margin-inline: 10vw;
     gap: 1rem;
-    color: #799DAB;
+    color: var(--blueGrey);
 }
 
 .category-packages h1 {
@@ -537,7 +532,7 @@ footer>div {
     grid-column: 1/2;
     grid-row: span 2;
     margin-bottom: auto;
-    border: solid #799DAB 1px;
+    border: solid var(--blueGrey) 1px;
     margin-left: 50%;
     display: grid;
     grid-template-columns: 10px auto 5px;
@@ -560,12 +555,12 @@ footer>div {
 .rightsection-packages input {
     width: 100%;
     height: 2rem;
-    border: 1px solid #799DAB;
+    border: 1px solid var(--blueGrey);
     border-radius: 0;
 }
 
 .searchbar-packages ::placeholder {
-    color: #799DAB;
+    color: var(--blueGrey);
 }
 
 .item-packages {
@@ -676,7 +671,7 @@ footer>div {
 .checkout_header02 {
     display: flex;
     align-items: center;
-    background-color: #799DAB;
+    background-color: var(--blueGrey);
     color: white;
     font-size: 1.5rem;
     font-style: normal;
@@ -717,7 +712,7 @@ footer>div {
 
 .checkoutButton input[type="submit"] {
     padding: 15px 7px;
-    background-color: #799DAB;
+    background-color: var(--blueGrey);
     color: white;
     border-radius: 0px;
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.12);
@@ -880,7 +875,7 @@ footer>div {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #799DAB;
+    color: var(--blueGrey);
 }
 
 .healthcareEducationContainer {
@@ -909,12 +904,12 @@ footer>div {
     transition: background-color 0.3 ease;
 
     background-color: white;
-    border: 1px solid #799DAB;
-    color: #799DAB;
+    border: 1px solid var(--blueGrey);
+    color: var(--blueGrey);
 }
 
 .healthcareEducation-seePackages:hover {
-    background-color: #799DAB;
+    background-color: var(--blueGrey);
     color: white;
 }
 
@@ -1027,7 +1022,7 @@ footer>div {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: #799dab;
+    color: var(--blueGrey);
 }
 
 .accountFormTypePage {
@@ -1057,7 +1052,7 @@ footer>div {
 }
 
 .accountFormTypePage h2 {
-    color: #799dab;
+    color: var(--blueGrey);
     font-weight: bold;
 }
 
@@ -1066,7 +1061,7 @@ footer>div {
 }
 
 .accountFormTypePage a {
-    color: #799dab;
+    color: var(--blueGrey);
     text-decoration: none;
 }
 
@@ -1630,7 +1625,7 @@ footer>div {
 .contact-circle {
     width: 360px;
     height: 200px;
-    background-color: #C7EAF8;
+    background-color: var(--blueGrey);
     border-radius: 270px 270px 0 0;
     position: absolute;
     bottom: 0px;
@@ -1650,7 +1645,7 @@ footer>div {
 .contact-left {
     padding: 40px 20px;
     border-radius: 0.5rem;
-    background-color: #799DAB;
+    background-color: var(--blueGrey);
     position: relative;
 }
 
@@ -1666,7 +1661,7 @@ footer>div {
 }
 
 .contact-darkblue {
-    color: #799dab;
+    color: var(--blueGrey);
 }
 
 .contact-darkblue h1 {
@@ -1723,7 +1718,7 @@ footer>div {
 }
 
 .contact-container label {
-    color: #799DAB;
+    color: var(--blueGrey);
 }
 
 .contact-container input {
@@ -1750,7 +1745,7 @@ footer>div {
 
 .contact-button input[type="submit"] {
     padding: 15px 7px;
-    background-color: #799DAB;
+    background-color: var(--blueGrey);
     color: white;
     border-radius: 5px;
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.12);
@@ -2036,7 +2031,7 @@ footer>div {
 }
 
 .Faq-questions {
-    background-color: #DCF1F9;
+    background-color: var(--lightBlueGrey);
     margin: 2em;
     padding: 1em;
 }
@@ -2072,3 +2067,9 @@ footer>div {
     }
 }
 /* faq.php end  */
+/* ======================================== */
+/* global PART 2 */
+.errors {
+    color: #008AB8;
+    padding-top: 15px;
+}

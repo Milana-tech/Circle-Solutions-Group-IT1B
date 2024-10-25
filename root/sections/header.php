@@ -43,10 +43,10 @@
                     </button>';
         } else {
             echo '
-                    <button>
+                    <div>
                     <a href="login.php" class="userMenuDropdownBtn">
                         <img src="../images/userIcon.png" alt="User icon" class="icon">
-                    </a></button>
+                    </a>
                     ';
         }
 
@@ -86,10 +86,16 @@
     </div>
     <div class="expandedMenu">
         <ul>
-            <li>
-                <a class="noBorder"
-                    href="./login.php">login</a>
-            </li>
+            <?php
+            if ($_SESSION['loggedIn'] == true) {
+            } else {
+                echo "
+                    <li>
+                        <a class='noBorder' href='./login.php'>login</a>
+                    </li>
+                    ";
+            }
+            ?>
             <li>
                 <a class="noBorder"
                     href="./contact-us.php">contact
