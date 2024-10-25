@@ -57,9 +57,12 @@ session_start();
           $password = filter_input(INPUT_POST, "password");
           $cPassword = filter_input(INPUT_POST, "cPassword");
 
+
+         
           if (!empty($name) && $email !== FALSE && !empty($password) && !empty($cPassword)) {
             if ($password === $cPassword) {
-              header("Location: ../index.php");
+            //  issue starts might be here   
+             header("Location: ../index.php");
               exit();
             } elseif ($password != $cPassword) {
               echo "<p class = 'errors errorMsg'>Passwords do not match</p>";
