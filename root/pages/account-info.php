@@ -3,7 +3,6 @@ $error = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $fname = filter_input(INPUT_POST, "fname");
     $lname = filter_input(INPUT_POST, "lname");
-    $rawEmail = filter_input(INPUT_POST, "email");
     $email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
     $phone = filter_input(INPUT_POST, "phone");
     $address = filter_input(INPUT_POST, "address");
