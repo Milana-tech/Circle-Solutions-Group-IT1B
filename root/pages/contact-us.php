@@ -57,7 +57,7 @@ ob_start();
                         </div>
                         <div class="contact-row">
                             <label for="phonenumber" class="contact-inline">Phone Number</label>
-                            <input type="text" name="phonenumber" placeholder="Please enter your number"
+                            <input type="text" name="phonenumber" maxlength="10" placeholder="Please enter your number"
                                 id="phonenumber" required>
                         </div>
                     </div>
@@ -96,7 +96,7 @@ ob_start();
                     $email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
 
                     if (!empty($email)) {
-                        echo "<p class='errors'> Message sent successfully! </p>";
+                        echo "Message sent successfully!";
                     } else {
                         echo "<p class='errors'> Error your messasge was not sent. Invalid email. </p>";
                     }

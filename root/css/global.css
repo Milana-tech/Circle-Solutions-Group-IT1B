@@ -42,7 +42,7 @@ body {
     border: none !important;
 }
 
-.form-group .errors {
+.errors {
     color: #ff0033;
     padding-top: 10px;
 }

@@ -9,11 +9,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $state = filter_input(INPUT_POST, "state");
     $postal = filter_input(INPUT_POST, "postal");
     if (isset($_POST["submit"])) {
+        $error = '';
         if (empty($fname) || empty($lname) || empty($email) || empty($phone) || empty($address) || empty($state) || empty($postal)) {
-
-            $error = "<p class='errors'> Please fill out all of the fileds</P>";
-        } else {
-            $error = "";
+            $error .= "<p class='errors'> Please fill out all of the fileds</p>";
         }
     }
 }
@@ -40,12 +38,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="container-accountinfo">
             <h1>Account Settings</h1>
             <p>Below you can observe your information</p>
-            <div class="errors">
                 <?php
                 echo $error;
                 ?>
-
-            </div>
             <h2>Profile Information</h2>
             <form action="account-info.php" method="POST" class="form-accountinfo">
                 <div class="firsthalf-accountinfo">
@@ -59,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <div class="firsthalf-accountinfo">
                     <label for="" class="labels-accountinfo">EMAIL ADDRESS</label>
-                    <input type="text" class="inputs-accountinfo" name="email">
+                    <input type="email" class="inputs-accountinfo" name="email">
                 </div>
                 <div class="secondhalf-accountinfo">
                     <label for="" class="labels-accountinfo">PHONE NUMBER</label>
@@ -70,11 +65,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <div class="firsthalf-accountinfo">
                     <label for="" class="labels-accountinfo">NEW PASSWORD</label>
-                    <input type="text" class="inputs-accountinfo">
+                    <input type="password" class="inputs-accountinfo">
                 </div>
                 <div class="secondhalf-accountinfo">
                     <label for="" class="labels-accountinfo">CONFIRM NEW PASSWORD</label>
-                    <input type="text" class="inputs-accountinfo">
+                    <input type="password" class="inputs-accountinfo">
                 </div>
 
                 <h4>Address</h4>
